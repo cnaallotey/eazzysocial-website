@@ -6,7 +6,9 @@
           <div
             class="w-full flex items-center justify-between px-5 pb-5 pt-6 select-none"
           >
-            <img src="../assets/logo.png" class="h-8 lg:h-10" alt="logo" />
+            <router-link to="/">
+              <img src="../assets/logo.png" class="h-8 select-none" alt="logo" />
+            </router-link>
             <ul
               class="text-white font-normal text-base lg:inline-flex tracking-wide space-x-8 cursor-pointer hidden"
             >
@@ -16,11 +18,12 @@
               <li>Programmes</li>
               <li>About</li>
             </ul>
-            <button
-              class="text-white font-medium text-base px-5 py-3 hidden lg:block bg-blue-600 tracking-wide"
+            <router-link
+              to="/contact"
+              class="text-white font-medium text-sm px-5 py-3 hidden lg:block bg-blue-600 tracking-wide"
             >
               Get in Touch
-            </button>
+            </router-link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-8 w-auto text-white border border-white lg:hidden"
@@ -41,3 +44,16 @@
     </nav>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {};
+  },
+  methods: {
+    gohome: function () {
+      $router.push("/");
+    },
+  },
+};
+</script>
