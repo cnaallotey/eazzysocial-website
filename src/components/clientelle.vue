@@ -19,7 +19,7 @@
                 class="flex flex-wrap w-full justify-between items-center space-y-5 lg:space-y-0"
               >
                 <img
-                  src="../assets/Ghana_Parliament_Emblem 1 (1).png"
+                  src="../assets/Ghana_Parliament_Emblem.png"
                   class="h-8 lg:h-20"
                   alt=""
                 />
