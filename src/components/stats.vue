@@ -60,7 +60,7 @@
         </div>
       </div>
       <img
-        src="../assets/eslogo 2.png"
+        src="../assets/eslogo2.png"
         class="img absolute bottom-0 left-0 hidden"
         alt=""
       />
