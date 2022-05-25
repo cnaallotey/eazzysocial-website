@@ -11,9 +11,9 @@
             </p>
             <div class="w-full mt-5 flex items-center justify-center">
               <button
-                class="text-white font-medium text-base px-5 py-3 bg-blue-600 tracking-wide"
+                class="text-white font-medium text-sm px-5 py-3 bg-blue-600 tracking-normal"
               >
-                Get in Touch
+                Get in touch
               </button>
             </div>
           </div>

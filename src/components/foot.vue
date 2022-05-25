@@ -6,10 +6,10 @@
           <div class="w-full flex flex-col items-center space-y-8">
             <img src="../assets/lgofull.png" class="h-8" alt="" />
             <ul
-              class="max-w-2xl lg:space-x-10 space-y-5 lg:space-y-0 text-base font-medium flex flex-col lg:flex-row items-center justify-between text-slate-700"
+              class="max-w-2xl lg:space-x-10 space-y-5 lg:space-y-0 text-sm font-medium flex flex-col lg:flex-row items-center justify-between text-slate-700"
             >
-              <li>Campus Club</li>
               <li>Express Social</li>
+              <li>Campus Club</li>
               <li>Courses</li>
               <li>About</li>
               <li>Contact</li>
@@ -54,7 +54,7 @@
                 />
               </svg>
             </div>
-            <p class="text-base font-medium text-slate-700 mt-2">
+            <p class="text-xs font-medium text-slate-700 mt-2">
               © 2021 Eazzysocial, All rights reserved.
             </p>
           </div>

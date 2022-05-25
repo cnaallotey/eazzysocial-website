@@ -24,7 +24,7 @@
                 </div>
               </div>
               <div class="w-1/2">
-                <form action="" class="bg-white p-10 flex flex-col w-fit lg:w-3/4">
+                <form action="" class="bg-white p-10 flex flex-col w-fit lg:w-full">
                   <label for="name" class="font-normal text-sm text-gray-700 mb-1"
                     >Full name</label
                   >
@@ -33,7 +33,7 @@
                     name="full name"
                     id="full-name"
                     placeholder="John Doe"
-                    class="p-3 text-sm font-normal text-gray-900 border-2 bg-gray-50 border-gray-200"
+                    class="p-3 text-sm rounded-md font-normal text-gray-900 border-2 bg-gray-50 border-gray-200"
                   />
                   <label for="Company" class="font-normal text-sm text-gray-700 mb-1 mt-4"
                     >Company</label
@@ -43,7 +43,17 @@
                     name="company"
                     id="company"
                     placeholder=""
-                    class="p-3 text-sm font-normal text-gray-900 border-2 bg-gray-50 border-gray-200"
+                    class="p-3 text-sm font-normal rounded-md text-gray-900 border-2 bg-gray-50 border-gray-200"
+                  />
+                  <label for="email" class="font-normal text-sm text-gray-700 mb-1 mt-4"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="example@gmail.com"
+                    class="p-3 text-sm font-normal rounded-md text-gray-900 border-2 bg-gray-50 border-gray-200"
                   />
                   <label for="number" class="font-normal text-sm text-gray-700 mb-1 mt-4"
                     >Contact Number</label
@@ -53,7 +63,7 @@
                     name="Contact Number"
                     id="contact-number"
                     placeholder=""
-                    class="p-3 text-sm font-normal text-gray-900 border-2 bg-gray-50 border-gray-200"
+                    class="p-3 text-sm font-normal rounded-md text-gray-900 border-2 bg-gray-50 border-gray-200"
                   />
                   <label for="country" class="font-normal text-sm text-gray-700 mb-1 mt-4"
                     >Country</label
@@ -63,7 +73,7 @@
                     name="Contact Numner"
                     id="contact-number"
                     placeholder=""
-                    class="p-3 text-sm font-normal text-gray-900 border-2 bg-gray-50 border-gray-200"
+                    class="p-3 text-sm font-normal rounded-md text-gray-900 border-2 bg-gray-50 border-gray-200"
                   />
                   <label for="message" class="font-normal text-sm text-gray-700 mb-1 mt-4"
                     >How can Eazzysocial be of help to you?</label
@@ -72,9 +82,27 @@
                     name="message"
                     id="message"
                     cols="30"
-                    class="bg-gray-50 border-2 border-gray-200"
+                    class="bg-gray-50 border-2 rounded-md border-gray-200"
                     rows="10"
                   ></textarea>
+                  <button
+                    class="text-sm font-normal flex justify-center items-center space-x-2 text-white w-full py-3 bg-blue-600 mt-5"
+                  >
+                    Send message
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 ml-2"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                          clip-rule="evenodd"
+                        /></svg
+                    ></span>
+                  </button>
                 </form>
               </div>
             </div>

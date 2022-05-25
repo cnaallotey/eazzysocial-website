@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="w-full bg-slate-900 overflow-hidden relative">
-      <div class="max-w-screen-xl mx-auto px-5 my-36">
+      <div class="max-w-screen-xl mx-auto px-5 my-28">
         <div class="w-full">
           <div>
             <p
