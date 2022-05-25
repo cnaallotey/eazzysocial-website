@@ -37,7 +37,7 @@ const router = createRouter({
             path:"/campusclub", name:"Campusclub", component:Campusclub
         },
        {
-            path:"*", name:"404", component:Home
+            path:"/:pathMatch(.*)", name:"404", component:Home
         },
     
     
