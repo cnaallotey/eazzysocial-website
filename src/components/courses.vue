@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="w-full bg-blue-50 py-20 my-32">
+    <div class="w-full bg-blue-50 py-20 my-10 lg:my-32">
       <div class="max-w-screen-xl mx-auto px-5">
         <div>
           <div class="w-full">

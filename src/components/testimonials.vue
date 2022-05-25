@@ -14,8 +14,10 @@
             >
               What our clients say about us.
             </p>
-            <div class="w-full mt-32">
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-36">
+            <div class="w-full mt-24 lg:mt-32">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 lg:gap-36"
+              >
                 <test />
                 <test />
                 <test />

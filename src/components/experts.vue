@@ -10,7 +10,9 @@
               Backed by industry experts.
             </p>
             <div class="w-full mt-10">
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-36">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-36"
+              >
                 <div class="w-full">
                   <div class="w-full h-64 bg-gray-200"></div>
                   <div class="p-8">

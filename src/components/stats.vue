@@ -5,14 +5,14 @@
         <div class="w-full">
           <div>
             <p
-              class="mt-4 max-w-2xl text-xl text-white lg:text-center lg:mx-auto tracking-wide"
+              class="mt-4 max-w-2xl text-lg md:text-xl text-white lg:text-center lg:mx-auto tracking-wide"
             >
               Whether you're looking to build your skills in digital marketing or grow
               your business, our standard courses and programs will help you succeed.
             </p>
             <div class="max-w-2xl mx-auto mt-5">
               <div class="w-full grid grid-cols-2 gap-10">
-                <div class="w-full flex flex-col items-center">
+                <div class="w-full flex flex-col lg:items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-12 w-12 text-blue-600"
@@ -23,7 +23,9 @@
                       d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
                     />
                   </svg>
-                  <p class="text-blue-600 text-5xl font-extrabold tracking-wide mt-2">
+                  <p
+                    class="text-blue-600 text-3xl lg:text-5xl font-extrabold tracking-wide mt-2"
+                  >
                     2000+
                   </p>
                   <h2
@@ -32,7 +34,7 @@
                     professionals trained
                   </h2>
                 </div>
-                <div class="w-full flex flex-col items-center">
+                <div class="w-full flex flex-col lg:items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-12 w-12 text-blue-600"
@@ -45,7 +47,9 @@
                       clip-rule="evenodd"
                     />
                   </svg>
-                  <p class="text-blue-600 text-5xl font-extrabold tracking-wide mt-2">
+                  <p
+                    class="text-blue-600 text-3xl lg:text-5xl font-extrabold tracking-wide mt-2"
+                  >
                     5000+
                   </p>
                   <h2
