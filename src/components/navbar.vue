@@ -12,21 +12,24 @@
             <ul
               class="text-white font-semibold text-sm lg:inline-flex tracking-wide space-x-8 cursor-pointer hidden"
             >
-              <li
+              <router-link
+                to="/expressSocial"
                 class="px-2 hover:text-blue-500 border-b-0 duration-200 border-blue-500 hover:border-b transform"
               >
                 Express Social
-              </li>
-              <li
+              </router-link>
+              <router-link
+                to="/campusclub"
                 class="px-2 hover:text-blue-500 border-b-0 duration-200 border-blue-500 hover:border-b transform"
               >
                 Campus Club
-              </li>
-              <li
+              </router-link>
+              <router-link
+                to="/courses"
                 class="px-2 hover:text-blue-500 border-b-0 duration-200 border-blue-500 hover:border-b transform"
               >
                 Courses
-              </li>
+              </router-link>
 
               <div class="group inline-block">
                 <button
@@ -50,7 +53,7 @@
                   class="bg-white border rounded-sm transform scale-0 group-hover:scale-100 slate-50 absolute transition duration-200 delay-500 shadow-xl ease-out origin-center -translate-x-5 w-72 cursor-pointer mt-8 text-gray-700 font-semibold"
                 >
                   <li class="rounded-sm px-3 py-3 hover:bg-gray-100 bg-slate-50">
-                    <router-link to="/groceryshop" class="flex items-center">
+                    <router-link to="/digitizing-TVET" class="flex items-center">
                       <div class="flex items-center space-x-2">
                         <div class="w-12 h-12 bg-blue-500"></div>
                         <span>Digitizing TVET</span>
