@@ -4,8 +4,8 @@
       <div class="max-w-screen-xl mx-auto px-5">
         <div>
           <div class="w-full">
-            <div class="w-full flex">
-              <div class="w-1/2">
+            <div class="w-full flex flex-col lg:flex-row">
+              <div class="w-full lg:w-1/2">
                 <p
                   class="mt-2 text-3xl leading-8 font-bold tracking-tight text-white md:text-4xl max-w-2xl mx-auto"
                 >
@@ -23,8 +23,11 @@
                   <p class="text-base text-slate-200">facebook.com</p>
                 </div>
               </div>
-              <div class="w-1/2">
-                <form action="" class="bg-white p-10 flex flex-col w-fit lg:w-full">
+              <div class="w-full lg:w-1/2">
+                <form
+                  action=""
+                  class="bg-white p-10 flex flex-col w-full mt-10 lg:mt-0 lg:w-full"
+                >
                   <label for="name" class="font-normal text-sm text-gray-700 mb-1"
                     >Full name</label
                   >
@@ -82,11 +85,11 @@
                     name="message"
                     id="message"
                     cols="30"
-                    class="bg-gray-50 border-2 rounded-md border-gray-200"
+                    class="bg-gray-50 border-2 rounded-md border-gray-200 p-3"
                     rows="10"
                   ></textarea>
                   <button
-                    class="text-sm font-normal flex justify-center items-center space-x-2 text-white w-full py-3 bg-blue-600 mt-5"
+                    class="text-sm uppercase tracking-wider font-normal flex justify-center items-center space-x-2 text-white w-full py-3 bg-blue-600 mt-5"
                   >
                     Send message
                     <span

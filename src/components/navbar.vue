@@ -50,7 +50,7 @@
                   </span>
                 </button>
                 <ul
-                  class="bg-white border rounded-sm transform scale-0 group-hover:scale-100 slate-50 absolute transition duration-200 delay-500 shadow-xl ease-out origin-center -translate-x-5 w-72 cursor-pointer mt-8 text-gray-700 font-semibold"
+                  class="bg-white border rounded-sm transform z-20 scale-0 group-hover:scale-100 slate-50 absolute transition duration-200 delay-500 shadow-xl ease-out origin-center -translate-x-5 w-72 cursor-pointer mt-8 text-gray-700 font-semibold"
                 >
                   <li class="rounded-sm px-3 py-3 hover:bg-gray-100 bg-slate-50">
                     <router-link to="/digitizing-TVET" class="flex items-center">
@@ -70,7 +70,7 @@
             </ul>
             <router-link
               to="/contact"
-              class="text-white font-normal text-sm px-5 py-3 hidden lg:block bg-blue-600 tracking-narmal transform"
+              class="text-white uppercase tracking-wider font-normal text-sm px-5 py-3 hidden lg:block bg-blue-600 tracking-narmal transform"
             >
               Get in touch
             </router-link>

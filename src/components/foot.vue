@@ -6,13 +6,13 @@
           <div class="w-full flex flex-col items-center space-y-8">
             <img src="../assets/lgofull.png" class="h-8" alt="" />
             <ul
-              class="max-w-2xl lg:space-x-10 space-y-5 lg:space-y-0 text-sm font-medium flex flex-col lg:flex-row items-center justify-between text-slate-700"
+              class="max-w-2xl cursor-pointer lg:space-x-10 space-y-5 lg:space-y-0 text-sm font-medium flex flex-col lg:flex-row items-center justify-between text-slate-700"
             >
-              <li>Express Social</li>
-              <li>Campus Club</li>
-              <li>Courses</li>
-              <li>About</li>
-              <li>Contact</li>
+              <li class="hover:text-blue-500 hover:font-semibold">Express Social</li>
+              <li class="hover:text-blue-500 hover:font-semibold">Campus Club</li>
+              <li class="hover:text-blue-500 hover:font-semibold">Courses</li>
+              <li class="hover:text-blue-500 hover:font-semibold">About</li>
+              <li class="hover:text-blue-500 hover:font-semibold">Contact</li>
             </ul>
             <div class="flex space-x-8">
               <svg

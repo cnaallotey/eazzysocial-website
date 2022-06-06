@@ -11,9 +11,9 @@
             </p>
             <div class="w-full mt-5 flex items-center justify-center">
               <button
-                class="text-white font-medium text-sm px-5 py-3 bg-blue-600 tracking-normal"
+                class="text-white font-medium text-sm px-5 py-3 uppercase tracking-wider bg-blue-600"
               >
-                Get in touch
+                Book a meeting
               </button>
             </div>
           </div>
