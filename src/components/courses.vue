@@ -18,12 +18,13 @@
               <div
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-10"
               >
-                <course />
-                <course />
-                <course />
-                <course />
-                <course />
-                <course />
+                <course
+                  v-for="course in courses"
+                  :key="course.name"
+                  :name="course.name"
+                  :price="course.price"
+                  :content="course.content"
+                />
               </div>
             </div>
             <div class="mt-10 flex justify-center">
@@ -44,5 +45,60 @@
 import course from "./course.vue";
 export default {
   components: { course },
+  data() {
+    return {
+      courses: [
+        {
+          name: "Social Media Marketing Training for SMEs",
+          price: "Free",
+          content:
+            "Access a completely free social media marketing program, e-commerce and gain daily support in driving sales, growing your customers and engaging your followers.",
+        },
+        {
+          name: "Small Business Social Media Marketing Course",
+          price: "GHC 250",
+          content:
+            "Develop a social media marketing strategy for your small business. Gain a strategic understanding of driving sales traffic through social media. ",
+        },
+        {
+          name: "Social Media Marketing with an option in Graphic Design and Photography",
+          price: "GHC 4,500",
+          content:
+            "Launch a successful career as a social media marketing manager with top firms. Gain relevant skills in all the areas of social media marketing. ",
+        },
+        {
+          name:
+            "Professional Certification in SEO with an option in WordPress Website Development",
+          price: "GHC 4,000",
+          content:
+            "Searching Engine Optimization specialists are in high demand across the Globe. Gain relevant skills in all the areas of SEO and work for top firms. Develop practical skills in building a website and optimizing. ",
+        },
+        {
+          name: "Executive Social Media and Digital Marketing Course",
+          price: "GHC 1,000",
+          content:
+            "Are you a business executive looking to deepen your knowledge in social media and digital marketing? Enrol our Executive course designed in partnership with Koforidua Technical University.  ",
+        },
+        {
+          name: "Online Shop Attendant Course",
+          price: "GHC 1,000",
+          content:
+            "Begin a journey as a professional as an online shop attendant. Gain skills in all the areas in managing an online shop ie. Social media, e-commerce, accounting, customer service, product photography etc.  ",
+        },
+        {
+          name: "Executive Social Selling and Digital Selling Course",
+          price: "GHC 1,200",
+          content:
+            "Be a digital sales leader. Increase sales velocity and engage more prospects using social media platforms. The course is in partnership with Koforidua Technical University.  ",
+        },
+        {
+          name: "Online Reputation Management and Applied SEO Workshop",
+          price: "GHC 2,500",
+          content:
+            "Protect the image of your business online through advanced social listening and bury negative information about your business in search through Advance search engine optimization.  ",
+        },
+      ],
+    };
+  },
 };
 </script>

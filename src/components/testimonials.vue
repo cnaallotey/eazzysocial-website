@@ -16,11 +16,16 @@
             </p>
             <div class="w-full mt-24 lg:mt-32">
               <div
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 lg:gap-36"
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 lg:gap-12"
               >
-                <test />
-                <test />
-                <test />
+                <test
+                  v-for="testimonial in testimonials"
+                  :key="testimonial"
+                  :name="testimonial.name"
+                  :message="testimonial.message"
+                  :company="testimonial.company"
+                  :group="testimonial.goup"
+                />
               </div>
             </div>
           </div>
@@ -34,5 +39,32 @@
 import test from "../components/test.vue";
 export default {
   components: { test },
+  data() {
+    return {
+      testimonials: [
+        {
+          name: "Nana Gyasi Boagye",
+          message:
+            " Eazzysocial is an ideal place for Social Media Education. It helped me develop a robust foundation in social media marketing.",
+          company: "Social Cycles Advertising ",
+          goup: "Professional",
+        },
+        {
+          name: "Isaac Mohammed Newton",
+          message:
+            "Even though I was using social media, I realized I was not maximizing the full marketing potential of social media until I participated in the small business social media marketing course.",
+          company: "General manager, Nhyilaw",
+          goup: "Small Business Owner",
+        },
+        {
+          name: "Stephanie Baiden",
+          message:
+            "Eazzysocial has been helpful. I will recommend it to every student seeking to acquire social media and digital business skills. Joining Eazzysocial Campus Club helped me to know social media is not just for only connecting with friends and family but also an enabler for business to drive their business",
+          company: "Koforidua Technical University ",
+          goup: "Student",
+        },
+      ],
+    };
+  },
 };
 </script>
