@@ -11,7 +11,7 @@
 
           <div class="w-full lg:w-1/2 flex flex-col justify-center">
             <h1
-              class="text-4xl lg:text-5xl font-extrabold text-slate-900 lg:leading-none"
+              class="text-4xl lg:text-5xl max-w-2xl font-extrabold text-slate-900 lg:leading-none"
             >
               Let's get you started with <span class="text-blue-600">Digital</span>.
             </h1>

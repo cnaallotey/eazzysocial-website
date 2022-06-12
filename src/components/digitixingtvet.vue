@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="w-full h-[29.125rem] relative overflow-hidden">
+  <div class="mb-20 lg:mb-0">
+    <div class="w-full h-[29.125rem] relative overflow-hidden mb-10 lg:mb-0">
       <img
         src="../assets/tvet.png"
         class="w-full h-full object-cover object-center"
@@ -93,7 +93,7 @@
             />
           </div>
           <div
-            class="w-full lg:max-w-lg lg:absolute top-0 left-0 p-5 lg:mt-0 lg:p-10 bg-slate-900"
+            class="w-full lg:max-w-lg lg:absolute mb-10 lg:mb-0 top-0 left-0 p-5 lg:mt-0 lg:p-10 bg-slate-900"
           >
             <p class="text-3xl font-semibold text-white tracking-normal">
               Register your TVET school for free

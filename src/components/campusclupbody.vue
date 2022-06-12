@@ -75,122 +75,178 @@
                     <div
                       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-10"
                     >
-                      <course />
-                      <course />
-                      <course />
-                      <course />
-                      <course />
-                      <course />
+                      <div
+                        class="bg-white pb-8 h-full group hover:shadow-lg transition-all ease-linear duration-150 overflow-hidden shadow-md"
+                        v-for="course in courses"
+                        :key="course.name"
+                      >
+                        <div class="w-full h-full flex flex-col justify-between">
+                          <div class="w-full">
+                            <div class="w-full h-52 relative">
+                              <img
+                                :src="course.img"
+                                class="w-full h-full object-cover"
+                                alt=""
+                              />
+                            </div>
+                            <div class="w-full px-8 pt-8">
+                              <div class="mt-4 w-full">
+                                <div>
+                                  <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                    {{ course.name }}
+                                  </h3>
+                                  <p class="text-sm text-gray-500 mt-2">
+                                    {{ course.content }}
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="w-fit">
+                            <button
+                              @click="openmodal(course.name)"
+                              class="text-lg leading-6 font-medium text-blue-500 mt-4 mx-8"
+                            >
+                              Register For Free
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="mt-10 flex justify-center">
-                    <button
-                      class="text-blue-500 border-2 border-blue-500 bg-transparent px-5 py-3 text-base font-medium"
-                    >
-                      Explore our courses
-                    </button>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="w-full bg-white mt-20 h-[50rem]">
-            <div class="w-full">
-              <div class="w-full flex flex-col lg:flex-row">
-                <div class="w-full hidden lg:flex lg:w-1/2">
-                  <img
-                    src="../assets/pexels-pixabay-207691.jpg"
-                    class="w-full h-[50rem] object-cover object-center"
-                    alt=""
-                  />
-                </div>
-                <div class="w-full lg:w-1/2 flex items-center relative overflow-visible">
+            <div>
+              <!-- This example requires Tailwind CSS v2.0+ -->
+              <div
+                class="fixed z-40 inset-0 overflow-y-auto"
+                aria-labelledby="modal-title"
+                role="dialog"
+                aria-modal="true"
+                v-if="modal"
+              >
+                <div
+                  class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+                >
+                  <!--
+      Background overlay, show/hide based on modal state.
+      Entering: "ease-out duration-300"
+        From: "opacity-0"
+        To: "opacity-100"
+      Leaving: "ease-in duration-200"
+        From: "opacity-100"
+        To: "opacity-0"
+    -->
                   <div
-                    class="w-full lg:max-w-xl lg:absolute top-20 p-5 mt-10 lg:mt-0 lg:p-10 bg-slate-900 lg:-translate-x-32"
+                    class="fixed inset-0 bg-blue-400 bg-opacity-75 transition-opacity"
+                    @click.prevent="modal = false"
+                    aria-hidden="true"
+                  ></div>
+
+                  <!-- This element is to trick the browser into centering the modal contents. -->
+                  <span
+                    class="hidden sm:inline-block sm:align-middle sm:h-screen"
+                    aria-hidden="true"
+                    >&#8203;</span
                   >
-                    <p
-                      class="text-3xl font-semibold text-white leading-7 tracking-normal"
-                    >
-                      Register for free
-                    </p>
-                    <p class="text-base font-normal text-slate-300 leading-6 mt-2">
-                      Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
-                      massa dictumst amet. Sapien tortor lacus arcu.
-                    </p>
-                    <form action="submit" class="w-full flex flex-col mt-12 0">
-                      <div
-                        class="flex flex-col lg:flex-row lg:space-x-10 space-y-4 lg:space-y-0"
-                      >
-                        <div class="w-full lg:w-1/2 flex flex-col">
-                          <label
-                            for="first name "
-                            class="text-slate-300 font-normal text-sm leading-5"
-                            >First name</label
-                          >
-                          <input
-                            type="text"
-                            class="p-3 bg-white text-base mt-1 font-normal text-slate-800"
-                          />
-                        </div>
-                        <div class="w-full lg:w-1/2 flex flex-col">
-                          <label
-                            for="Last name "
-                            class="text-slate-300 font-normal text-sm leading-5"
-                            >Last name</label
-                          >
-                          <input
-                            type="text"
-                            class="p-3 bg-white text-base mt-1 font-normal text-slate-800"
+
+                  <!--
+      Modal panel, show/hide based on modal state.
+      Entering: "ease-out duration-300"
+        From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+        To: "opacity-100 translate-y-0 sm:scale-100"
+      Leaving: "ease-in duration-200"
+        From: "opacity-100 translate-y-0 sm:scale-100"
+        To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+    -->
+                  <div
+                    class="relative inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm p-5 lg:p-0 md:max-w-5xl sm:w-full"
+                  >
+                    <div class="w-full flex">
+                      <div class="w-full lg:w-1/2 m-0 lg:m-10">
+                        <h2
+                          class="text-gray-900 font-semibold text-2xl tracking-tight text-left mb-2"
+                        >
+                          Register for Free
+                        </h2>
+                        <form action="submit" id="contact_form" class="w-full">
+                          <div class="w-full">
+                            <div class="w-full flex flex-col">
+                              <label for="name" class="text-sm text-gray-700 mb-1"
+                                >Your name <span class="text-red-500">*</span></label
+                              ><input
+                                type="text"
+                                name="name"
+                                placeholder="eg. John Doe"
+                                class="rounded-none border-gray-200 p-3 border-2"
+                                required
+                              />
+                              <label for="email" class="text-sm text-gray-700 mb-1 mt-4"
+                                >Your email <span class="text-red-500">*</span></label
+                              ><input
+                                type="email"
+                                name="email"
+                                placeholder="eg. you@example.com"
+                                class="rounded-none border-gray-200 p-3 border-2"
+                                required
+                              />
+                              <label for="Phone" class="text-sm text-gray-700 mb-1 mt-4"
+                                >Your phone number</label
+                              ><input
+                                type="tel"
+                                name="contact"
+                                placeholder=""
+                                class="rounded-none border-gray-200 p-3 border-2"
+                              />
+                              <label for="School" class="text-sm text-gray-700 mb-1 mt-4"
+                                >Your School</label
+                              ><input
+                                type="text"
+                                name="school"
+                                placeholder="enter school name"
+                                class="rounded-none border-gray-200 p-3 border-2"
+                              />
+                            </div>
+                            <div class="w-full mt-4 flex flex-col">
+                              <label for="course" class="text-sm text-gray-700 mb-1"
+                                >Course <span class="text-red-500">*</span></label
+                              ><select
+                                name="course"
+                                class="p-3 border-2 text-base font-normal appearance-none border-gray-200 text-gray-800"
+                                id=""
+                                v-model="selectedCourse"
+                              >
+                                <option
+                                  v-for="course in courses"
+                                  :key="course.name"
+                                  :value="course.name"
+                                >
+                                  {{ course.name }}
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="w-full flex flex-row space-x-4 justify-center">
+                            <button
+                              type="submit"
+                              class="w-full py-3 text-sm font-normal uppercase tracking-wide text-white bg-blue-600 rounded-none hover:-translate-y-1 hover:bg-blue-700 hover:shadow-xl transition-all duration-200 mx-auto mt-8"
+                            >
+                              register
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="w-1/2 bg-black">
+                        <div class="w-full h-full bg-red-100">
+                          <img
+                            src="../assets/collage.png"
+                            class="w-full h-full object-fill object-center"
+                            alt=""
                           />
                         </div>
                       </div>
-                      <label
-                        for="email "
-                        class="text-slate-300 font-normal mt-5 text-sm leading-5"
-                        >Email</label
-                      >
-                      <input
-                        type="email"
-                        class="p-3 bg-white text-base mt-1 font-normal text-slate-800"
-                      />
-
-                      <label
-                        for="school "
-                        class="text-slate-300 font-normal mt-5 text-sm leading-5"
-                        >School</label
-                      >
-                      <input
-                        type="text"
-                        class="p-3 bg-white text-base mt-1 font-normal text-slate-800"
-                      />
-                      <label
-                        for="contact "
-                        class="text-slate-300 font-normal mt-5 text-sm leading-5"
-                        >Contact Number</label
-                      >
-                      <input
-                        type="tel"
-                        class="p-3 bg-white text-base mt-1 font-normal text-slate-800"
-                      />
-                      <button
-                        class="w-full flex flex-row items-center justify-center space-x-2 text-base font-normal uppercase tracking-wider bg-blue-600 mt-10 text-white py-3"
-                      >
-                        Register
-                        <span
-                          ><svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5 ml-2"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
-                              clip-rule="evenodd"
-                            /></svg
-                        ></span>
-                      </button>
-                    </form>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -206,5 +262,75 @@
 import course from "./course.vue";
 export default {
   components: { course },
+  data() {
+    return {
+      courses: [
+        {
+          name: "Social Media Marketing (Community Management) ",
+          content:
+            "Acquire relevant skills needed in starting a career in social media marketing. Gain and jobs and internships with companies globally. Earn monthly stipends while in school.",
+          img:
+            "https://images.unsplash.com/photo-1537731121640-bc1c4aba9b80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        },
+        {
+          name: "E-commerce Management and SEO ",
+          content:
+            "Acquire relevant skills in e-commerce and search engine optimization. Gain jobs and internships with companies globally. Earn monthly stipends while in school.",
+          img:
+            "https://images.unsplash.com/photo-1586880244386-8b3e34c8382c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZWNvbW1lcmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        },
+        {
+          name: "Business Blogging ",
+          content:
+            "Turn your passion for writing into a profitable venture writing articles and stories for businesses and while learning the secret of blogging.",
+          img:
+            "https://images.unsplash.com/photo-1604933762023-7213af7ff7a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxvZ2dpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        },
+        {
+          name: "Data Science and Analytics",
+          content:
+            "Start a journey with data science and business analytics. Gain jobs and internships with companies globally. Earn monthly stipends while in school. ",
+          img:
+            "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGF0YSUyMHNjaWVuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        },
+        {
+          name: "UX and UI Design Fundamentals",
+          content:
+            "Learn the basics of designing websites and apps through human-centred interaction design. Gain jobs and internships with companies globally. Earn monthly stipends while in school.",
+          img:
+            "https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dWklMjBkZXNpZ258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        },
+        {
+          name: "LinkedIn for Jobs and Personal Branding ",
+          content:
+            "Build an effective personal brand for your career as a student. Increases your chances of getting jobs through Social Media and LinkedIn. ",
+          img:
+            "https://images.unsplash.com/photo-1616469829581-73993eb86b02?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlua2VkaW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        },
+        {
+          name: "CV Writing ",
+          content:
+            "Learn advanced techniques in writing an effective CV that increases your chances of landing a job. Gain support in re-writing your CV.",
+          img:
+            "https://images.unsplash.com/photo-1602407294553-6ac9170b3ed0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y3Z8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        },
+        {
+          name: "Business Computing (Microsoft Word, Excel, PowerPoint…)",
+          content:
+            "Strengthen your skills in using ICT for business. Gain advanced knowledge in Excel, Microsoft Word etc. ",
+          img:
+            "https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbXB1dGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        },
+      ],
+      modal: false,
+      selectedCourse: "",
+    };
+  },
+  methods: {
+    openmodal: function (x) {
+      this.modal = true;
+      this.selectedCourse = x;
+    },
+  },
 };
 </script>

@@ -6,11 +6,7 @@
       <div class="w-full h-full flex flex-col justify-between">
         <div class="w-full">
           <div class="w-full h-52 relative">
-            <img
-              src="https://images.unsplash.com/photo-1622929611233-bd6d58cbd4dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
-              class="w-full h-full object-cover"
-              alt=""
-            />
+            <img :src="img" class="w-full h-full object-cover" alt="" />
             <div
               class="absolute w-full h-full top-0 bg-black bg-opacity-40 flex items-center justify-center invisible group-hover:visible transition-all ease-out duration-150"
             >
@@ -58,6 +54,9 @@ export default {
       type: String,
     },
     content: {
+      type: String,
+    },
+    img: {
       type: String,
     },
   },

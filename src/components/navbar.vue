@@ -68,28 +68,30 @@
                 >About</router-link
               >
             </ul>
-            <router-link
-              to="/contact"
-              class="text-white uppercase tracking-wider font-normal text-sm px-5 py-3 hidden lg:block bg-blue-600 tracking-narmal transform"
-            >
-              Get in touch
-            </router-link>
-            <button @click="modal = true">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-8 w-auto text-white border border-white lg:hidden"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="1.5"
+            <div class="flex items-center">
+              <router-link
+                to="/contact"
+                class="text-white uppercase tracking-wider font-normal text-sm px-5 py-3 hidden lg:block bg-blue-600 tracking-narmal transform"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
-            </button>
+                Get in touch
+              </router-link>
+              <button @click="modal = true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-auto text-white border border-white lg:hidden"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>

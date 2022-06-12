@@ -19,8 +19,27 @@
                   Or you can reach us on the following platforms.
                 </p>
                 <div class="mt-10 flex space-x-2 items-center">
-                  <img src="../assets/facebook.svg" class="w-8" alt="" />
+                  <img src="../assets/facebook.png" class="w-8" alt="" />
                   <p class="text-base text-slate-200">facebook.com</p>
+                </div>
+                <div class="mt-10 flex space-x-2 items-center">
+                  <img src="../assetS/whatsapp.png" class="w-8" alt="" />
+                  <p class="text-base text-slate-200">+233 54 666 0320</p>
+                </div>
+                <div class="mt-10 max-w-sm flex flex-col">
+                  <p class="text-base text-white font-medium">
+                    or you can send us an email on
+                    <span class="font-bold text-blue-500">info@eazzysocial.com </span>
+                  </p>
+
+                  <div class="w-fit mt-2">
+                    <button
+                      @click.prevent="mail()"
+                      class="bg-blue-600 uppercase text-white font-normal text-sm tracking-wide px-5 py-3"
+                    >
+                      Send an email
+                    </button>
+                  </div>
                 </div>
               </div>
               <div class="w-full lg:w-1/2">
@@ -115,3 +134,13 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    mail: function () {
+      window.open("mailto:info@eazzysocial.com");
+    },
+  },
+};
+</script>

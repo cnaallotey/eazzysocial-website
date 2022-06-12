@@ -20,7 +20,7 @@
               >
                 <img
                   src="../assets/Ghana_Parliament_Emblem.png"
-                  class="h-12 lg:h-20 mt-5 saturate-0"
+                  class="h-12 lg:h-20 mt-5 saturate-100"
                   alt=""
                 />
                 <img

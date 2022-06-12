@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="w-full relative z-10 -translate-y-32">
-      <div class="max-w-4xl mx-auto bg-slate-900">
+      <div class="max-w-5xl mx-auto bg-slate-900">
         <div class="w-full p-5 lg:p-8">
           <div class="max-w-screen-xl mx-auto px-5">
             <div class="w-full">
@@ -20,8 +20,8 @@
                   Whether you're looking to build your skills in digital marketing or grow
                   your business, our standard courses and programs will help you succeed.
                 </p>
-                <div class="max-w-2xl mx-auto mt-5">
-                  <div class="w-full grid grid-cols-2 gap-10">
+                <div class="max-w-5xl mx-auto mt-5">
+                  <div class="w-full grid grid-cols-3 gap-10">
                     <div class="w-full flex flex-col lg:items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -34,13 +34,14 @@
                         />
                       </svg>
                       <p
-                        class="text-blue-600 text-3xl lg:text-5xl font-extrabold tracking-wide mt-2"
+                        class="text-blue-600 hidden text-3xl lg:text-5xl font-extrabold tracking-wide mt-2"
                       >
                         2000+
                       </p>
                       <h2
                         class="text-base text-white font-semibold tracking-wide uppercase mt-2"
                       >
+                        <span class="text-blue-500">2000+</span>
                         professionals trained
                       </h2>
                     </div>
@@ -58,14 +59,28 @@
                         />
                       </svg>
                       <p
-                        class="text-blue-600 text-3xl lg:text-5xl font-extrabold tracking-wide mt-2"
+                        class="text-blue-600 hidden text-3xl lg:text-5xl font-extrabold tracking-wide mt-2"
                       >
                         5000+
                       </p>
                       <h2
                         class="text-base text-white font-semibold tracking-wide uppercase mt-2"
                       >
+                        <span class="text-blue-500">5000+</span>
                         sme's supported
+                      </h2>
+                    </div>
+                    <div class="w-full flex flex-col lg:items-center">
+                      <img
+                        src="../assets/fa-solid_university.svg"
+                        class="w-12 h-12"
+                        alt=""
+                      />
+
+                      <h2
+                        class="text-base text-white font-semibold tracking-wide uppercase mt-2"
+                      >
+                        university Partnership
                       </h2>
                     </div>
                   </div>

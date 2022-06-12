@@ -67,7 +67,7 @@
               </div>
             </div>
             <div class="w-full flex justify-center mt-10">
-              <button class="appearance-none bg-white text-slate-800 px-5 py-2">
+              <button class="appearance-none hidden bg-white text-slate-800 px-5 py-2">
                 Book a meeting
               </button>
             </div>
