@@ -23,7 +23,7 @@
                   <p class="text-base text-slate-200">facebook.com</p>
                 </div>
                 <div class="mt-10 flex space-x-2 items-center">
-                  <img src="../assetS/whatsapp.png" class="w-8" alt="" />
+                  <img src="../assets/whatsapp.png" class="w-8" alt="" />
                   <p class="text-base text-slate-200">+233 54 666 0320</p>
                 </div>
                 <div class="mt-10 max-w-sm flex flex-col">
