@@ -74,20 +74,132 @@
             >
               Get in touch
             </router-link>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-auto text-white border border-white lg:hidden"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="1.5"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
+            <button @click="modal = true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-auto text-white border border-white lg:hidden"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="fixed z-40 inset-0 overflow-y-auto lg:hidden"
+        aria-labelledby="modal-title"
+        role="dialog"
+        aria-modal="true"
+        v-if="modal"
+      >
+        <div
+          class="flex items-start justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+        >
+          <!--
+      Background overlay, show/hide based on modal state.
+      Entering: "ease-out duration-300"
+        From: "opacity-0"
+        To: "opacity-100"
+      Leaving: "ease-in duration-200"
+        From: "opacity-100"
+        To: "opacity-0"
+    -->
+          <div
+            class="fixed inset-0 bg-opacity-75 transition-opacity"
+            aria-hidden="true"
+          ></div>
+
+          <!-- This element is to trick the browser into centering the modal contents. -->
+          <span class="hidden sm:inline-block sm:align-top sm:h-screen" aria-hidden="true"
+            >&#8203;</span
+          >
+
+          <!--
+      Modal panel, show/hide based on modal state.
+      Entering: "ease-out duration-300"
+        From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+        To: "opacity-100 translate-y-0 sm:scale-100"
+      Leaving: "ease-in duration-200"
+        From: "opacity-100 translate-y-0 sm:scale-100"
+        To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+    -->
+          <div
+            class="inline-block align-bottom w-full bg-white rounded-lg text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+          >
+            <div class="relative bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <div class="absolute top-0 right-0 p-5" @click="modal = false">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.2"
+                    d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+
+              <h3
+                class="text-lg leading-6 font-bold text-purple-800 text-center uppercase mt-10"
+              >
+                Menu
+              </h3>
+              <div class="mt-5">
+                <div class="flex flex-col space-y-5 text-center text-lg font-medium">
+                  <router-link to="/expressSocail">Express Social</router-link>
+                  <router-link to="/campusclub">Campus Club</router-link>
+                  <router-link to="/courses">Courses</router-link>
+                  <div>
+                    <div class="w-full">
+                      <button
+                        class="w-full space-x-4 flex font-medium items-center justify-center"
+                        @click="submenu = !submenu"
+                      >
+                        Programmes
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                              clip-rule="evenodd"
+                            /></svg
+                        ></span>
+                      </button>
+                      <div class="text-blue-600 mt-5" v-if="submenu">
+                        <router-link to="/digitizng-TVET"> DIgitizing TVET </router-link>
+                      </div>
+                    </div>
+                  </div>
+                  <router-link to="/about">About</router-link>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+              <router-link
+                to="/contact"
+                class="w-full rounded-md uppercase flex justify-center py-4 bg-blue-600 text-lg font-normal text-white hover:bg-blue-900"
+              >
+                Get in touch
+              </router-link>
+            </div>
           </div>
         </div>
       </div>
@@ -98,7 +210,10 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      modal: false,
+      submenu: false,
+    };
   },
   methods: {
     gohome: function () {

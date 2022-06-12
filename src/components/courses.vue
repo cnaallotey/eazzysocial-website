@@ -16,7 +16,7 @@
             </p>
             <div class="w-full mt-10">
               <div
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-10"
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10"
               >
                 <course
                   v-for="course in courses"

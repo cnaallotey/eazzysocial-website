@@ -5,7 +5,7 @@
         <div>
           <div class="w-full">
             <p
-              class="mt-2 text-3xl leading-8 font-bold tracking-tight text-white sm:text-4xl max-w-2xl mx-auto text-center"
+              class="mt-2 text-3xl leading-8 font-bold text-white sm:text-4xl max-w-2xl mx-auto text-center"
             >
               Start right with us
             </p>

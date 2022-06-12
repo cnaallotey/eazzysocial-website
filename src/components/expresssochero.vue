@@ -19,7 +19,7 @@
             How we help you grow as a small business owner
           </p>
           <p class="font-semibold text-2xl max-w-xl text-white leading-normal mt-4">
-            Access completely free social media and digital marketing courses and programs
+            {{ text }}
           </p>
           <div class="mt-8 flex justify-between items-center">
             <div class="flex items-center space-x-2">
@@ -28,9 +28,18 @@
               <p class="text-sm text-white leading-5 font-normal">/ Month</p>
             </div>
             <div class="flex items-center space-x-2">
-              <div class="w-2 h-2 bg-slate-200 rounded-full"></div>
-              <div class="w-2 h-2 bg-slate-200 rounded-full"></div>
-              <div class="w-2 h-2 bg-slate-200 rounded-full"></div>
+              <div
+                class="w-2 h-2 rounded-full"
+                :class="[this.offset == 0 ? 'bg-blue-500' : 'bg-slate-200']"
+              ></div>
+              <div
+                class="w-2 h-2 rounded-full"
+                :class="[this.offset == 1 ? 'bg-blue-500' : 'bg-slate-200']"
+              ></div>
+              <div
+                class="w-2 h-2 rounded-full"
+                :class="[this.offset == 2 ? 'bg-blue-500' : 'bg-slate-200']"
+              ></div>
             </div>
           </div>
         </div>
@@ -38,3 +47,36 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      texts: [
+        " Access completely free social media and digital marketing courses and programs",
+        "Enjoy free online and offline support in social media, e-commerce, fintech etc.",
+        "Free business advisory services and funding for your business",
+      ],
+      text: "",
+      offset: 0,
+    };
+  },
+  methods: {
+    display: function () {
+      this.text = this.texts[this.offset];
+      setInterval(() => {
+        console.log(this.offset);
+        if (this.offset == this.texts.length - 1) {
+          this.offset = 0;
+        } else {
+          this.offset++;
+        }
+        this.text = this.texts[this.offset];
+      }, 5000);
+    },
+  },
+  mounted() {
+    this.display();
+  },
+};
+</script>

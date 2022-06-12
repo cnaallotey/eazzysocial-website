@@ -1,13 +1,13 @@
 <template>
   <div>
     <div
-      class="bg-white p-8 h-full group hover:shadow-lg transition-all ease-linear duration-150"
+      class="bg-white pb-8 h-full group hover:shadow-lg transition-all ease-linear duration-150 overflow-hidden shadow-md"
     >
       <div class="w-full h-full flex flex-col justify-between">
         <div class="w-full">
           <div class="w-full h-52 relative">
             <img
-              src="../assets/socialimage.jpg"
+              src="https://images.unsplash.com/photo-1622929611233-bd6d58cbd4dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
               class="w-full h-full object-cover"
               alt=""
             />
@@ -21,25 +21,28 @@
               </div>
             </div>
           </div>
-
-          <div
-            class="flex space-x-1 px-2 py-2 w-5/12 items-center bg-rose-500 mt-4 justify-center"
-          >
-            <img src="../assets/badge.png" class="w-6" alt="" />
-            <p class="text-base font-normal text-white">Certificate</p>
-          </div>
-          <div class="mt-4 w-full">
-            <div>
-              <h3 class="text-lg leading-6 font-medium text-gray-900">
-                {{ name }}
-              </h3>
-              <p class="text-sm text-gray-500 mt-2">
-                {{ content }}
+          <div class="w-full px-8 pt-8">
+            <div class="w-fit">
+              <p
+                class="text-sm font-semibold space-x-1 text-orange-600 p-2 bg-orange-100 flex items-center"
+              >
+                <span><img src="../assets/badge.png" class="w-4 hidden" alt="" /></span>
+                <span>Certificate upon completion</span>
               </p>
+            </div>
+            <div class="mt-4 w-full">
+              <div>
+                <h3 class="text-lg leading-6 font-medium text-gray-900">
+                  {{ name }}
+                </h3>
+                <p class="text-sm text-gray-500 mt-2">
+                  {{ content }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <p class="text-lg leading-6 font-bold text-gray-900 mt-4">{{ price }}</p>
+        <p class="text-lg leading-6 font-bold text-gray-900 mt-4 mx-8">{{ price }}</p>
       </div>
     </div>
   </div>

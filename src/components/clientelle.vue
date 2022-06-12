@@ -20,18 +20,34 @@
               >
                 <img
                   src="../assets/Ghana_Parliament_Emblem.png"
-                  class="h-12 lg:h-20 mt-5"
+                  class="h-12 lg:h-20 mt-5 saturate-0"
                   alt=""
                 />
-                <img src="../assets/mantrac.png" class="h-12 lg:h-20 mt-5" alt="" />
+                <img
+                  src="../assets/mantrac.png"
+                  class="h-12 lg:h-20 mt-5 saturate-100"
+                  alt=""
+                />
                 <img
                   src="../assets/denmarkembassy.png"
-                  class="h-12 lg:h-20 mt-5"
+                  class="h-12 lg:h-20 mt-5 saturate-100"
                   alt=""
                 />
-                <img src="../assets/castrol.png" class="h-12 lg:h-20 mt-5" alt="" />
-                <img src="../assets/nadmo.png" class="h-12 lg:h-20 mt-5" alt="" />
-                <img src="../assets/peduase.png" class="h-12 lg:h-20 mt-5" alt="" />
+                <img
+                  src="../assets/castrol.png"
+                  class="h-12 lg:h-20 mt-5 saturate-100"
+                  alt=""
+                />
+                <img
+                  src="../assets/nadmo.png"
+                  class="h-12 lg:h-20 mt-5 saturate-100"
+                  alt=""
+                />
+                <img
+                  src="../assets/peduase.png"
+                  class="h-12 lg:h-20 mt-5 saturate-100"
+                  alt=""
+                />
               </div>
             </div>
           </div>
