@@ -10,14 +10,16 @@
         <div
           class="flex flex-col items-center w-full h-full justify-center max-w-2xl mx-auto"
         >
-          <h2 class="font-bold text-5xl text-white leading-7">Digitizing TVET</h2>
+          <h2 class="font-bold text-5xl text-white">Digitizing TVET</h2>
         </div>
       </div>
     </div>
     <div class="w-full mt-20">
       <div class="max-w-screen-xl mx-auto px-5">
-        <div class="w-full flex items-center pt-10 lg:space-x-20">
-          <div class="w-1/2 bg-gray-700">
+        <div
+          class="w-full flex flex-col lg:flex-row items-center pt-10 lg:space-x-20 space-y-5 lg:space-y-0"
+        >
+          <div class="lg:w-1/2 bg-gray-700">
             <img src="../assets/tvetccontent1.png" class="w-full" alt="" />
           </div>
           <div class="w-full lg:w-1/2 pr-8">
@@ -41,7 +43,9 @@
     </div>
     <div class="w-full bg-slate-900 py-20 mt-20">
       <div class="max-w-screen-xl mx-auto px-5">
-        <div class="w-full flex flex-col lg:flex-row lg:space-x-20">
+        <div
+          class="w-full flex flex-col lg:flex-row lg:space-x-20 space-y-5 lg:space-y-0"
+        >
           <div class="w-full lg:w-1/2 pr-8">
             <p class="text-2xl font-semibold text-blue-500 leading-7">
               Digitizing TVET (Our Response )
@@ -62,9 +66,11 @@
     </div>
     <div class="w-full bg-blue-50 py-20">
       <div class="max-w-screen-xl mx-auto px-5">
-        <div class="w-full flex items-center lg:space-x-20">
-          <div class="w-1/2 bg-gray-700">
-            <img src="../assets/tvetcontent2.png" class="w-full" alt="" />
+        <div
+          class="w-full flex flex-col lg:flex-row items-center lg:space-x-20 space-y-5 lg:space-y-0"
+        >
+          <div class="w-full lg:w-1/2 bg-gray-700">
+            <img src="../assets/tvetcontent2.png" class="w-full object-contain" alt="" />
           </div>
           <div class="w-full lg:w-1/2 pr-8">
             <p class="text-2xl font-semibold text-blue-500 leading-7">
@@ -93,7 +99,7 @@
             />
           </div>
           <div
-            class="w-full lg:max-w-lg lg:absolute mb-10 lg:mb-0 top-0 left-0 p-5 lg:mt-0 lg:p-10 bg-slate-900"
+            class="w-full lg:max-w-lg lg:absolute mb-10 lg:mb-0 top-0 left-0 px-5 lg:mt-0 lg:px-10 py-10 bg-slate-900"
           >
             <p class="text-3xl font-semibold text-white tracking-normal">
               Register your TVET school for free

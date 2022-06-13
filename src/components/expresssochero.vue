@@ -8,7 +8,7 @@
       />
       <div class="w-full h-full absolute top-0 bg-green-500 bg-opacity-60 px-5">
         <div class="flex flex-col items-center mt-32 max-w-2xl mx-auto">
-          <h2 class="font-bold text-5xl text-white leading-7 flex items-center">
+          <h2 class="font-bold text-5xl text-white flex items-start md:items-center">
             <span
               ><img src="../assets/expsocialimg.png" class="w-20 mr-4 rounded-2xl" alt=""
             /></span>
