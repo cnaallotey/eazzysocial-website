@@ -43,10 +43,12 @@
             <div
               class="w-full flex flex-col lg:flex-row items-center pt-10 lg:space-x-20"
             >
-              <div class="w-full lg:w-1/2 h-[20rem] overflow-hidden bg-gray-700">
+              <div
+                class="w-full lg:w-1/2 h-auto lg:h-[20rem] overflow-hidden bg-gray-700"
+              >
                 <img
                   src="../assets/laptopimage.png"
-                  class="w-full h-fit object-cover object-center"
+                  class="w-full object-cover object-center"
                   alt=""
                 />
               </div>
