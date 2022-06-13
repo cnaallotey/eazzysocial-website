@@ -134,7 +134,7 @@
         To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
     -->
           <div
-            class="inline-block align-bottom w-full bg-white rounded-lg text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+            class="inline-block align-bottom w-full bg-white text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
           >
             <div class="relative bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
               <div class="absolute top-0 right-0 p-5" @click="modal = false">
@@ -155,13 +155,13 @@
               </div>
 
               <h3
-                class="text-lg leading-6 font-bold text-purple-800 text-center uppercase mt-10"
+                class="text-lg leading-6 font-bold text-blue-800 text-center uppercase mt-10"
               >
                 Menu
               </h3>
               <div class="mt-5">
                 <div class="flex flex-col space-y-5 text-center text-lg font-medium">
-                  <router-link to="/expressSocail">Express Social</router-link>
+                  <router-link to="/expressSocial">Express Social</router-link>
                   <router-link to="/campusclub">Campus Club</router-link>
                   <router-link to="/courses">Courses</router-link>
                   <div>

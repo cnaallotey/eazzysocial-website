@@ -11,11 +11,11 @@
               your business, our standard courses and programs will help you succeed.
             </p>
             <div class="max-w-5xl mx-auto mt-5">
-              <div class="w-full grid grid-cols-3 gap-10">
-                <div class="w-full flex flex-col lg:items-center">
+              <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-10">
+                <div class="w-full flex lg:flex-col lg:items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-12 w-12 text-blue-600"
+                    class="w-8 h-8 mr-2 lg:mr-0 lg:h-12 lg:w-12 text-blue-600"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -35,10 +35,10 @@
                     professionals trained
                   </h2>
                 </div>
-                <div class="w-full flex flex-col lg:items-center">
+                <div class="w-full flex lg:flex-col lg:items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-12 w-12 text-blue-600"
+                    class="w-8 h-8 mr-2 lg:mr-0 lg:h-12 lg:w-12 text-blue-600"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -60,8 +60,12 @@
                     sme's supported
                   </h2>
                 </div>
-                <div class="w-full flex flex-col lg:items-center">
-                  <img src="../assets/fa-solid_university.svg" class="w-12 h-12" alt="" />
+                <div class="w-full flex lg:flex-col lg:items-center">
+                  <img
+                    src="../assets/fa-solid_university.svg"
+                    class="w-8 h-8 mr-2 lg:mr-0 lg:h-12 lg:w-12"
+                    alt=""
+                  />
 
                   <h2
                     class="text-base text-white font-semibold tracking-wide uppercase mt-2"

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="w-full py-40 bg-slate-900">
+    <div class="w-full py-16 lg:py-32 bg-slate-900">
       <div class="max-w-screen-xl mx-auto px-5">
         <div>
           <div class="w-full">
@@ -45,7 +45,7 @@
               <div class="w-full lg:w-1/2">
                 <form
                   action=""
-                  class="bg-white p-10 flex flex-col w-full mt-10 lg:mt-0 lg:w-full"
+                  class="bg-white p-5 lg:p-10 flex flex-col w-full mt-10 lg:mt-0 lg:w-full"
                 >
                   <label for="name" class="font-normal text-sm text-gray-700 mb-1"
                     >Full name</label

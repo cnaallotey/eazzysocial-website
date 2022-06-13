@@ -11,6 +11,7 @@
             </p>
             <div class="w-full mt-5 flex items-center justify-center">
               <button
+                @click="goto('/contact')"
                 class="text-white font-medium text-sm px-5 py-3 uppercase tracking-wider bg-blue-600"
               >
                 Book a meeting
@@ -22,3 +23,13 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    goto: function (x) {
+      this.$router.push(x);
+    },
+  },
+};
+</script>

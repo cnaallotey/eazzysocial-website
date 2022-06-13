@@ -36,7 +36,7 @@
         >
           Events Gallery
         </p>
-        <div class="w-full overflow-hidden">
+        <div class="w-full overflow-hidden hidden lg:block">
           <swiper
             :modules="modules"
             :slides-per-view="3"
@@ -51,6 +51,26 @@
                 <img
                   :src="image"
                   class="h-20 lg:h-full w-full object-cover object-center"
+                  alt=""
+                />
+              </div> </swiper-slide
+          ></swiper>
+        </div>
+        <div class="w-full overflow-hidden lg:hidden">
+          <swiper
+            :modules="modules"
+            :slides-per-view="1"
+            :space-between="40"
+            class="flex justify-between h-full mb-10 lg:mb-20"
+            autoplay=""
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+          >
+            <swiper-slide v-for="image in images" :key="image" class="overflow-hidden">
+              <div class="flex justify-center overflow-hidden">
+                <img
+                  :src="image"
+                  class="h-full lg:h-full w-full object-cover object-center"
                   alt=""
                 />
               </div> </swiper-slide
