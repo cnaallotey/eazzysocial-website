@@ -3,7 +3,11 @@
     <div
       class="bg-blue-700 px-8 pb-8 pt-16 relative overflow-visible h-full flex flex-col justify-between"
     >
-      <div class="absolute top-0 left-8 h-28 w-28 -translate-y-16 bg-rose-300"></div>
+      <div
+        class="absolute top-0 left-8 h-28 w-28 -translate-y-16 bg-rose-300 overflow-hidden"
+      >
+        <img :src="img" class="w-full h-full object-cover" alt="" />
+      </div>
       <p class="text-base text-white mt-2">
         {{ message }}
       </p>
@@ -82,6 +86,9 @@ export default {
       type: String,
     },
     group: {
+      type: String,
+    },
+    img: {
       type: String,
     },
   },

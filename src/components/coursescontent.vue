@@ -45,7 +45,7 @@ export default {
     return {
       courses: [
         {
-          name: "Social Media Marketing Training for SMEs",
+          name: "Social Media Marketing Training And Advertising Support for SMEs",
           price: "Free",
           content:
             "Access a completely free social media marketing program, e-commerce and gain daily support in driving sales, growing your customers and engaging your followers. ",
@@ -92,7 +92,7 @@ export default {
           content:
             "Be a digital sales leader. Increase sales velocity and engage more prospects using social media platforms. The course is in partnership with Koforidua Technical University. ",
           img:
-            "https://images.unsplash.com/photo-1572584642822-6f8de0243c93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "https://images.unsplash.com/photo-1573162915955-6a8ba9d2fe20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
         },
         {
           name: "Online Reputation Management and Applied SEO Workshop",

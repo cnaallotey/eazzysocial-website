@@ -38,7 +38,29 @@
             </div>
           </div>
         </div>
-        <p class="text-lg leading-6 font-bold text-gray-900 mt-4 mx-8">{{ price }}</p>
+        <div class="w-full mt-4 px-8">
+          <p class="text-lg leading-6 font-bold text-gray-900">{{ price }}</p>
+          <div class="mt-4">
+            <button
+              class="text-blue-500 text-xs hidden font-semibold uppercase tracking-wide flex space-x-1 items-center"
+            >
+              <span>Register</span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  /></svg
+              ></span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

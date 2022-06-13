@@ -36,12 +36,12 @@
                       <p
                         class="text-blue-600 hidden text-3xl lg:text-5xl font-extrabold tracking-wide mt-2"
                       >
-                        2000+
+                        3,000+
                       </p>
                       <h2
                         class="text-base text-white font-semibold tracking-wide uppercase mt-2"
                       >
-                        <span class="text-blue-500">2000+</span>
+                        <span class="text-blue-500">3,000+</span>
                         professionals trained
                       </h2>
                     </div>
@@ -61,12 +61,12 @@
                       <p
                         class="text-blue-600 hidden text-3xl lg:text-5xl font-extrabold tracking-wide mt-2"
                       >
-                        5000+
+                        50,000+
                       </p>
                       <h2
                         class="text-base text-white font-semibold tracking-wide uppercase mt-2"
                       >
-                        <span class="text-blue-500">5000+</span>
+                        <span class="text-blue-500">50,000+</span>
                         sme's supported
                       </h2>
                     </div>

@@ -20,7 +20,7 @@
                 </p>
                 <div class="mt-10 flex space-x-2 items-center">
                   <img src="../assets/facebook.png" class="w-8" alt="" />
-                  <p class="text-base text-slate-200">facebook.com</p>
+                  <p class="text-base text-slate-200">eazzysocial</p>
                 </div>
                 <div class="mt-10 flex space-x-2 items-center">
                   <img src="../assets/whatsapp.png" class="w-8" alt="" />

@@ -14,41 +14,137 @@
             >
               Trusted by Ghana’s best companies
             </p>
-            <div class="w-full mt-5">
-              <div
-                class="flex flex-wrap w-full justify-around space-x-5 lg:justify-between items-center lg:space-y-0"
+            <div class="w-full mt-5 hidden lg:block">
+              <swiper
+                :modules="modules"
+                :slides-per-view="5"
+                :space-between="0"
+                class="flex justify-between items-center"
+                autoplay=""
+                @swiper="onSwiper"
+                @slideChange="onSlideChange"
               >
-                <img
-                  src="../assets/Ghana_Parliament_Emblem.png"
-                  class="h-12 lg:h-20 mt-5 saturate-100"
-                  alt=""
-                />
-                <img
-                  src="../assets/mantrac.png"
-                  class="h-12 lg:h-20 mt-5 saturate-100"
-                  alt=""
-                />
-                <img
-                  src="../assets/denmarkembassy.png"
-                  class="h-12 lg:h-20 mt-5 saturate-100"
-                  alt=""
-                />
-                <img
-                  src="../assets/castrol.png"
-                  class="h-12 lg:h-20 mt-5 saturate-100"
-                  alt=""
-                />
-                <img
-                  src="../assets/nadmo.png"
-                  class="h-12 lg:h-20 mt-5 saturate-100"
-                  alt=""
-                />
-                <img
-                  src="../assets/peduase.png"
-                  class="h-12 lg:h-20 mt-5 saturate-100"
-                  alt=""
-                />
-              </div>
+                <swiper-slide>
+                  <img
+                    src="../assets/Ghana_Parliament_Emblem.png"
+                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="../assets/mantrac.png"
+                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="../assets/denmarkembassy.png"
+                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="../assets/castrol.png"
+                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="../assets/nadmo.png"
+                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="../assets/peduase.png"
+                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="../assets/telesol.png"
+                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="../assets/pbl.png"
+                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="../assets/sltf-logo.jpg"
+                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
+                    alt=""
+                /></swiper-slide>
+              </swiper>
+            </div>
+            <div class="w-full mt-5 lg:hidden">
+              <swiper
+                :modules="modules"
+                :slides-per-view="3"
+                :space-between="0"
+                class="flex justify-between items-center"
+                autoplay=""
+                @swiper="onSwiper"
+                @slideChange="onSlideChange"
+              >
+                <swiper-slide>
+                  <img
+                    src="../assets/Ghana_Parliament_Emblem.png"
+                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="../assets/mantrac.png"
+                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="../assets/denmarkembassy.png"
+                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="../assets/castrol.png"
+                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="../assets/nadmo.png"
+                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="../assets/peduase.png"
+                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="../assets/telesol.png"
+                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="../assets/pbl.png"
+                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
+                    alt=""
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    src="../assets/sltf-logo.jpg"
+                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
+                    alt=""
+                /></swiper-slide>
+              </swiper>
             </div>
           </div>
         </div>
@@ -56,3 +152,40 @@
     </div>
   </div>
 </template>
+
+<script>
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
+
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
+
+// Import Swiper styles
+import "swiper/css";
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    const onSwiper = (swiper) => {
+      console.log(swiper);
+    };
+    const onSlideChange = () => {
+      console.log("slide change");
+    };
+    return {
+      onSwiper,
+      onSlideChange,
+      modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
+    };
+  },
+};
+</script>

@@ -14,7 +14,13 @@
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-36"
               >
                 <div class="w-full">
-                  <div class="w-full h-64 bg-gray-200"></div>
+                  <div class="w-full h-64 bg-gray-200">
+                    <img
+                      src="../assets/gad.jpg"
+                      class="h-full w-full object-cover object-center"
+                      alt=""
+                    />
+                  </div>
                   <div class="p-8">
                     <p class="text-lg leading-6 font-bold text-white">Gad Ocran</p>
                     <p class="text-base text-slate-200 mt-2">
@@ -24,21 +30,37 @@
                   <p></p>
                 </div>
                 <div class="w-full">
-                  <div class="w-full h-64 bg-gray-200"></div>
+                  <div class="w-full h-64 bg-gray-200">
+                    <img
+                      src="../assets/brew.jpeg"
+                      class="h-full w-full object-cover object-top"
+                      alt=""
+                    />
+                  </div>
                   <div class="p-8">
-                    <p class="text-lg leading-6 font-bold text-white">Gad Ocran</p>
+                    <p class="text-lg leading-6 font-bold text-white">Dr Brew</p>
                     <p class="text-base text-slate-200 mt-2">
-                      Msc. PgDip, PgC, Digital Marketing and Digital Transformation
+                      Former Head of Marketing, KTU, Lecturer, Department of Marketing,
+                      University of Education, Winneaba
                     </p>
                   </div>
                   <p></p>
                 </div>
                 <div class="w-full">
-                  <div class="w-full h-64 bg-gray-200"></div>
+                  <div class="w-full h-64 bg-gray-200">
+                    <img
+                      src="../assets/pri.jpeg"
+                      class="h-full w-full object-cover object-top"
+                      alt=""
+                    />
+                  </div>
                   <div class="p-8">
-                    <p class="text-lg leading-6 font-bold text-white">Gad Ocran</p>
+                    <p class="text-lg leading-6 font-bold text-white">
+                      Princewill Ejirika
+                    </p>
                     <p class="text-base text-slate-200 mt-2">
-                      Msc. PgDip, PgC, Digital Marketing and Digital Transformation
+                      Convener, Association of Digital Marketing Professionals Nigeria,
+                      Ex- Ringier, Ex- Heineken etc
                     </p>
                   </div>
                   <p></p>
@@ -51,3 +73,17 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      experts: [
+        { name: "Gad ocran", content: "", img: "" },
+        { name: "Gad ocran", content: "", img: "" },
+        { name: "Gad ocran", content: "", img: "" },
+      ],
+    };
+  },
+};
+</script>

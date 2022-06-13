@@ -25,6 +25,7 @@
                   :message="testimonial.message"
                   :company="testimonial.company"
                   :group="testimonial.goup"
+                  :img="testimonial.img"
                 />
               </div>
             </div>
@@ -48,6 +49,7 @@ export default {
             " Eazzysocial is an ideal place for Social Media Education. It helped me develop a robust foundation in social media marketing.",
           company: "Social Cycles Advertising ",
           goup: "Professional",
+          img: "/public/images/brew.jpeg",
         },
         {
           name: "Isaac Mohammed Newton",
@@ -55,6 +57,7 @@ export default {
             "Even though I was using social media, I realized I was not maximizing the full marketing potential of social media until I participated in the small business social media marketing course.",
           company: "General manager, Nhyilaw",
           goup: "Small Business Owner",
+          img:""
         },
         {
           name: "Stephanie Baiden",
@@ -62,6 +65,7 @@ export default {
             "Eazzysocial has been helpful. I will recommend it to every student seeking to acquire social media and digital business skills. Joining Eazzysocial Campus Club helped me to know social media is not just for only connecting with friends and family but also an enabler for business to drive their business",
           company: "Koforidua Technical University ",
           goup: "Student",
+          img: "/public/images/pri.jpeg",
         },
       ],
     };

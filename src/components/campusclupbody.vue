@@ -5,16 +5,16 @@
         <div class="w-full">
           <div class="max-w-screen-xl mx-auto px-5">
             <div
-              class="w-full flex flex-col lg:flex-row items-center pt-10 lg:space-x-20 space-y-5 lg:space-y-0"
+              class="w-full grid grid-cols-1 lg:grid-cols-2 gap-y-10 gap-x-20 lg:flex-row"
             >
-              <div class="w-full md:1/2 bg-gray-700">
+              <div class="w-full bg-gray-700 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  src="https://img.freepik.com/free-photo/black-people-having-video-call-via-digital-tablet_53876-141610.jpg?size=626&ext=jpg&uid=R9744136&ga=GA1.2.1187962965.1621546722"
                   class="w-full h-full"
                   alt=""
                 />
               </div>
-              <div class="w-full lg:w-1/2 pr-8">
+              <div class="w-full pr-8">
                 <p class="text-2xl font-semibold text-blue-500 leading-7">
                   Digital Economic Opportunities for African Youth.
                 </p>
@@ -104,7 +104,7 @@
                           </div>
                           <div class="w-fit">
                             <button
-                              @click="openmodal(course.name)"
+                              @click="openmodal(course.name, course.img)"
                               class="text-lg leading-6 font-medium text-blue-500 mt-4 mx-8"
                             >
                               Register For Free
@@ -240,8 +240,8 @@
                       <div class="w-1/2 bg-black">
                         <div class="w-full h-full bg-red-100">
                           <img
-                            src="../assets/collage.png"
-                            class="w-full h-full object-fill object-center"
+                            :src="selectedimg"
+                            class="w-full h-full object-cover object-center"
                             alt=""
                           />
                         </div>
@@ -324,12 +324,14 @@ export default {
       ],
       modal: false,
       selectedCourse: "",
+      selectedimg: "",
     };
   },
   methods: {
-    openmodal: function (x) {
+    openmodal: function (x, y) {
       this.modal = true;
       this.selectedCourse = x;
+      this.selectedimg = y;
     },
   },
 };
