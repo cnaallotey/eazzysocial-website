@@ -7,7 +7,7 @@
         alt=""
       />
       <div class="w-full h-full absolute top-0 bg-green-500 bg-opacity-60 px-5">
-        <div class="flex flex-col items-center mt-32 max-w-2xl mx-auto">
+        <div class="flex flex-col items-center mt-20 lg:mt-32 max-w-2xl mx-auto">
           <h2
             class="font-bold text-5xl text-white flex flex-col lg:flex-row items-center text-center lg:text-left"
           >
