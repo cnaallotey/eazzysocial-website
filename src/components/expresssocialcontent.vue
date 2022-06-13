@@ -2,7 +2,7 @@
   <div>
     <div class="w-full">
       <div class="w-full">
-        <div class="max-w-5xl bg-slate-50"></div>
+        <div class="max-w-5xl bg-slate-50 grid grid-cols "></div>
         <div class="w-full">
           <h2
             class="text-base px-5 text-green-500 font-semibold max-w-2xl mx-auto tracking-wide uppercase mt-2 lg:text-center"
