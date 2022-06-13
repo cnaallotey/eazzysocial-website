@@ -109,22 +109,11 @@
             </p>
             <form action="submit" class="w-full flex flex-col mt-12 0">
               <div class="flex flex-col lg:flex-row lg:space-x-5 space-y-4 lg:space-y-0">
-                <div class="w-full lg:w-1/2 flex flex-col">
+                <div class="w-full flex flex-col">
                   <label
                     for="first name "
                     class="text-slate-300 font-normal text-sm leading-5"
-                    >First name</label
-                  >
-                  <input
-                    type="text"
-                    class="p-3 bg-white text-base mt-1 font-normal text-slate-800"
-                  />
-                </div>
-                <div class="w-full lg:w-1/2 flex flex-col">
-                  <label
-                    for="Last name "
-                    class="text-slate-300 font-normal text-sm leading-5"
-                    >Last name</label
+                    >Full name</label
                   >
                   <input
                     type="text"
