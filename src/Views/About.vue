@@ -2,7 +2,7 @@
   <div>
     <navbar />
     <abouttext />
-    <clientelle />
+
     <cta />
     <foot />
   </div>

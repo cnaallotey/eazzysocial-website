@@ -3,7 +3,7 @@
     <navbar />
     <expresshero />
     <content />
-    <clientelle />
+    
     <cta />
     <foote />
   </div>

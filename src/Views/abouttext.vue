@@ -29,5 +29,108 @@
         </div>
       </div>
     </div>
+    <div class="w-full my-10 lg:my-32 bg-gradient-to-t from-blue-50">
+      <div class="max-w-screen-xl mx-auto px-5">
+        <p
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight mb-10 text-gray-900 sm:text-4xl max-w-2xl mx-auto lg:text-center"
+        >
+          Events Gallery
+        </p>
+        <div class="w-full overflow-hidden">
+          <swiper
+            :modules="modules"
+            :slides-per-view="3"
+            :space-between="40"
+            class="flex justify-between h-[20rem] mb-10 lg:mb-20 overflow-hidden"
+            autoplay=""
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+          >
+            <swiper-slide v-for="image in images" :key="image" class="overflow-hidden">
+              <div class="flex justify-center overflow-hidden">
+                <img
+                  :src="image"
+                  class="h-20 lg:h-full w-full object-cover object-center"
+                  alt=""
+                />
+              </div> </swiper-slide
+          ></swiper>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
+
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
+
+// Import Swiper styles
+import "swiper/css";
+
+import { ref } from "vue";
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    const onSwiper = (swiper) => {
+      console.log(swiper);
+    };
+
+    const images = ref([
+      "/images/gallery/img1.jpeg",
+      "/images/gallery/img2.jpeg",
+      "/images/gallery/img3.jpeg",
+      "/images/gallery/img4.jpeg",
+      "/images/gallery/img5.jpeg",
+      "/images/gallery/img6.jpeg",
+      "/images/gallery/img7.jpeg",
+      "/images/gallery/img8.jpeg",
+      "/images/gallery/img9.jpeg",
+      "/images/gallery/img10.jpeg",
+      "/images/gallery/img11.jpeg",
+      "/images/gallery/img12.jpeg",
+      "/images/gallery/img13.jpeg",
+      "/images/gallery/img14.jpeg",
+    ]);
+
+    const onSlideChange = () => {
+      console.log("slide change");
+    };
+    return {
+      onSwiper,
+      images,
+      onSlideChange,
+      modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
+    };
+  },
+};
+</script>
+
+<!-- <script>
+export default {
+  data() {
+    return {
+      images: [
+        "/public/images/expsocial/infantPro.jpeg",
+        "/public/images/expsocial/greatspeed.jpeg",
+        "/public/images/expsocial/scentall.jpeg",
+        "/public/images/expsocial/tchi.jpeg",
+        "/public/images/expsocial/mrright.jpeg",
+      ],
+    };
+  },
+};
+</script> -->

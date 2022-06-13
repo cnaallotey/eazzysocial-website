@@ -49,7 +49,7 @@ export default {
             " Eazzysocial is an ideal place for Social Media Education. It helped me develop a robust foundation in social media marketing.",
           company: "Social Cycles Advertising ",
           goup: "Professional",
-          img: "/public/images/brew.jpeg",
+          img: "/images/brew.jpeg",
         },
         {
           name: "Isaac Mohammed Newton",
@@ -57,7 +57,8 @@ export default {
             "Even though I was using social media, I realized I was not maximizing the full marketing potential of social media until I participated in the small business social media marketing course.",
           company: "General manager, Nhyilaw",
           goup: "Small Business Owner",
-          img:""
+          img:
+            "https://img.freepik.com/free-photo/portrait-smart-professional-african-american-man-standing-with-hands-crossed-chest-confident-pose_176420-33861.jpg?size=626&ext=jpg&uid=R9744136&ga=GA1.2.1187962965.1621546722",
         },
         {
           name: "Stephanie Baiden",
@@ -65,7 +66,7 @@ export default {
             "Eazzysocial has been helpful. I will recommend it to every student seeking to acquire social media and digital business skills. Joining Eazzysocial Campus Club helped me to know social media is not just for only connecting with friends and family but also an enabler for business to drive their business",
           company: "Koforidua Technical University ",
           goup: "Student",
-          img: "/public/images/pri.jpeg",
+          img: "/images/pri.jpeg",
         },
       ],
     };

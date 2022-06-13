@@ -18,132 +18,88 @@
               <swiper
                 :modules="modules"
                 :slides-per-view="5"
-                :space-between="0"
+                :space-between="40"
                 class="flex justify-between items-center"
                 autoplay=""
                 @swiper="onSwiper"
                 @slideChange="onSlideChange"
               >
                 <swiper-slide>
-                  <img
-                    src="../assets/Ghana_Parliament_Emblem.png"
-                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
-                    alt=""
-                /></swiper-slide>
-                <swiper-slide
-                  ><img
-                    src="../assets/mantrac.png"
-                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
-                    alt=""
-                /></swiper-slide>
-                <swiper-slide
-                  ><img
-                    src="../assets/denmarkembassy.png"
-                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
-                    alt=""
-                /></swiper-slide>
-                <swiper-slide
-                  ><img
-                    src="../assets/castrol.png"
-                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
-                    alt=""
-                /></swiper-slide>
-                <swiper-slide
-                  ><img
-                    src="../assets/nadmo.png"
-                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
-                    alt=""
-                /></swiper-slide>
-                <swiper-slide
-                  ><img
-                    src="../assets/peduase.png"
-                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
-                    alt=""
-                /></swiper-slide>
-                <swiper-slide
-                  ><img
-                    src="../assets/telesol.png"
-                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
-                    alt=""
-                /></swiper-slide>
-                <swiper-slide
-                  ><img
-                    src="../assets/pbl.png"
-                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
-                    alt=""
-                /></swiper-slide>
-                <swiper-slide
-                  ><img
-                    src="../assets/sltf-logo.jpg"
-                    class="h-12 lg:h-20 mt-5 px-10 saturate-100 bg-slate-50"
-                    alt=""
-                /></swiper-slide>
-              </swiper>
-            </div>
-            <div class="w-full mt-5 lg:hidden">
-              <swiper
-                :modules="modules"
-                :slides-per-view="3"
-                :space-between="0"
-                class="flex justify-between items-center"
-                autoplay=""
-                @swiper="onSwiper"
-                @slideChange="onSlideChange"
-              >
+                  <div class="flex justify-center items-center h-full p-10">
+                    <img
+                      src="../assets/Ghana_Parliament_Emblem.png"
+                      class="h-20 lg:h-32 object-contain saturate-100 object-center"
+                      alt=""
+                    />
+                  </div>
+                </swiper-slide>
                 <swiper-slide>
-                  <img
-                    src="../assets/Ghana_Parliament_Emblem.png"
-                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
-                    alt=""
-                /></swiper-slide>
+                  <div class="flex justify-center items-center h-full p-10">
+                    <img
+                      src="../assets/mantrac.png"
+                      class="h-20 lg:h-32 object-contain saturate-100 object-center"
+                      alt=""
+                    /></div
+                ></swiper-slide>
+                <swiper-slide>
+                  <div class="flex justify-center items-center h-full p-10">
+                    <img
+                      src="../assets/denmarkembassy.png"
+                      class="h-20 lg:h-32 object-contain saturate-100 object-center"
+                      alt=""
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="flex justify-center items-center h-full p-10">
+                    <img
+                      src="../assets/castrol.png"
+                      class="h-20 lg:h-32 object-contain saturate-100 object-center"
+                      alt=""
+                    /></div
+                ></swiper-slide>
+                <swiper-slide>
+                  <div class="flex justify-center items-center h-full p-10">
+                    <img
+                      src="../assets/nadmo.png"
+                      class="h-20 lg:h-32 object-contain saturate-100 object-center"
+                      alt=""
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="flex justify-center items-center h-full p-10">
+                    <img
+                      src="../assets/peduase.png"
+                      class="h-20 lg:h-32 object-contain saturate-100 object-center"
+                      alt=""
+                    /></div
+                ></swiper-slide>
+                <swiper-slide>
+                  <div class="flex justify-center items-center h-full p-10">
+                    <img
+                      src="../assets/telesol.png"
+                      class="h-20 lg:h-32 object-contain saturate-100 object-center"
+                      alt=""
+                    /></div
+                ></swiper-slide>
+                <swiper-slide>
+                  <div class="flex justify-center items-center h-full p-10">
+                    <img
+                      src="../assets/pbl.png"
+                      class="h-20 lg:h-32 object-contain saturate-100 object-center"
+                      alt=""
+                    />
+                  </div>
+                </swiper-slide>
                 <swiper-slide
-                  ><img
-                    src="../assets/mantrac.png"
-                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
-                    alt=""
-                /></swiper-slide>
-                <swiper-slide
-                  ><img
-                    src="../assets/denmarkembassy.png"
-                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
-                    alt=""
-                /></swiper-slide>
-                <swiper-slide
-                  ><img
-                    src="../assets/castrol.png"
-                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
-                    alt=""
-                /></swiper-slide>
-                <swiper-slide
-                  ><img
-                    src="../assets/nadmo.png"
-                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
-                    alt=""
-                /></swiper-slide>
-                <swiper-slide
-                  ><img
-                    src="../assets/peduase.png"
-                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
-                    alt=""
-                /></swiper-slide>
-                <swiper-slide
-                  ><img
-                    src="../assets/telesol.png"
-                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
-                    alt=""
-                /></swiper-slide>
-                <swiper-slide
-                  ><img
-                    src="../assets/pbl.png"
-                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
-                    alt=""
-                /></swiper-slide>
-                <swiper-slide
-                  ><img
-                    src="../assets/sltf-logo.jpg"
-                    class="h-12 lg:h-20 mt-5 px-5 saturate-100"
-                    alt=""
-                /></swiper-slide>
+                  ><div class="flex justify-center items-center h-full p-10">
+                    <img
+                      src="../assets/sltf-logo.jpg"
+                      class="h-20 lg:h-32 object-contain object-center"
+                      alt=""
+                    /></div
+                ></swiper-slide>
               </swiper>
             </div>
           </div>

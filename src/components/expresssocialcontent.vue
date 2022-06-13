@@ -1,9 +1,34 @@
 <template>
   <div>
-    <div class="w-full">
+    <div class="w-full -mt-10">
       <div class="w-full">
-        <div class="max-w-5xl bg-slate-50 grid grid-cols "></div>
-        <div class="w-full">
+        <div
+          class="max-w-5xl mx-auto bg-slate-50 grid grid-cols-1 lg:grid-cols-2 overflow-hidden"
+        >
+          <div class="p-8 space-y-5 bg-gradient-to-tl from-green-50">
+            <p class="text-base font-medium text-slate-500">
+              Get your social media page managed as low as
+            </p>
+            <p class="text-9xl bg-semibold text-green-900">$25</p>
+            <p class="text-base font-medium text-green-500">per Month</p>
+            <div class="w-fit">
+              <button
+                class="text-white bg-green-900 text-sm py-3 px-5 font-medium shadow-lg uppercase tracking-wide"
+                @click="goto('/contact')"
+              >
+                Get in Touch
+              </button>
+            </div>
+          </div>
+          <div class="w-full h-full bg-slate-900 overflow-hidden hidden lg:block">
+            <img
+              src="../assets/portrait-young-african-woman-standing-cafe.jpg"
+              class="w-full h-full object-contain object-center transform scale-125"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="w-full mt-20">
           <h2
             class="text-base px-5 text-green-500 font-semibold max-w-2xl mx-auto tracking-wide uppercase mt-2 lg:text-center"
           >
@@ -72,16 +97,22 @@
                 <div class="lg:w-1/2">
                   <img src="../assets/chefimage.png" class="w-full" alt="" />
                   <div class="w-full py-8 pr-8">
-                    <p class="text-2xl font-semibold text-green-500 leading-7">
-                      Vocational School Owner or Principal
-                    </p>
-                    <p class="text-lg font-normal text-white mt-5 leading-7 max-w-3xl">
+                    <div class="flex items-center space-x-2">
+                      <div class="w-1 h-10 bg-green-400"></div>
+                      <p class="text-2xl font-semibold text-green-500 leading-7">
+                        Vocational School Owner or Principal
+                      </p>
+                    </div>
+
+                    <p
+                      class="text-lg font-normal text-white mt-5 ml-3 leading-7 max-w-3xl"
+                    >
                       Add express social small business social media marketing course to
                       the courses you run. Become current and stand out among your
                       competitors. Attract more students who can sell using social media
                       and digital channels. No cost to the school.
                     </p>
-                    <div class="mt-5 w-fit">
+                    <div class="mt-5 w-fit ml-3">
                       <button
                         class="text-green-100 text-base font-medium uppercase tracking-wide flex space-x-2 items-center"
                       >
@@ -106,15 +137,21 @@
                 <div class="lg:w-1/2">
                   <img src="../assets/businessman.png" class="w-full" alt="" />
                   <div class="w-full py-8 pr-8">
-                    <p class="text-2xl font-semibold text-green-500 leading-7">
-                      Large Organizations or Enterprises
-                    </p>
-                    <p class="text-lg font-normal text-white mt-5 leading-7 max-w-3xl">
+                    <div class="flex items-center space-x-2">
+                      <div class="w-1 h-10 bg-green-400"></div>
+                      <p class="text-2xl font-semibold text-green-500 leading-7">
+                        Large Organizations or Enterprises
+                      </p>
+                    </div>
+
+                    <p
+                      class="text-lg font-normal ml-3 text-white mt-5 leading-7 max-w-3xl"
+                    >
                       Add express social media and digital marketing programs to your
                       service offering; address their pain points; deepen existing
                       relationships, increase loyalty and attract new SME clients.
                     </p>
-                    <div class="mt-5 w-fit">
+                    <div class="mt-5 ml-3 w-fit">
                       <button
                         class="text-green-100 text-base font-medium uppercase tracking-wide flex space-x-2 items-center"
                       >
@@ -159,8 +196,44 @@
               </div>
             </div>
           </div>
+          <div class="w-full my-10 lg:my-32">
+            <div class="max-w-screen-xl mx-auto px-5">
+              <p
+                class="mt-2 text-3xl leading-8 font-extrabold tracking-tight mb-10 text-gray-900 sm:text-4xl max-w-2xl mx-auto lg:text-center"
+              >
+                Join a growing list of digital forward SMEs and organizations that trust
+                our service
+              </p>
+              <div class="grid grid-cols-3 lg:grid-cols-5 gap-10">
+                <div class="flex justify-center" v-for="image in images" :key="image">
+                  <img :src="image" class="h-20 lg:h-32 w-auto" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      images: [
+        "/images/expsocial/infantPro.jpeg",
+        "/images/expsocial/greatspeed.jpeg",
+        "/images/expsocial/scentall.jpeg",
+        "/images/expsocial/tchi.jpeg",
+        "/images/expsocial/mrright.jpeg",
+      ],
+    };
+  },
+  methods: {
+    goto: function (x) {
+      this.$router.push(x);
+    },
+  },
+};
+</script>
