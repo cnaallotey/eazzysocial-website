@@ -8,7 +8,9 @@
       />
       <div class="w-full h-full absolute top-0 bg-green-500 bg-opacity-60 px-5">
         <div class="flex flex-col items-center mt-32 max-w-2xl mx-auto">
-          <h2 class="font-bold text-5xl text-white flex items-start md:items-center">
+          <h2
+            class="font-bold text-5xl text-white flex flex-col lg:flex-row items-center text-center lg:text-left"
+          >
             <span
               ><img src="../assets/expsocialimg.png" class="w-20 mr-4 rounded-2xl" alt=""
             /></span>
@@ -21,7 +23,7 @@
         </div>
       </div>
     </div>
-    <div class="w-full relative z-10 -translate-y-32">
+    <div class="w-full relative z-10 -translate-y-24 md:-translate-y-32">
       <div class="max-w-4xl mx-auto bg-slate-900">
         <div class="w-full p-5 lg:p-8">
           <p class="text-sm text-green-300 leading-5 font-normal">
