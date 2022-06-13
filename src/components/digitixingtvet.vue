@@ -86,7 +86,7 @@
       </div>
     </div>
 
-    <div class="w-full bg-white mt-20 h-[40rem]">
+    <div class="w-full bg-white mt-20 h-auto lg:h-[40rem]">
       <div class="w-full">
         <div
           class="w-full max-w-screen-xl mx-auto flex flex-col lg:justify-end lg:flex-row relative pt-12"
@@ -99,7 +99,7 @@
             />
           </div>
           <div
-            class="w-full lg:max-w-lg lg:absolute mb-10 lg:mb-0 top-0 left-0 px-5 lg:mt-0 lg:px-10 py-10 bg-slate-900"
+            class="w-full lg:max-w-lg lg:absolute mb-0 lg:mb-0 top-0 left-0 px-5 lg:mt-0 lg:px-10 py-10 bg-slate-900"
           >
             <p class="text-3xl font-semibold text-white tracking-normal">
               Register your TVET school for free
