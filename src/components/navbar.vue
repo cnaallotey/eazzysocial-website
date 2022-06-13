@@ -186,7 +186,7 @@
                         ></span>
                       </button>
                       <div class="text-blue-600 mt-5" v-if="submenu">
-                        <router-link to="/digitizng-TVET"> DIgitizing TVET </router-link>
+                        <router-link to="/digitizing-TVET"> DIgitizing TVET </router-link>
                       </div>
                     </div>
                   </div>
