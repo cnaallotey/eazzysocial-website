@@ -36,8 +36,10 @@
           </div>
           <div class="w-full bg-slate-900 py-20 mt-20">
             <div class="max-w-screen-xl mx-auto px-5">
-              <div class="w-full flex flex-col lg:flex-row lg:space-x-20">
-                <div class="w-full lg:w-1/2 pr-8">
+              <div
+                class="w-full flex flex-col lg:flex-row lg:space-x-20 lg:items-center space-y-10 lg:space-y-0"
+              >
+                <div class="w-full lg:w-1/2 pr-8 h-full flex flex-col lg:justify-center">
                   <p class="text-2xl font-semibold text-blue-500 leading-7">
                     Eazzysocial Campus Club (Our Response)
                   </p>
@@ -53,6 +55,9 @@
                     students studying in any African University at no cost and link them
                     to internships and jobs.
                   </p>
+                </div>
+                <div class="w-full lg:w-1/2 flex justify-center">
+                  <img src="../assets/framwork.png" class="w-2/3" alt="" />
                 </div>
               </div>
             </div>

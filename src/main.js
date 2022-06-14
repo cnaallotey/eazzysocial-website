@@ -9,6 +9,7 @@ import DigitizingTVET from "./Views/DigitizingTVET.vue"
 import ExpressSocial from "./Views/ExpressSocial.vue"
 import Courses from "./Views/Courses.vue"
 import Campusclub from "./Views/Campusclub.vue"
+import Register from "./Views/registercourse.vue"
 
 
 
@@ -38,6 +39,9 @@ const router = createRouter({
         },
        {
             path:"/:pathMatch(.*)", name:"404", component:Home
+        },
+        {
+            path:"/registercourse/:id", name:"registercourse", component:Register
         },
     
     
