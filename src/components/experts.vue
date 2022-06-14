@@ -32,7 +32,7 @@
                 <div class="w-full">
                   <div class="w-full h-64 bg-gray-200">
                     <img
-                      src="../assets/dr. brew.jpg"
+                      src="../assets/drbrew.jpg"
                       class="h-full w-full object-cover object-top"
                       alt=""
                     />
