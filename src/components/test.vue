@@ -6,7 +6,7 @@
       <div
         class="absolute top-0 left-8 h-28 w-28 -translate-y-16 bg-rose-300 overflow-hidden"
       >
-        <img :src="img" class="w-full h-full object-cover" alt="" />
+        <img :src="img" class="w-full h-full object-cover object-top scale-150" alt="" />
       </div>
       <p class="text-base text-white mt-2">
         {{ message }}

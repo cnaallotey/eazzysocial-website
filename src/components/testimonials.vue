@@ -52,13 +52,12 @@ export default {
           img: "/images/brew.jpeg",
         },
         {
-          name: "Isaac Mohammed Newton",
+          name: "Abigail Obiri",
           message:
-            "Even though I was using social media, I realized I was not maximizing the full marketing potential of social media until I participated in the small business social media marketing course.",
-          company: "General manager, Nhyilaw",
+            "Sales was so low until I met Eazzy Social. They handled my in page with professionalism and with ads on social media. They are the best Thanks 😊 Eazzy Social",
+          company: "CEO, SCENTitALL",
           goup: "Small Business Owner",
-          img:
-            "https://img.freepik.com/free-photo/portrait-smart-professional-african-american-man-standing-with-hands-crossed-chest-confident-pose_176420-33861.jpg?size=626&ext=jpg&uid=R9744136&ga=GA1.2.1187962965.1621546722",
+          img: "/images/abi.jpeg",
         },
         {
           name: "Stephanie Baiden",
