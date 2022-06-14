@@ -139,7 +139,11 @@
 export default {
   methods: {
     mail: function () {
-      window.open("mailto:info@eazzysocial.com");
+      const mailinfo = "info@eazzysocial.com";
+      window.open(
+        `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${mailinfo}&su=SUBJECT&body=BODY&tf=1`,
+        "_blank"
+      );
     },
   },
 };
