@@ -1,14 +1,14 @@
 <template>
   <div>
     <div
-      class="bg-white pb-8 h-full group hover:shadow-lg transition-all ease-linear duration-150 overflow-hidden shadow-md"
+      class="bg-white h-full group hover:shadow-lg transition-all ease-linear duration-150 overflow-hidden shadow-md"
     >
       <div class="w-full h-full flex flex-col justify-between">
         <div class="w-full">
           <div class="w-full h-52 relative">
             <img :src="img" class="w-full h-full object-cover" alt="" />
             <div
-              class="absolute w-full h-full top-0 bg-black bg-opacity-40 flex items-center justify-center invisible group-hover:visible transition-all ease-out duration-150"
+              class="absolute w-full h-full hidden top-0 bg-black bg-opacity-40 flex items-center justify-center invisible group-hover:visible transition-all ease-out duration-150"
             >
               <div>
                 <button class="p-2 text-white text-sm font-normal border border-white">
@@ -61,6 +61,11 @@
             </button>
           </div>
         </div>
+        <button
+          class="w-full text-center bg-blue-600 py-2 text-base font-normal text-white uppercase"
+        >
+          Register
+        </button>
       </div>
     </div>
   </div>

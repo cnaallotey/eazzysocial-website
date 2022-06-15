@@ -41,40 +41,44 @@
             :modules="modules"
             :slides-per-view="3"
             :space-between="40"
+            class="flex justify-between h-[20rem] mb-10 lg:mb-10 overflow-hidden"
+            autoplay=""
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+          >
+            <swiper-slide v-for="image in images" :key="image" class="overflow-hidden">
+              <div class="flex flex-col items-center overflow-hidden">
+                <img
+                  :src="image.img"
+                  class="h-20 lg:h-[15rem] object-contain object-center"
+                  alt=""
+                />
+                <p class="text-center leading-5 px-5 mt-5">{{ image.caption }}</p>
+              </div>
+            </swiper-slide></swiper
+          >
+        </div>
+        <div class="w-full overflow-hidden lg:hidden">
+          <swiper
+            :modules="modules"
+            :slides-per-view="1"
+            :space-between="10"
             class="flex justify-between h-[20rem] mb-10 lg:mb-20 overflow-hidden"
             autoplay=""
             @swiper="onSwiper"
             @slideChange="onSlideChange"
           >
             <swiper-slide v-for="image in images" :key="image" class="overflow-hidden">
-              <div class="flex justify-center overflow-hidden">
+              <div class="flex flex-col items-center overflow-hidden">
                 <img
-                  :src="image"
-                  class="h-20 lg:h-full w-full object-cover object-center"
+                  :src="image.img"
+                  class="h-[15rem] object-contain object-center"
                   alt=""
                 />
-              </div> </swiper-slide
-          ></swiper>
-        </div>
-        <div class="w-full overflow-hidden lg:hidden">
-          <swiper
-            :modules="modules"
-            :slides-per-view="1"
-            :space-between="40"
-            class="flex justify-between h-full mb-10 lg:mb-20"
-            autoplay=""
-            @swiper="onSwiper"
-            @slideChange="onSlideChange"
+                <p class="text-center leading-5 px-5 mt-5">{{ image.caption }}</p>
+              </div>
+            </swiper-slide></swiper
           >
-            <swiper-slide v-for="image in images" :key="image" class="overflow-hidden">
-              <div class="flex justify-center overflow-hidden">
-                <img
-                  :src="image"
-                  class="h-full lg:h-full w-full object-cover object-center"
-                  alt=""
-                />
-              </div> </swiper-slide
-          ></swiper>
         </div>
       </div>
     </div>
@@ -109,21 +113,89 @@ export default {
       console.log(swiper);
     };
 
+    const new_images = ref([
+      {
+        images: [
+          "/images/gallery/img1.jpeg",
+          "/images/gallery/img2.jpeg",
+          "/images/gallery/img3.jpeg",
+          "/images/gallery/img4.jpeg",
+          "/images/gallery/img5.jpeg",
+        ],
+      },
+      {
+        images: [
+          "/images/gallery/img6.jpeg",
+          "/images/gallery/img7.jpeg",
+          "/images/gallery/img8.jpeg",
+          "/images/gallery/img9.jpeg",
+          "/images/gallery/img10.jpeg",
+        ],
+      },
+      {
+        images: [
+          "/images/gallery/img11.jpeg",
+          "/images/gallery/img12.jpeg",
+          "/images/gallery/img13.jpeg",
+          "/images/gallery/img14.jpeg",
+        ],
+      },
+    ]);
+
     const images = ref([
-      "/images/gallery/img1.jpeg",
-      "/images/gallery/img2.jpeg",
-      "/images/gallery/img3.jpeg",
-      "/images/gallery/img4.jpeg",
-      "/images/gallery/img5.jpeg",
-      "/images/gallery/img6.jpeg",
-      "/images/gallery/img7.jpeg",
-      "/images/gallery/img8.jpeg",
-      "/images/gallery/img9.jpeg",
-      "/images/gallery/img10.jpeg",
-      "/images/gallery/img11.jpeg",
-      "/images/gallery/img12.jpeg",
-      "/images/gallery/img13.jpeg",
-      "/images/gallery/img14.jpeg",
+      {
+        img: "/images/gallery/img1.jpeg",
+        caption: "",
+      },
+      { img: "/images/gallery/img2.jpeg", caption: "" },
+      { img: "/images/gallery/img3.jpeg", caption: "" },
+      { img: "/images/gallery/img4.jpeg", caption: "" },
+      {
+        img: "/images/gallery/img5.jpeg",
+        caption:
+          "Our Executive Social Media Marketing and Digital Selling for Marketing and Sales professionals at  Peduase Valley Resort, Aburi, Ghana",
+      },
+      {
+        img: "/images/gallery/img6.jpeg",
+        caption:
+          "Our Executive Social Media Marketing and Digital Selling for Marketing and Sales professionals at  Peduase Valley Resort, Aburi, Ghana",
+      },
+      {
+        img: "/images/gallery/img7.jpeg",
+        caption:
+          "Executive Social Media Marketing and Digital Selling for Marketing and Sales professionals at Mantrac - Ghana.",
+      },
+      {
+        img: "/images/gallery/img8.jpeg",
+        caption:
+          "Executive Social Media Marketing for Marketing and Sales professionals at Student Loan Trust Fund. Accra - Ghana",
+      },
+      {
+        img: "/images/gallery/img9.jpeg",
+        caption:
+          "Executive Social Media Marketing training for some executives at the Parliament of Ghana.",
+      },
+      {
+        img: "/images/gallery/img10.jpeg",
+        caption:
+          "Executive Social Media Marketing training for some executives at the Parliament of Ghana.",
+      },
+      {
+        img: "/images/gallery/img11.jpeg",
+        caption: "Free social media marketing launchpad program for SME’s at Kumasi",
+      },
+      {
+        img: "/images/gallery/img12.jpeg",
+        caption: "Free social media marketing launchpad program for SME’s at Kumasi",
+      },
+      {
+        img: "/images/gallery/img13.jpeg",
+        caption: "Free social media marketing launchpad program for SME’s at Kumasi",
+      },
+      {
+        img: "/images/gallery/img14.jpeg",
+        caption: "Free social media marketing launchpad program for SME’s at Kumasi",
+      },
     ]);
 
     const onSlideChange = () => {

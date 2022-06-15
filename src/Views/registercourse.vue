@@ -103,10 +103,14 @@ export default {
   data() {
     return {
       course: "",
+      courses: ["Social_Media_Marketing_Training"],
     };
   },
   created() {
     this.course = this.$route.params.id;
+    if (!this.courses.includes(this.$route.params.id)) {
+      this.$router.push("/");
+    } else return;
   },
 };
 </script>
