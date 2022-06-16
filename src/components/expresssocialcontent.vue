@@ -71,6 +71,7 @@
                 <div class="mt-5 w-fit ml-3">
                   <button
                     class="text-green-500 text-base font-medium uppercase tracking-wide flex space-x-2 items-center"
+                    @click="goto('/contact')"
                   >
                     <span>Learn More</span>
                     <span
@@ -117,6 +118,7 @@
                     <div class="mt-5 w-fit ml-3">
                       <button
                         class="text-green-100 text-base font-medium uppercase tracking-wide flex space-x-2 items-center"
+                        @click="goto('/contact')"
                       >
                         <span>Learn More</span>
                         <span
@@ -156,6 +158,7 @@
                     <div class="mt-5 ml-3 w-fit">
                       <button
                         class="text-green-100 text-base font-medium uppercase tracking-wide flex space-x-2 items-center"
+                        @click="goto('/contact')"
                       >
                         <span>Learn More</span>
                         <span
