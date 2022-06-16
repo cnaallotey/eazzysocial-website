@@ -2,7 +2,7 @@
   <div class="bg-slate-900 relative">
     <!-- <waves class="absolute top-0 z-0 w-full h-screen" /> -->
     <div class="w-full h-screen px-4 relative z-10">
-      <div class="bg-slate-900 h-screen">
+      <div class="bg-slate-900 h-screen overflow-y-scroll lg:overflow-y-hidden">
         <div class="w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-y-10">
           <div
             class="w-full h-full flex flex-col items-end justify-center bg-slate-900 p-0 lg:p-20 overflow-y-hidden lg:overflow-y-hidden"
