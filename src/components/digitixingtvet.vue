@@ -72,7 +72,7 @@
             >
               <div class="w-full h-full flex flex-col justify-end p-4 lg:p-8">
                 <p
-                  class="text-black text-base lg:text-xl font-semibold leading-7 max-w-sm"
+                  class="text-black text-base lg:text-xl font-semibold lg:leading-7 max-w-sm"
                 >
                   Free Social Media Marketing Training and Business Computing
                 </p>
