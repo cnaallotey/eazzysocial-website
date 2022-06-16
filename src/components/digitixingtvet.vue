@@ -70,11 +70,15 @@
             <div
               class="w-full h-full bg-gradient-to-tr from-white bg-opacity-70 absolute top-0"
             >
-              <div class="w-full h-full flex flex-col justify-end p-8">
-                <p class="text-black text-xl font-semibold leading-7 max-w-sm">
+              <div class="w-full h-full flex flex-col justify-end p-4 lg:p-8">
+                <p
+                  class="text-black text-base lg:text-xl font-semibold leading-7 max-w-sm"
+                >
                   Free Social Media Marketing Training and Business Computing
                 </p>
-                <p class="text-base font-medium leading-5 text-slate-900 max-w-sm mt-2">
+                <p
+                  class="text-sm lg:text-base font-medium leading-5 text-slate-900 max-w-sm mt-2"
+                >
                   Apprentices or Trainees enjoy free training in social media marketing,
                   e-commerce and business computing Free.
                 </p>
