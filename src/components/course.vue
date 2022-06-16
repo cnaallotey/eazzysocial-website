@@ -61,11 +61,12 @@
             </button>
           </div>
         </div>
-        <button
+        <a
           class="w-full text-center bg-blue-600 py-2 text-base font-normal text-white uppercase"
+          :href="'/registercourse/' + link"
         >
           Register
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -84,6 +85,9 @@ export default {
       type: String,
     },
     img: {
+      type: String,
+    },
+    link: {
       type: String,
     },
   },
