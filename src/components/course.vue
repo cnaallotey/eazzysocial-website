@@ -63,7 +63,7 @@
         </div>
         <a
           class="w-full text-center bg-blue-600 py-2 text-base font-normal text-white uppercase"
-          :href="'/registercourse/' + link"
+          @click="goto(link)"
         >
           Register
         </a>
@@ -89,6 +89,11 @@ export default {
     },
     link: {
       type: String,
+    },
+  },
+  methods: {
+    goto: function (x) {
+      this.$router.push(`/registercourse/${x}`);
     },
   },
 };
