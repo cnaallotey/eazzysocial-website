@@ -63,21 +63,21 @@
           </div>
           <div class="w-full lg:w-1/2 relative">
             <img
-              src="../assets/happy-young-african-businessman.jpg"
+              src="../assets/dressmaker.jpg"
               class="w-full h-full object-contain object-center"
               alt=""
             />
             <div
-              class="w-full h-full bg-gradient-to-tr from-white bg-opacity-70 absolute top-0"
+              class="w-full h-full bg-gradient-to-tr from-black bg-opacity-50 absolute top-0"
             >
               <div class="w-full h-full flex flex-col justify-end p-4 lg:p-8">
                 <p
-                  class="text-blue-800 text-base lg:text-xl font-semibold lg:leading-7 max-w-sm"
+                  class="text-white text-base lg:text-xl font-semibold lg:leading-7 max-w-sm"
                 >
                   Free Social Media Marketing Training and Business Computing
                 </p>
                 <p
-                  class="text-sm lg:text-base font-medium leading-5 text-slate-900 max-w-sm mt-2"
+                  class="text-sm lg:text-base font-medium leading-5 text-slate-200 max-w-sm mt-2"
                 >
                   Apprentices or Trainees enjoy free training in social media marketing,
                   e-commerce and business computing Free.

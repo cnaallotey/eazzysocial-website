@@ -145,20 +145,33 @@ export default {
     const images = ref([
       {
         img: "/images/gallery/img1.jpeg",
-        caption: "",
+        caption:
+          "Social Media Marketing Training and Business Computing for student at Winglow Fashion Academy",
       },
-      { img: "/images/gallery/img2.jpeg", caption: "" },
-      { img: "/images/gallery/img3.jpeg", caption: "" },
-      { img: "/images/gallery/img4.jpeg", caption: "" },
+      {
+        img: "/images/gallery/img2.jpeg",
+        caption:
+          "Social Media Marketing Training and Business Computing for student at Winglow Fashion Academy",
+      },
+      {
+        img: "/images/gallery/img3.jpeg",
+        caption:
+          "Social Media Marketing Training and Business Computing for students at FC Beauty Academy",
+      },
+      {
+        img: "/images/gallery/img4.jpeg",
+        caption:
+          "Social Media Marketing Training and Business Computing for students at FC Beauty Academy",
+      },
       {
         img: "/images/gallery/img5.jpeg",
         caption:
-          "Our Executive Social Media Marketing and Digital Selling for Marketing and Sales professionals at  Peduase Valley Resort, Aburi, Ghana",
+          "Executive Social Media Marketing and Digital Selling for Marketing and Sales professionals at  Peduase Valley Resort - Aburi, Ghana",
       },
       {
         img: "/images/gallery/img6.jpeg",
         caption:
-          "Our Executive Social Media Marketing and Digital Selling for Marketing and Sales professionals at  Peduase Valley Resort, Aburi, Ghana",
+          "Executive Social Media Marketing and Digital Selling for Marketing and Sales professionals at  Peduase Valley Resort - Aburi, Ghana",
       },
       {
         img: "/images/gallery/img7.jpeg",
