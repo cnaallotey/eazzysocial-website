@@ -2,19 +2,45 @@
   <div class="bg-slate-900 relative">
     <!-- <waves class="absolute top-0 z-0 w-full h-screen" /> -->
     <div class="w-full h-screen px-4 relative z-10">
-      <div class="bg-slate-900 h-screen overflow-y-scroll lg:overflow-y-hidden">
-        <div class="w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-y-10">
+      <div class="bg-slate-900 h-screen">
+        <div
+          class="w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-y-10 overflow-y-scroll xl:overflow-hidden"
+        >
+          <div class="w-full h-full hidden lg:flex relative">
+            <img
+              src="../assets/african-blogger-waving-audience-while-filming-podcast-air-production-internet-broadcast-host-streaming-live-content-recording-digital-social-media.jpg"
+              class="w-full h-full object-cover object-center"
+              alt=""
+            />
+            <p
+              class="text-2xl font-bold bg-opacity-80 animate-bounce text-slate-900 max-w-sm p-16 bg-white absolute bottom-20 left-1/3"
+            >
+              Join the winning Social Media Training Team Today
+            </p>
+            <!-- <img
+              src="../assets/dark-skinned-woman-colleagues-corporate-start-up-office-working-finish-project-diverse-team-business-people-analyzing-company-financial-reports-from-computer.jpg"
+              class="w-full h-full object-cover object-center"
+              alt=""
+            /> -->
+          </div>
           <div
-            class="w-full h-full flex flex-col items-end justify-center bg-slate-900 p-0 lg:p-20 overflow-y-hidden lg:overflow-y-hidden"
+            class="w-full h-full flex flex-col items-start xl:justify-center bg-slate-900 p-0 lg:p-20"
           >
-            <div class="lg:max-w-xl">
-              <div class="flex items-center space-x-2">
-                <img src="../assets/logohalf.png" class="h-12" alt="" />
-                <p class="text-3xl font-bold text-white tracking-wide">eazzysocial</p>
-              </div>
+            <div class="lg:max-w-xl py-10 lg:py-0">
+              <router-link to="/">
+                <div class="flex items-center space-x-2">
+                  <img src="../assets/logohalf.png" class="h-12" alt="" />
+                  <p class="text-3xl font-bold text-white tracking-wide">eazzysocial</p>
+                </div></router-link
+              >
 
-              <p class="text-3xl font-semibold text-white tracking-normal">
+              <p class="text-3xl font-semibold mt-2 text-white tracking-normal">
                 Register for {{ course.name }}
+              </p>
+              <p
+                class="py-1 px-3 text-lg font-semibold w-fit bg-rose-600 text-white mt-5"
+              >
+                {{ course.price }}
               </p>
               <p class="text-base font-normal text-slate-300 leading-6 mt-2">
                 Partner with us! Fill the form here
@@ -90,23 +116,6 @@
                 </p>
               </form>
             </div>
-          </div>
-          <div class="w-full h-full hidden lg:flex relative">
-            <img
-              src="../assets/diverse-friends-students-shoot.jpg"
-              class="w-full h-full object-cover object-center"
-              alt=""
-            />
-            <p
-              class="text-2xl font-bold bg-opacity-80 animate-bounce text-slate-900 max-w-sm p-16 bg-white absolute bottom-20 left-1/3"
-            >
-              Join the winning Social Media Training Team Today
-            </p>
-            <!-- <img
-              src="../assets/dark-skinned-woman-colleagues-corporate-start-up-office-working-finish-project-diverse-team-business-people-analyzing-company-financial-reports-from-computer.jpg"
-              class="w-full h-full object-cover object-center"
-              alt=""
-            /> -->
           </div>
         </div>
       </div>
