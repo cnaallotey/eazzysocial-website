@@ -320,7 +320,7 @@
                       </div>
                     </form>
                   </div>
-                  <div class="w-1/2 bg-black">
+                  <div class="w-1/2 bg-black hidden lg:flex">
                     <div class="w-full h-full bg-red-100">
                       <img
                         src="../assets/dressmaker.jpg"
