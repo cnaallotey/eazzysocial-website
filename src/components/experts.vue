@@ -30,8 +30,12 @@
                   <p></p>
                 </div>
                 <div class="w-full">
-                  <div class="w-full h-64 bg-gray-200">
-                    <img src="" class="h-full w-full object-cover object-top" alt="" />
+                  <div class="w-full h-64 bg-gray-200 overflow-hidden">
+                    <img
+                      src="../assets/brew.jpg"
+                      class="h-full w-full object-cover scale-150 object-top -translate-y-12"
+                      alt=""
+                    />
                   </div>
                   <div class="p-8">
                     <p class="text-lg leading-6 font-bold text-white">Dr Brew</p>

@@ -8,9 +8,10 @@
       />
       <div class="w-full h-full absolute top-0 bg-blue-500 bg-opacity-60 px-5">
         <div
-          class="flex flex-col items-center w-full h-full justify-center max-w-2xl mx-auto"
+          class="flex flex-col space-y-5 lg:space-y-0 lg:flex-row lg:space-x-8 items-center w-full h-full justify-center max-w-2xl mx-auto"
         >
-          <h2 class="font-bold text-5xl text-white">Digitizing TVET</h2>
+          <img src="../assets/tvetlogo.png" class="h-20 w-auto rounded-xl" alt="" />
+          <h2 class="font-bold text-5xl text-white text-center">Digitizing TVET</h2>
         </div>
       </div>
     </div>
@@ -84,6 +85,7 @@
                 </p>
                 <button
                   class="p-3 text-base font-normal uppercase mt-5 bg-blue-600 w-fit text-white"
+                  @click="modal = true"
                 >
                   Register for free
                 </button>
@@ -199,7 +201,150 @@
             </form>
           </div>
         </div>
+        <div>
+          <!-- This example requires Tailwind CSS v2.0+ -->
+          <div
+            class="fixed z-40 inset-0 overflow-y-auto"
+            aria-labelledby="modal-title"
+            role="dialog"
+            aria-modal="true"
+            v-if="modal"
+          >
+            <div
+              class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+            >
+              <!--
+      Background overlay, show/hide based on modal state.
+      Entering: "ease-out duration-300"
+        From: "opacity-0"
+        To: "opacity-100"
+      Leaving: "ease-in duration-200"
+        From: "opacity-100"
+        To: "opacity-0"
+    -->
+              <div
+                class="fixed inset-0 bg-blue-400 bg-opacity-75 transition-opacity"
+                @click.prevent="modal = false"
+                aria-hidden="true"
+              ></div>
+
+              <!-- This element is to trick the browser into centering the modal contents. -->
+              <span
+                class="hidden sm:inline-block sm:align-middle sm:h-screen"
+                aria-hidden="true"
+                >&#8203;</span
+              >
+
+              <!--
+      Modal panel, show/hide based on modal state.
+      Entering: "ease-out duration-300"
+        From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+        To: "opacity-100 translate-y-0 sm:scale-100"
+      Leaving: "ease-in duration-200"
+        From: "opacity-100 translate-y-0 sm:scale-100"
+        To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+    -->
+              <div
+                class="relative inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm p-5 lg:p-0 md:max-w-5xl sm:w-full"
+              >
+                <div class="w-full flex">
+                  <div class="w-full lg:w-1/2 m-0 lg:m-10">
+                    <div class="w-ful flex items-center justify-end">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-8 w-8 cursor-pointer text-gray-500"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        @click="modal = false"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </div>
+                    <h2
+                      class="text-gray-900 font-semibold text-2xl tracking-tight text-left mb-2 mt-2"
+                    >
+                      Register for Free
+                    </h2>
+                    <form action="submit" id="contact_form" class="w-full">
+                      <div class="w-full">
+                        <div class="w-full flex flex-col">
+                          <label for="name" class="text-sm text-gray-700 mb-1"
+                            >Your name <span class="text-red-500">*</span></label
+                          ><input
+                            type="text"
+                            name="name"
+                            placeholder="eg. John Doe"
+                            class="rounded-none border-gray-200 p-3 border-2"
+                            required
+                          />
+                          <label for="email" class="text-sm text-gray-700 mb-1 mt-4"
+                            >Your email <span class="text-red-500">*</span></label
+                          ><input
+                            type="email"
+                            name="email"
+                            placeholder="eg. you@example.com"
+                            class="rounded-none border-gray-200 p-3 border-2"
+                            required
+                          />
+                          <label for="Phone" class="text-sm text-gray-700 mb-1 mt-4"
+                            >Your phone number</label
+                          ><input
+                            type="tel"
+                            name="contact"
+                            placeholder=""
+                            class="rounded-none border-gray-200 p-3 border-2"
+                          />
+                          <label for="School" class="text-sm text-gray-700 mb-1 mt-4"
+                            >Your School</label
+                          ><input
+                            type="text"
+                            name="school"
+                            placeholder="enter school name"
+                            class="rounded-none border-gray-200 p-3 border-2"
+                          />
+                        </div>
+                      </div>
+                      <div class="w-full flex flex-row space-x-4 justify-center">
+                        <button
+                          type="submit"
+                          class="w-full py-3 text-sm font-normal uppercase tracking-wide text-white bg-blue-600 rounded-none hover:-translate-y-1 hover:bg-blue-700 hover:shadow-xl transition-all duration-200 mx-auto mt-8"
+                        >
+                          register
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="w-1/2 bg-black">
+                    <div class="w-full h-full bg-red-100">
+                      <img
+                        src="../assets/dressmaker.jpg"
+                        class="w-full h-full object-cover object-center"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      modal: false,
+    };
+  },
+};
+</script>

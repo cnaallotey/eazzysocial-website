@@ -23,7 +23,7 @@
                 class="text-sm font-semibold space-x-1 text-orange-600 p-2 bg-orange-100 flex items-center"
               >
                 <span><img src="../assets/badge.png" class="w-4 hidden" alt="" /></span>
-                <span>Certificate upon completion</span>
+                <span>{{ type }}</span>
               </p>
             </div>
             <div class="mt-4 w-full">
@@ -88,6 +88,9 @@ export default {
       type: String,
     },
     link: {
+      type: String,
+    },
+    type: {
       type: String,
     },
   },

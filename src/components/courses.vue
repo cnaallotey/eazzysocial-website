@@ -26,6 +26,7 @@
                   :content="course.content"
                   :img="course.img"
                   :link="course.params"
+                  :type="course.type"
                 />
               </div>
             </div>
@@ -46,6 +47,7 @@ export default {
         {
           name: "Social Media Marketing Training and Advertising Support for SMEs",
           params: "smmta",
+          type: "Crash Course",
           price: "Free",
           content:
             "Access a completely free social media marketing program, e-commerce and gain daily support in driving sales, growing your customers and engaging your followers.",
@@ -56,6 +58,7 @@ export default {
           name: "Small Business Social Media Marketing Course",
           price: "GHC 250",
           params: "sbsmmc",
+          type: "Crash Course",
           img:
             "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
           content:
@@ -64,6 +67,7 @@ export default {
         {
           name: "Social Media Marketing with an option in Graphic Design and Photography",
           price: "GHC 4,500",
+          type: "Complete Certification",
           params: "sdmgdp",
           img:
             "https://images.unsplash.com/photo-1613479205646-c0dc1ee8511f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
@@ -75,6 +79,7 @@ export default {
             "Professional Certification in SEO with an option in WordPress Website Development",
           price: "GHC 4,000",
           params: "pcseowwd",
+          type: "Complete Certification",
           img:
             "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80",
           content:
@@ -84,6 +89,7 @@ export default {
           name: "Executive Social Media and Digital Marketing Course",
           price: "GHC 1,000",
           params: "escdmc",
+          type: "Crash Course",
           img:
             "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
           content:
@@ -93,6 +99,7 @@ export default {
           name: "Online Shop Attendant Course",
           price: "GHC 1,000",
           params: "osac",
+          type: "Crash Course",
           img:
             "https://images.unsplash.com/photo-1570857502809-08184874388e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
           content:
@@ -102,6 +109,7 @@ export default {
           name: "Executive Social Selling and Digital Selling Course",
           price: "GHC 1,200",
           params: "essdsc",
+          type: "Crash Course",
           img:
             "https://images.unsplash.com/photo-1573162915955-6a8ba9d2fe20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
           content:
@@ -111,6 +119,7 @@ export default {
           name: "Online Reputation Management and Applied SEO Workshop",
           price: "GHC 2,500",
           params: "ormaseow",
+          type: "Crash Course",
           img:
             "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
           content:
