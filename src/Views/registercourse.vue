@@ -1,19 +1,17 @@
 <template>
   <div class="bg-slate-900 relative">
     <!-- <waves class="absolute top-0 z-0 w-full h-screen" /> -->
-    <div class="w-full h-screen px-4 relative z-10">
+    <div class="w-full h-screen relative z-10">
       <div class="bg-slate-900 h-screen">
-        <div
-          class="w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-y-10 overflow-y-scroll xl:overflow-hidden"
-        >
-          <div class="w-full h-full hidden lg:flex relative">
+        <div class="w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-y-10">
+          <div class="w-full h-screen hidden lg:flex relative">
             <img
               src="../assets/african-blogger-waving-audience-while-filming-podcast-air-production-internet-broadcast-host-streaming-live-content-recording-digital-social-media.jpg"
               class="w-full h-full object-cover object-center"
               alt=""
             />
             <p
-              class="text-2xl font-bold bg-opacity-80 animate-bounce text-slate-900 max-w-sm p-16 bg-white absolute bottom-20 left-1/3"
+              class="text-2xl font-bold bg-opacity-80 text-slate-900 max-w-sm p-16 bg-white absolute bottom-0 left-0"
             >
               Join the winning Social Media Training Team Today
             </p>
@@ -24,7 +22,7 @@
             /> -->
           </div>
           <div
-            class="w-full h-full flex flex-col items-start xl:justify-center bg-slate-900 p-0 lg:p-20"
+            class="w-full h-screen overflow-y-auto flex flex-col items-start p-4 lg:p-20"
           >
             <div class="lg:max-w-xl py-10 lg:py-0">
               <router-link to="/">

@@ -61,12 +61,12 @@
             </button>
           </div>
         </div>
-        <a
+        <button
           class="w-full text-center bg-blue-600 py-2 text-base font-normal text-white uppercase"
           @click="goto(link)"
         >
           Register
-        </a>
+        </button>
       </div>
     </div>
   </div>
