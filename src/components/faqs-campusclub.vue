@@ -7,7 +7,7 @@
         >
           Frequently Asked Questions
         </p>
-        <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-10">
+        <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-10">
           <div class="w-full">
             <img
               src="../assets/african-blogger-waving-audience-while-filming-podcast-air-production-internet-broadcast-host-streaming-live-content-recording-digital-social-media.jpg"
