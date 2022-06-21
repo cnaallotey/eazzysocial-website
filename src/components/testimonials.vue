@@ -49,7 +49,7 @@ export default {
             " Eazzysocial is an ideal place for Social Media Education. It helped me develop a robust foundation in social media marketing.",
           company: "Social Cycles Advertising ",
           goup: "Professional",
-          img: "/public/images/custumer1.png",
+          img: "/images/custumer1.png",
         },
         {
           name: "Abigail Obiri",

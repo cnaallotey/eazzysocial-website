@@ -226,11 +226,7 @@
           class="w-full flex flex-col lg:flex-row items-center lg:space-x-20 space-y-5 lg:space-y-0"
         >
           <div class="w-full lg:w-1/2 bg-gray-700">
-            <img
-              src="/public/images/gallery/img1.jpeg"
-              class="w-full object-contain"
-              alt=""
-            />
+            <img src="/images/gallery/img1.jpeg" class="w-full object-contain" alt="" />
           </div>
           <div class="w-full lg:w-1/2 pr-8">
             <p class="text-2xl font-semibold text-blue-500 leading-7">
