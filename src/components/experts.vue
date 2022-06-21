@@ -16,8 +16,8 @@
                 <div class="w-full">
                   <div class="w-full h-64 bg-gray-200">
                     <img
-                      src="../assets/gad.jpg"
-                      class="h-full w-full object-cover object-center"
+                      src="../assets/gadnew.png"
+                      class="h-full w-full object-contain object-center"
                       alt=""
                     />
                   </div>
@@ -32,8 +32,8 @@
                 <div class="w-full">
                   <div class="w-full h-64 bg-gray-200 overflow-hidden">
                     <img
-                      src="../assets/brew.jpg"
-                      class="h-full w-full object-cover scale-150 object-top -translate-y-12"
+                      src="../assets/brewnew.png"
+                      class="h-full w-full object-contain object-center"
                       alt=""
                     />
                   </div>
@@ -49,8 +49,8 @@
                 <div class="w-full">
                   <div class="w-full h-64 bg-gray-200">
                     <img
-                      src="../assets/drbrew.jpg"
-                      class="h-full w-full object-cover object-top"
+                      src="../assets/pincewill.png"
+                      class="h-full w-full object-contain object-center"
                       alt=""
                     />
                   </div>

@@ -12,7 +12,7 @@
             <p
               class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl max-w-2xl mx-auto lg:text-center"
             >
-              Master new social media and digital marketing tools taught by experts
+              Master new social media and digital marketing skills taught by experts
             </p>
             <div class="w-full mt-10">
               <div

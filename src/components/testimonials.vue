@@ -14,7 +14,7 @@
             >
               What our clients say about us.
             </p>
-            <div class="w-full mt-24 lg:mt-32">
+            <div class="w-full mt-24 lg:mt-24">
               <div
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 lg:gap-12"
               >
@@ -49,7 +49,7 @@ export default {
             " Eazzysocial is an ideal place for Social Media Education. It helped me develop a robust foundation in social media marketing.",
           company: "Social Cycles Advertising ",
           goup: "Professional",
-          img: "/images/brew.jpeg",
+          img: "/public/images/custumer1.png",
         },
         {
           name: "Abigail Obiri",
@@ -57,7 +57,7 @@ export default {
             "Sales was so low until I met Eazzy Social. They handled my in page with professionalism and with ads on social media. They are the best Thanks 😊 Eazzy Social",
           company: "CEO, SCENTitALL",
           goup: "Small Business Owner",
-          img: "/images/abi.jpeg",
+          img: "/images/customer2.png",
         },
         {
           name: "Stephanie Baiden",
@@ -65,7 +65,7 @@ export default {
             "Eazzysocial has been helpful. I will recommend it to every student seeking to acquire social media and digital business skills. Joining Eazzysocial Campus Club helped me to know social media is not just for only connecting with friends and family but also an enabler for business to drive their business",
           company: "Koforidua Technical University ",
           goup: "Student",
-          img: "/images/pri.jpeg",
+          img: "/images/customer3.png",
         },
       ],
     };
