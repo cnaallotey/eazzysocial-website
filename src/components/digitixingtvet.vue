@@ -226,7 +226,11 @@
           class="w-full flex flex-col lg:flex-row items-center lg:space-x-20 space-y-5 lg:space-y-0"
         >
           <div class="w-full lg:w-1/2 bg-gray-700">
-            <img src="../assets/tvetcontent2.png" class="w-full object-contain" alt="" />
+            <img
+              src="/public/images/gallery/img1.jpeg"
+              class="w-full object-contain"
+              alt=""
+            />
           </div>
           <div class="w-full lg:w-1/2 pr-8">
             <p class="text-2xl font-semibold text-blue-500 leading-7">
@@ -328,6 +332,24 @@
         </div>
       </div>
     </div>
+    <div class="w-full my-10 lg:my-32">
+      <div class="max-w-screen-xl mx-auto px-5">
+        <p
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight mb-10 text-gray-900 sm:text-4xl max-w-2xl mx-auto lg:text-center"
+        >
+          Trusted by Ghana’s Best TVET Schools
+        </p>
+        <div class="grid grid-cols-3 lg:grid-cols-4 gap-10">
+          <div class="flex justify-center" v-for="image in images" :key="image.index">
+            <img
+              :src="'/public/images/tvet/' + image"
+              class="h-20 lg:h-32 w-auto"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -336,6 +358,7 @@ export default {
   data() {
     return {
       modal: false,
+      images: ["img1.jpeg", "img2.jpeg", "mg3.jpeg", "img4.jpeg"],
     };
   },
 };
