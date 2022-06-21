@@ -390,11 +390,7 @@
         </p>
         <div class="grid grid-cols-3 lg:grid-cols-4 gap-10">
           <div class="flex justify-center" v-for="logo in logos" :key="logo.index">
-            <img
-              :src="'/public/images/tvet/' + logo"
-              class="h-20 lg:h-32 w-auto"
-              alt=""
-            />
+            <img :src="'/images/tvet/' + logo" class="h-20 lg:h-32 w-auto" alt="" />
           </div>
         </div>
       </div>
