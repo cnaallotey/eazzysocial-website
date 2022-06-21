@@ -226,7 +226,7 @@
           class="w-full flex flex-col lg:flex-row items-center lg:space-x-20 space-y-5 lg:space-y-0"
         >
           <div class="w-full lg:w-1/2 bg-gray-700">
-            <img src="/images/gallery/img1.jpeg" class="w-full object-contain" alt="" />
+            <img src="../assets/tvetcontent2.png" class="w-full object-contain" alt="" />
           </div>
           <div class="w-full lg:w-1/2 pr-8">
             <p class="text-2xl font-semibold text-blue-500 leading-7">
@@ -328,6 +328,59 @@
         </div>
       </div>
     </div>
+    <div class="w-full my-10 lg:my-32 bg-gradient-to-t from-blue-50">
+      <div class="max-w-screen-xl mx-auto px-5">
+        <p
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight mb-10 text-gray-900 sm:text-4xl max-w-2xl mx-auto lg:text-center"
+        >
+          Events Gallery
+        </p>
+        <div class="w-full overflow-hidden hidden lg:block">
+          <swiper
+            :modules="modules"
+            :slides-per-view="4"
+            :space-between="40"
+            class="flex justify-between h-[20rem] mb-10 lg:mb-10 overflow-hidden"
+            autoplay=""
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+          >
+            <swiper-slide v-for="image in images" :key="image" class="overflow-hidden">
+              <div class="flex flex-col items-center overflow-hidden">
+                <img
+                  :src="image.img"
+                  class="h-20 lg:h-[15rem] object-contain object-center"
+                  alt=""
+                />
+                <p class="text-center leading-5 px-5 mt-5">{{ image.caption }}</p>
+              </div>
+            </swiper-slide></swiper
+          >
+        </div>
+        <div class="w-full overflow-hidden lg:hidden">
+          <swiper
+            :modules="modules"
+            :slides-per-view="1"
+            :space-between="10"
+            class="flex justify-between h-[20rem] mb-10 lg:mb-20 overflow-hidden"
+            autoplay=""
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+          >
+            <swiper-slide v-for="image in images" :key="image" class="overflow-hidden">
+              <div class="flex flex-col items-center overflow-hidden">
+                <img
+                  :src="image.img"
+                  class="h-[15rem] object-contain object-center"
+                  alt=""
+                />
+                <p class="text-center leading-5 px-5 mt-5">{{ image.caption }}</p>
+              </div>
+            </swiper-slide></swiper
+          >
+        </div>
+      </div>
+    </div>
     <div class="w-full my-10 lg:my-32">
       <div class="max-w-screen-xl mx-auto px-5">
         <p
@@ -336,9 +389,9 @@
           Trusted by Ghana’s Best TVET Schools
         </p>
         <div class="grid grid-cols-3 lg:grid-cols-4 gap-10">
-          <div class="flex justify-center" v-for="image in images" :key="image.index">
+          <div class="flex justify-center" v-for="logo in logos" :key="logo.index">
             <img
-              :src="'/public/images/tvet/' + image"
+              :src="'/public/images/tvet/' + logo"
               class="h-20 lg:h-32 w-auto"
               alt=""
             />
@@ -350,11 +403,69 @@
 </template>
 
 <script>
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
+
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
+
+// Import Swiper styles
+import "swiper/css";
+
+import { ref } from "vue";
+
 export default {
-  data() {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    const onSwiper = (swiper) => {
+      console.log(swiper);
+    };
+    const modal = ref(false);
+
+    const logos = ref(["img1.jpeg", "img2.jpeg", "mg3.jpeg", "img4.jpeg"]);
+
+    const images = ref([
+      {
+        img: "/images/gallery/img1.jpeg",
+        caption:
+          "Social Media Marketing Training and Business Computing for student at Winglow Fashion Academy",
+      },
+      {
+        img: "/images/gallery/img2.jpeg",
+        caption:
+          "Social Media Marketing Training and Business Computing for student at Winglow Fashion Academy",
+      },
+      {
+        img: "/images/gallery/img3.jpeg",
+        caption:
+          "Social Media Marketing Training and Business Computing for students at FC Beauty Academy",
+      },
+      {
+        img: "/images/gallery/img4.jpeg",
+        caption:
+          "Social Media Marketing Training and Business Computing for students at FC Beauty Academy",
+      },
+    ]);
+
+    const onSlideChange = () => {
+      console.log("slide change");
+    };
     return {
-      modal: false,
-      images: ["img1.jpeg", "img2.jpeg", "mg3.jpeg", "img4.jpeg"],
+      onSwiper,
+      images,
+      modal,
+      logos,
+      onSlideChange,
+      modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
     };
   },
 };
