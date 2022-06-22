@@ -6,11 +6,11 @@
           class="max-w-5xl mx-auto bg-slate-50 grid grid-cols-1 lg:grid-cols-2 overflow-hidden"
         >
           <div class="p-8 space-y-5 bg-gradient-to-tl from-green-50">
-            <p class="text-base font-medium text-slate-500">
+            <p class="text-sm font-medium text-slate-500">
               Get your social media page managed for as low as
             </p>
             <p class="text-9xl bg-semibold text-green-900">$25</p>
-            <p class="text-base font-medium text-green-500">per Month</p>
+            <p class="text-sm font-medium text-green-500">per Month</p>
             <div class="w-fit">
               <button
                 class="text-white bg-green-900 text-sm py-3 px-5 font-medium shadow-lg uppercase tracking-wide"
@@ -28,9 +28,20 @@
             />
           </div>
         </div>
+
+        <div class="max-w-screen-lg mx-auto hidden">
+          <div class="w-full flex">
+            <div class="w-1/2">
+              <img src="/public/images/book/expresssocialbook.jpg" alt="" />
+            </div>
+            <div class="w-1/2">
+              <img src="/public/images/book/expresssocialbook2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
         <div class="w-full mt-20">
           <h2
-            class="text-base px-5 text-green-500 font-semibold max-w-2xl mx-auto tracking-wide uppercase mt-2 lg:text-center"
+            class="text-sm px-5 text-green-500 font-semibold max-w-2xl mx-auto tracking-wide uppercase mt-2 lg:text-center"
           >
             Express Social for Enterprise
           </h2>
@@ -70,7 +81,7 @@
                 </p>
                 <div class="mt-5 w-fit ml-3">
                   <button
-                    class="text-green-500 text-base font-medium uppercase tracking-wide flex space-x-2 items-center"
+                    class="text-green-500 text-sm font-medium uppercase tracking-wide flex space-x-2 items-center"
                     @click="goto('/contact')"
                   >
                     <span>Learn More</span>
@@ -117,7 +128,7 @@
                     </p>
                     <div class="mt-5 w-fit ml-3">
                       <button
-                        class="text-green-100 text-base font-medium uppercase tracking-wide flex space-x-2 items-center"
+                        class="text-green-100 text-sm font-medium uppercase tracking-wide flex space-x-2 items-center"
                         @click="goto('/contact')"
                       >
                         <span>Learn More</span>
@@ -157,7 +168,7 @@
                     </p>
                     <div class="mt-5 ml-3 w-fit">
                       <button
-                        class="text-green-100 text-base font-medium uppercase tracking-wide flex space-x-2 items-center"
+                        class="text-green-100 text-sm font-medium uppercase tracking-wide flex space-x-2 items-center"
                         @click="goto('/contact')"
                       >
                         <span>Learn More</span>
@@ -190,11 +201,11 @@
             class="max-w-5xl mx-auto bg-slate-50 grid grid-cols-1 lg:grid-cols-2 overflow-hidden mt-20 hidden"
           >
             <div class="p-8 space-y-5 bg-gradient-to-tl from-green-50">
-              <p class="text-base font-medium text-slate-500">
+              <p class="text-sm font-medium text-slate-500">
                 Get your social media page managed for as low as
               </p>
               <p class="text-9xl bg-semibold text-green-900">$25</p>
-              <p class="text-base font-medium text-green-500">per Month</p>
+              <p class="text-sm font-medium text-green-500">per Month</p>
               <div class="w-fit">
                 <button
                   class="text-white bg-green-900 text-sm py-3 px-5 font-medium shadow-lg uppercase tracking-wide"
@@ -252,6 +263,8 @@
 export default {
   data() {
     return {
+      book: ["/images/book/expresssocialbook.jpg", "/images/book/expresssocialbook2.jpg"],
+
       images: [
         "/images/expsocial/infantPro.jpeg",
         "/images/expsocial/greatspeed.jpeg",
