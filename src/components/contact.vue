@@ -44,7 +44,8 @@
               </div>
               <div class="w-full lg:w-1/2">
                 <form
-                  action=""
+                  action="submit"
+                  @submit.prevent="sendform(contact)"
                   class="bg-white p-5 lg:p-10 flex flex-col w-full mt-10 lg:mt-0 lg:w-full"
                 >
                   <label for="name" class="font-normal text-sm text-gray-700 mb-1"
@@ -56,6 +57,8 @@
                     id="full-name"
                     placeholder="John Doe"
                     class="p-3 text-sm rounded-md font-normal text-gray-900 border-2 bg-gray-50 border-gray-200"
+                    required
+                    v-model="contact.name"
                   />
                   <label for="Company" class="font-normal text-sm text-gray-700 mb-1 mt-4"
                     >Company</label
@@ -66,6 +69,7 @@
                     id="company"
                     placeholder=""
                     class="p-3 text-sm font-normal rounded-md text-gray-900 border-2 bg-gray-50 border-gray-200"
+                    v-model="contact.company"
                   />
                   <label for="email" class="font-normal text-sm text-gray-700 mb-1 mt-4"
                     >Email address</label
@@ -74,8 +78,10 @@
                     type="email"
                     name="email"
                     id="email"
+                    required
                     placeholder="example@gmail.com"
                     class="p-3 text-sm font-normal rounded-md text-gray-900 border-2 bg-gray-50 border-gray-200"
+                    v-model="contact.email"
                   />
                   <label for="number" class="font-normal text-sm text-gray-700 mb-1 mt-4"
                     >Contact Number</label
@@ -86,16 +92,18 @@
                     id="contact-number"
                     placeholder=""
                     class="p-3 text-sm font-normal rounded-md text-gray-900 border-2 bg-gray-50 border-gray-200"
+                    v-model="contact.tel"
                   />
                   <label for="country" class="font-normal text-sm text-gray-700 mb-1 mt-4"
                     >Country</label
                   >
                   <input
                     type="text"
-                    name="Contact Numner"
-                    id="contact-number"
+                    name="Country"
+                    id="country"
                     placeholder=""
                     class="p-3 text-sm font-normal rounded-md text-gray-900 border-2 bg-gray-50 border-gray-200"
+                    v-model="contact.country"
                   />
                   <label for="message" class="font-normal text-sm text-gray-700 mb-1 mt-4"
                     >How can Eazzysocial be of help to you?</label
@@ -105,13 +113,16 @@
                     id="message"
                     cols="30"
                     class="bg-gray-50 border-2 rounded-md border-gray-200 p-3"
+                    required
+                    v-model="contact.message"
                     rows="10"
                   ></textarea>
                   <button
+                    type="submit"
                     class="text-sm uppercase tracking-wider font-normal flex justify-center items-center space-x-2 text-white w-full py-3 bg-blue-600 mt-5"
                   >
                     Send message
-                    <span
+                    <span v-if="!loading"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="h-5 w-5 ml-2"
@@ -124,10 +135,34 @@
                           clip-rule="evenodd"
                         /></svg
                     ></span>
+                    <span v-if="loading"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="#fff"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-loader animate-spin"
+                      >
+                        <line x1="12" y1="2" x2="12" y2="6"></line>
+                        <line x1="12" y1="18" x2="12" y2="22"></line>
+                        <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
+                        <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
+                        <line x1="2" y1="12" x2="6" y2="12"></line>
+                        <line x1="18" y1="12" x2="22" y2="12"></line>
+                        <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
+                        <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line></svg
+                    ></span>
                   </button>
                 </form>
               </div>
             </div>
+            <success v-if="success" />
+            <error v-if="error" />
           </div>
         </div>
       </div>
@@ -136,7 +171,19 @@
 </template>
 
 <script>
+import axios from "axios";
+import success from "./successnotification.vue";
+import error from "./errornot.vue";
 export default {
+  components: { success, error },
+  data() {
+    return {
+      contact: {},
+      success: false,
+      loading: false,
+      error: false,
+    };
+  },
   methods: {
     mail: function () {
       const mailinfo = "info@eazzysocial.com";
@@ -144,6 +191,28 @@ export default {
         `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${mailinfo}&su=SUBJECT&body=BODY&tf=1`,
         "_blank"
       );
+    },
+    sendform: function (contact) {
+      this.loading = true;
+      axios
+        .post("https://getform.io/f/0ad3c0c8-9097-4810-9d0c-a4693582d0cf", contact)
+        .then((res) => {
+          //console.log(res);
+          this.success = true;
+          this.loading = false;
+          this.contact = {};
+          setTimeout(() => {
+            this.success = false;
+          }, 3000);
+        })
+        .catch((err) => {
+          this.error = true;
+          this.loading = false;
+          setTimeout(() => {
+            this.error = false;
+          });
+          //console.log(err);
+        });
     },
   },
 };
