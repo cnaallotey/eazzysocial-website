@@ -8,7 +8,16 @@
       />
       <div class="w-full h-full absolute top-0 bg-blue-500 bg-opacity-60 px-5">
         <div class="flex flex-col items-center mt-32 max-w-2xl mx-auto">
-          <h2 class="font-bold text-5xl text-white leading-7">Campus Club</h2>
+          <div
+            class="flex flex-col space-y-5 lg:space-y-0 lg:flex-row lg:space-x-8 items-center w-full h-full justify-center max-w-2xl mx-auto"
+          >
+            <img
+              src="../assets/logoampusclub.png"
+              class="h-20 w-auto rounded-xl"
+              alt=""
+            />
+            <h2 class="font-bold text-5xl text-white text-center">Campus Club</h2>
+          </div>
         </div>
       </div>
     </div>

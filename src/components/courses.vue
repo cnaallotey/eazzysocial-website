@@ -86,7 +86,7 @@ export default {
             "Searching Engine Optimization specialists are in high demand across the Globe. Gain relevant skills in all the areas of SEO and work for top firms. Develop practical skills in building a website and optimizing. ",
         },
         {
-          name: "Executive Social Media and Digital Marketing Course",
+          name: "Executive Social Media and Digital Marketing Short Course",
           price: "GHC 1,000",
           params: "escdmc",
           type: "Crash Course",

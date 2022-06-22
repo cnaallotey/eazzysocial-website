@@ -55,7 +55,13 @@
                   <li class="rounded-sm px-3 py-3 hover:bg-gray-100 bg-slate-50">
                     <router-link to="/digitizing-TVET" class="flex items-center">
                       <div class="flex items-center space-x-2">
-                        <div class="w-12 h-12 bg-blue-500"></div>
+                        <div class="w-12 h-12 bg-white">
+                          <img
+                            src="../assets/tvetlogo.png"
+                            class="w-full h-full object-contain object-center"
+                            alt=""
+                          />
+                        </div>
                         <span>Digitizing TVET</span>
                       </div></router-link
                     >

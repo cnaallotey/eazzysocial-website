@@ -333,7 +333,7 @@
         <p
           class="mt-2 text-3xl leading-8 font-extrabold tracking-tight mb-10 text-gray-900 sm:text-4xl max-w-2xl mx-auto lg:text-center"
         >
-          Events Gallery
+          Case Study
         </p>
         <div class="w-full overflow-hidden hidden lg:block">
           <swiper
