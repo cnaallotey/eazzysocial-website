@@ -55,7 +55,7 @@ export default {
             "https://images.unsplash.com/photo-1610473199899-fc0ec6e204bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         },
         {
-          name: "Small Business Social Media Marketing Course",
+          name: "Small Business Advanced Social Media Strategy Crash Course",
           price: "GHC 250",
           params: "sbsmmc",
           type: "Crash Course",
@@ -65,7 +65,8 @@ export default {
             "Develop a social media marketing strategy for your small business. Gain a strategic understanding of driving sales traffic through social media. ",
         },
         {
-          name: "Social Media Marketing with an option in Graphic Design and Photography",
+          name:
+            "Complete Certification in Social Media Marketing with an option in Graphic Design and Photography",
           price: "GHC 4,500",
           type: "Complete Certification",
           params: "sdmgdp",
@@ -76,7 +77,7 @@ export default {
         },
         {
           name:
-            "Professional Certification in SEO with an option in WordPress Website Development",
+            "Complete Certification in SEO with an option in WordPress Website Development ",
           price: "GHC 4,000",
           params: "pcseowwd",
           type: "Complete Certification",
@@ -86,7 +87,7 @@ export default {
             "Searching Engine Optimization specialists are in high demand across the Globe. Gain relevant skills in all the areas of SEO and work for top firms. Develop practical skills in building a website and optimizing. ",
         },
         {
-          name: "Executive Social Media and Digital Marketing Short Course",
+          name: "Executive Social Media and Digital Marketing Crash Course",
           price: "GHC 1,000",
           params: "escdmc",
           type: "Crash Course",
@@ -96,7 +97,7 @@ export default {
             "Are you a business executive looking to deepen your knowledge in social media and digital marketing? Enrol our Executive course designed in partnership with Koforidua Technical University.  ",
         },
         {
-          name: "Online Shop Attendant Course",
+          name: "Online Shop Attendant Crash Course",
           price: "GHC 1,000",
           params: "osac",
           type: "Crash Course",
@@ -106,7 +107,7 @@ export default {
             "Begin a journey as a professional as an online shop attendant. Gain skills in all the areas in managing an online shop ie. Social media, e-commerce, accounting, customer service, product photography etc.  ",
         },
         {
-          name: "Executive Social Selling and Digital Selling Course",
+          name: "Executive Social Selling and Digital Selling Crash Course",
           price: "GHC 1,200",
           params: "essdsc",
           type: "Crash Course",
@@ -116,7 +117,7 @@ export default {
             "Be a digital sales leader. Increase sales velocity and engage more prospects using social media platforms. The course is in partnership with Koforidua Technical University.  ",
         },
         {
-          name: "Online Reputation Management and Applied SEO Workshop",
+          name: "Online Reputation Management and Applied SEO Crash Course",
           price: "GHC 2,500",
           params: "ormaseow",
           type: "Crash Course",

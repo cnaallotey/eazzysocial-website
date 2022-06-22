@@ -93,6 +93,12 @@
                                 class="w-full h-full object-cover"
                                 alt=""
                               />
+                              <p
+                                v-if="course.job_ready"
+                                class="px-3 py-2 bg-white text-sm text-orange-600 bg-opacity-80 font-medium absolute bottom-5 left-8"
+                              >
+                                Job ready
+                              </p>
                             </div>
                             <div class="w-full px-8 pt-8">
                               <div class="mt-4 w-full">
@@ -262,7 +268,7 @@
               <p
                 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight mb-10 text-gray-900 sm:text-4xl max-w-2xl mx-auto lg:text-center"
               >
-                Trusted by Ghana’s Best Schools
+                Trusted by Students in Ghana’s Best Tertiary Institutions
               </p>
               <tvetslide />
             </div>
@@ -284,6 +290,7 @@ export default {
       courses: [
         {
           name: "Social Media Marketing (Community Management) ",
+          job_ready: true,
           content:
             "Acquire relevant skills needed in starting a career in social media marketing. Gain and jobs and internships with companies globally. Earn monthly stipends while in school.",
           img:
@@ -291,6 +298,7 @@ export default {
         },
         {
           name: "E-commerce Management and SEO ",
+          job_ready: true,
           content:
             "Acquire relevant skills in e-commerce and search engine optimization. Gain jobs and internships with companies globally. Earn monthly stipends while in school.",
           img:
@@ -298,6 +306,7 @@ export default {
         },
         {
           name: "Business Blogging ",
+          job_ready: true,
           content:
             "Turn your passion for writing into a profitable venture writing articles and stories for businesses and while learning the secret of blogging.",
           img:
@@ -305,6 +314,7 @@ export default {
         },
         {
           name: "Data Science and Analytics",
+          job_ready: true,
           content:
             "Start a journey with data science and business analytics. Gain jobs and internships with companies globally. Earn monthly stipends while in school. ",
           img:
@@ -312,6 +322,7 @@ export default {
         },
         {
           name: "UX and UI Design Fundamentals",
+          job_ready: true,
           content:
             "Learn the basics of designing websites and apps through human-centred interaction design. Gain jobs and internships with companies globally. Earn monthly stipends while in school.",
           img:
@@ -319,6 +330,7 @@ export default {
         },
         {
           name: "LinkedIn for Jobs and Personal Branding ",
+          job_ready: false,
           content:
             "Build an effective personal brand for your career as a student. Increases your chances of getting jobs through Social Media and LinkedIn. ",
           img:
@@ -326,6 +338,7 @@ export default {
         },
         {
           name: "CV Writing ",
+          job_ready: false,
           content:
             "Learn advanced techniques in writing an effective CV that increases your chances of landing a job. Gain support in re-writing your CV.",
           img:
@@ -333,6 +346,7 @@ export default {
         },
         {
           name: "Business Computing (Microsoft Word, Excel, PowerPoint…)",
+          job_ready: true,
           content:
             "Strengthen your skills in using ICT for business. Gain advanced knowledge in Excel, Microsoft Word etc. ",
           img:

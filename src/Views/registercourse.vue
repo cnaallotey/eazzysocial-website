@@ -144,7 +144,7 @@ export default {
             "/brochures/Free_Social_Media_Marketing_Training_and_Advertising_Support_for_SMEs.pdf",
         },
         {
-          name: "Small Business Social Media Marketing Course",
+          name: "Small Business Advanced Social Media Strategy Crash Course",
           price: "GHC 250",
           params: "sbsmmc",
           type: "Crash Course",
@@ -155,7 +155,8 @@ export default {
           brochure: "/brochures/Brochure-Social_Media_Marketing.pdf",
         },
         {
-          name: "Social Media Marketing with an option in Graphic Design and Photography",
+          name:
+            "Complete Certification in Social Media Marketing with an option in Graphic Design and Photography",
           price: "GHC 4,500",
           type: "Complete Certification",
           params: "sdmgdp",
@@ -167,7 +168,7 @@ export default {
         },
         {
           name:
-            "Professional Certification in SEO with an option in WordPress Website Development",
+            "Complete Certification in SEO with an option in WordPress Website Development ",
           price: "GHC 4,000",
           params: "pcseowwd",
           type: "Complete Certification",
@@ -178,7 +179,7 @@ export default {
           brochure: "/brochures/Eazzy_Social_SEO_Brochure.pdf",
         },
         {
-          name: "Executive Social Media and Digital Marketing Course",
+          name: "Executive Social Media and Digital Marketing Crash Course",
           price: "GHC 1,000",
           params: "escdmc",
           type: "Crash Course",
@@ -189,7 +190,7 @@ export default {
           brochure: "/brochures/Eazzy_Social_SM_Marketing_Brochure.pdf",
         },
         {
-          name: "Online Shop Attendant Course",
+          name: "Online Shop Attendant Crash Course",
           price: "GHC 1,000",
           params: "osac",
           type: "Crash Course",
@@ -200,7 +201,7 @@ export default {
           brochure: "",
         },
         {
-          name: "Executive Social Selling and Digital Selling Course",
+          name: "Executive Social Selling and Digital Selling Crash Course",
           price: "GHC 1,200",
           params: "essdsc",
           type: "Crash Course",
@@ -211,7 +212,7 @@ export default {
           brochure: "/brochures/SOCIAL_SELLING_CRASH_COURSE_BROCHURE.pdf",
         },
         {
-          name: "Online Reputation Management and Applied SEO Workshop",
+          name: "Online Reputation Management and Applied SEO Crash Course",
           price: "GHC 2,500",
           params: "ormaseow",
           type: "Crash Course",

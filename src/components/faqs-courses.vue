@@ -69,7 +69,7 @@ export default {
     return {
       faqs: [
         {
-          que: "Are courses accredited",
+          que: "Are courses accredited?",
           ans:
             "Most of our courses are accredited through a long-standing partnership with Short Courses, Koforidua Technical University.",
           open: false,
@@ -77,7 +77,7 @@ export default {
         {
           que: "Will I get a certificate after the course? ",
           ans:
-            "Certificates awardees after the completion of each course. Certificates from Koforidua Technical University mostly attract an extra fee of GHS200",
+            "Certificates are awarded after the completion of each course. Certificates from Koforidua Technical University mostly attract an extra fee of GHS200",
           open: false,
         },
         {
