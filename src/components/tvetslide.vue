@@ -7,8 +7,6 @@
         :space-between="40"
         class="flex justify-between items-center"
         autoplay=""
-        @swiper="onSwiper"
-        @slideChange="onSlideChange"
       >
         <swiper-slide v-for="logo in logos" :key="logo.index">
           <div class="flex justify-center items-center h-full p-10">
@@ -28,8 +26,6 @@
         :space-between="40"
         class="flex justify-between items-center"
         autoplay=""
-        @swiper="onSwiper"
-        @slideChange="onSlideChange"
       >
         <swiper-slide v-for="logo in logos" :key="logo.index">
           <div class="flex justify-center items-center h-full p-10">
