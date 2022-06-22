@@ -342,7 +342,6 @@
             :space-between="40"
             class="flex justify-between h-[20rem] mb-10 lg:mb-10 overflow-hidden"
             autoplay=""
-           
           >
             <swiper-slide v-for="image in images" :key="image" class="overflow-hidden">
               <div class="flex flex-col items-center overflow-hidden">
