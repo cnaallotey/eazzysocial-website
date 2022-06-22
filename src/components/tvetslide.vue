@@ -76,12 +76,12 @@ export default {
       "uew.png",
       "ug.png",
     ]);
-    const onSwiper = (swiper) => {
-      console.log(swiper);
-    };
-    const onSlideChange = () => {
-      console.log("slide change");
-    };
+    // const onSwiper = (swiper) => {
+    //   console.log(swiper);
+    // };
+    // const onSlideChange = () => {
+    //   console.log("slide change");
+    // };
     return {
       onSwiper,
       onSlideChange,

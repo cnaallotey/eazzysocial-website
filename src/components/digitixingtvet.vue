@@ -389,7 +389,7 @@
           Trusted by Ghana’s Best TVET Schools
         </p>
         <div class="grid grid-cols-3 lg:grid-cols-4 gap-10">
-          <div class="flex justify-center" v-for="logo in logos" :key="logo.index">
+          <div class="flex justify-center" v-for="logo in logoimages" :key="logo.index">
             <img :src="'/images/tvet/' + logo" class="h-20 lg:h-32 w-auto" alt="" />
           </div>
         </div>
@@ -422,10 +422,12 @@ export default {
     SwiperSlide,
   },
   setup() {
-    const onSwiper = (swiper) => {
-      console.log(swiper);
-    };
+    // const onSwiper = (swiper) => {
+    //   console.log(swiper);
+    // };
     const modal = ref(false);
+
+    const logoimages = ref(["img1.jpeg", "img2.jpeg", "mg3.jpeg", "img4.jpeg"]);
 
     const images = ref([
       {
@@ -450,15 +452,14 @@ export default {
       },
     ]);
 
-    const onSlideChange = () => {
-      console.log("slide change");
-    };
+    // const onSlideChange = () => {
+    //   console.log("slide change");
+    // };
     return {
-      onSwiper,
       images,
       modal,
-      logos,
-      onSlideChange,
+      logoimages,
+
       modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
     };
   },
