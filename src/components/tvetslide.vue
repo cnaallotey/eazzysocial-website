@@ -34,7 +34,7 @@
         <swiper-slide v-for="logo in logos" :key="logo.index">
           <div class="flex justify-center items-center h-full p-10">
             <img
-              :src="'/immages/campusclub/' + logo"
+              :src="'/images/campusclub/' + logo"
               class="h-20 lg:h-32 object-contain saturate-100 object-center"
               alt=""
             />
