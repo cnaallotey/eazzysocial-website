@@ -79,8 +79,8 @@ export default {
     //   console.log("slide change");
     // };
     return {
-      onSwiper,
-      onSlideChange,
+      //   onSwiper,
+      //   onSlideChange,
       logos,
       modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
     };
