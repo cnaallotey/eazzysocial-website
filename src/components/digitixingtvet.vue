@@ -427,8 +427,6 @@ export default {
     };
     const modal = ref(false);
 
-    const logos = ref(["img1.jpeg", "img2.jpeg", "mg3.jpeg", "img4.jpeg"]);
-
     const images = ref([
       {
         img: "/images/gallery/img1.jpeg",

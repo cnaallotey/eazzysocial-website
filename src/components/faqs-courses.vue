@@ -10,7 +10,7 @@
         <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-10">
           <div class="w-full">
             <img
-              src="../assets/african-blogger-waving-audience-while-filming-podcast-air-production-internet-broadcast-host-streaming-live-content-recording-digital-social-media.jpg"
+              src="../assets/dark-skinned-woman-colleagues-corporate-start-up-office-working-finish-project-diverse-team-business-people-analyzing-company-financial-reports-from-computer.jpg"
               class="w-full h-full object-cover object-center"
               alt=""
             />
@@ -72,7 +72,7 @@ export default {
           que: "Are courses accredited",
           ans:
             "Most of our courses are accredited through a long-standing partnership with Short Courses, Koforidua Technical University.",
-          open: "false",
+          open: false,
         },
         {
           que: "Will I get a certificate after the course? ",
@@ -89,7 +89,7 @@ export default {
         {
           que: "Who qualifies to apply for a course? ",
           ans: "Anyone qualifies from students, workers, parents etc.",
-          open: "",
+          open: false,
         },
       ],
     };

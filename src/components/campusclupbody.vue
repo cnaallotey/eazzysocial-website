@@ -257,6 +257,16 @@
               </div>
             </div>
           </div>
+          <div class="w-full my-10 lg:my-32">
+            <div class="max-w-screen-xl mx-auto px-5">
+              <p
+                class="mt-2 text-3xl leading-8 font-extrabold tracking-tight mb-10 text-gray-900 sm:text-4xl max-w-2xl mx-auto lg:text-center"
+              >
+                Trusted by Ghana’s Best Schools
+              </p>
+              <tvetslide />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -265,10 +275,12 @@
 
 <script>
 import course from "./course.vue";
+import tvetslide from "../components/tvetslide.vue";
 export default {
-  components: { course },
+  components: { course, tvetslide },
   data() {
     return {
+      logos: ["ashesi.jpg", "knust.png", "ktu.jpg", "ucc.png", "uew.png", "ug.png"],
       courses: [
         {
           name: "Social Media Marketing (Community Management) ",
