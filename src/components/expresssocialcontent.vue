@@ -236,32 +236,7 @@
               </button>
             </div>
           </div>
-          <div
-            class="max-w-5xl mx-auto bg-slate-50 grid grid-cols-1 lg:grid-cols-2 overflow-hidden mt-20 hidden"
-          >
-            <div class="p-8 space-y-5 bg-gradient-to-tl from-green-50">
-              <p class="text-sm font-medium text-slate-500">
-                Get your social media page managed for as low as
-              </p>
-              <p class="text-9xl bg-semibold text-green-900">$25</p>
-              <p class="text-sm font-medium text-green-500">per Month</p>
-              <div class="w-fit">
-                <button
-                  class="text-white bg-green-900 text-sm py-3 px-5 font-medium shadow-lg uppercase tracking-wide"
-                  @click="goto('/contact')"
-                >
-                  Get in Touch
-                </button>
-              </div>
-            </div>
-            <div class="w-full h-full bg-slate-900 overflow-hidden hidden lg:block">
-              <img
-                src="../assets/expresssocialbook.jpg"
-                class="w-full h-full transform"
-                alt=""
-              />
-            </div>
-          </div>
+
           <div class="w-full mt-10 lg:mt-32">
             <div class="max-w-screen-xl mx-auto px-5">
               <p
