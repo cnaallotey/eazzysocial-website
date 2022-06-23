@@ -14,7 +14,7 @@
             <div class="w-fit">
               <button
                 class="text-white bg-green-900 text-sm py-3 px-5 font-medium shadow-lg uppercase tracking-wide"
-                @click="goto('/contact')"
+                @click="whatsapp('https://wa.me/+233551590388')"
               >
                 Get in Touch
               </button>
@@ -24,6 +24,45 @@
             <img
               src="../assets/portrait-young-african-woman-standing-cafe.jpg"
               class="w-full h-full object-contain object-center transform scale-125"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="max-w-6xl mx-auto bg-slate-50 grid grid-cols-12 lg:grid-cols-12 overflow-hidden mt-10"
+        >
+          <div
+            class="p-8 space-y-5 bg-slate-900 col-span-12 flex flex-col justify-center lg:col-span-4 order-3 lg:order-2"
+          >
+            <p class="text-2xl font-medium text-white">
+              Get Our express Social Content Strategy Workbook today!
+            </p>
+            <p class="text-9xl bg-semibold text-green-900 hidden">$25</p>
+            <p class="text-sm font-medium text-green-500 hidden">per Month</p>
+            <div class="w-fit">
+              <button
+                class="text-white bg-green-900 text-sm py-3 px-5 font-medium shadow-lg uppercase tracking-wide"
+                @click="whatsapp('https://wa.me/+233551590388')"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-full h-full bg-slate-900 overflow-hidden col-span-6 lg:col-span-4 block order-1 lg:order-1"
+          >
+            <img
+              src="/public/images/book/expresssocialbook.jpg"
+              class="w-full h-full object-contain transform"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-full h-full bg-slate-900 overflow-hidden col-span-6 lg:col-span-4 block order-2 lg:order-3"
+          >
+            <img
+              src="/public/images/book/expresssocialbook2.jpg"
+              class="w-full h-full object-cover transform"
               alt=""
             />
           </div>
@@ -277,6 +316,9 @@ export default {
   methods: {
     goto: function (x) {
       this.$router.push(x);
+    },
+    whatsapp: function (x) {
+      window.open(x, "_blank");
     },
   },
 };

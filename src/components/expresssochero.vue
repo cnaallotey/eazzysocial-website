@@ -76,7 +76,7 @@ export default {
     display: function () {
       this.text = this.texts[this.offset];
       setInterval(() => {
-        console.log(this.offset);
+        //console.log(this.offset);
         if (this.offset == this.texts.length - 1) {
           this.offset = 0;
         } else {
