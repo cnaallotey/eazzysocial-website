@@ -15,18 +15,25 @@
               <router-link
                 to="/expressSocial"
                 class="px-2 hover:text-blue-500 border-b-0 duration-200 border-blue-500 hover:border-b transform"
+                :class="[
+                  this.$route.name == 'ExpressSocial' ? 'text-blue-500' : 'text-white',
+                ]"
               >
                 Express Social
               </router-link>
               <router-link
                 to="/campusclub"
                 class="px-2 hover:text-blue-500 border-b-0 duration-200 border-blue-500 hover:border-b transform"
+                :class="[
+                  this.$route.name == 'Campusclub' ? 'text-blue-500' : 'text-white',
+                ]"
               >
                 Campus Club
               </router-link>
               <router-link
                 to="/courses"
                 class="px-2 hover:text-blue-500 border-b-0 duration-200 border-blue-500 hover:border-b transform"
+                :class="[this.$route.name == 'courses' ? 'text-blue-500' : 'text-white']"
               >
                 Courses
               </router-link>
@@ -70,6 +77,7 @@
               </div>
               <router-link
                 class="px-2 hover:text-blue-500 border-b-0 duration-200 border-blue-500 hover:border-b transform"
+                :class="[this.$route.name == 'About' ? 'text-blue-500' : 'text-white']"
                 to="/about"
                 >About</router-link
               >

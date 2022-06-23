@@ -97,7 +97,7 @@
                                 v-if="course.job_ready"
                                 class="px-3 py-2 bg-white text-sm text-orange-600 bg-opacity-80 font-medium absolute bottom-5 left-8"
                               >
-                                Job ready
+                                Job-Ready
                               </p>
                             </div>
                             <div class="w-full px-8 pt-8">
