@@ -87,7 +87,7 @@
           <p
             class="mt-2 px-5 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl max-w-2xl mx-auto lg:text-center"
           >
-            Choose a package thats suits you
+            Choose a package that suits you
           </p>
           <div class="max-w-screen-xl mx-auto px-5 relative">
             <div
