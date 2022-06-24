@@ -29,7 +29,7 @@
           </div>
         </div>
         <div
-          class="max-w-6xl mx-auto bg-slate-50 grid grid-cols-12 lg:grid-cols-12 overflow-hidden mt-10"
+          class="max-w-6xl mx-auto bg-slate-50 lg:grid grid-cols-12 lg:grid-cols-12 hidden overflow-hidden mt-10"
         >
           <div
             class="p-8 space-y-5 bg-slate-900 col-span-12 flex flex-col justify-center lg:col-span-4 order-3 lg:order-2"
