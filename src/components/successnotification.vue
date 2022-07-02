@@ -46,7 +46,7 @@
         </div>
         <div>
           <div class="text-sm pb-2">
-            Message sent successfully
+            {{ header }}
             <span class="float-right hidden">
               <svg
                 class="fill-current text-gray-600"
@@ -63,10 +63,23 @@
             </span>
           </div>
           <div class="text-sm text-gray-600 tracking-tight">
-            Thank you for contacting Eazzysocial . We will get back to you as soon as possible.
+            {{ message }}
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    message: {
+      type: String,
+    },
+    header: {
+      type: String,
+    },
+  },
+};
+</script>

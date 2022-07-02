@@ -163,7 +163,11 @@
                 </form>
               </div>
             </div>
-            <success v-if="success" />
+            <success
+              v-if="success"
+              header="Message sent successfully"
+              message="Thank you for contacting Eazzysocial . We will get back to you as soon as possible."
+            />
             <error v-if="error" />
           </div>
         </div>

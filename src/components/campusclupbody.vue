@@ -95,7 +95,7 @@
                               />
                               <p
                                 v-if="course.job_ready"
-                                class="px-3 py-2 bg-white text-sm text-orange-600 bg-opacity-80 font-medium absolute bottom-5 left-8"
+                                class="px-3 py-2 bg-black text-sm text-orange-600 bg-opacity-80 font-medium absolute bottom-5 left-8"
                               >
                                 Job-Ready
                               </p>
@@ -176,12 +176,36 @@
                   >
                     <div class="w-full flex">
                       <div class="w-full lg:w-1/2 m-0 lg:m-10">
+                        <div class="w-full flex justify-end">
+                          <button
+                            class="p-3 hover:text-red-500 transition-all ease-linear transform hover:rotate-180 duration-300"
+                            @click="modal = false"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-5 w-5"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </button>
+                        </div>
                         <h2
                           class="text-gray-900 font-semibold text-2xl tracking-tight text-left mb-2"
                         >
                           Register for Free
                         </h2>
-                        <form action="submit" id="contact_form" class="w-full">
+                        <form
+                          action="submit"
+                          @submit.prevent="sendform()"
+                          id="contact_form"
+                          class="w-full"
+                        >
                           <div class="w-full">
                             <div class="w-full flex flex-col">
                               <label for="name" class="text-sm text-gray-700 mb-1"
@@ -190,6 +214,7 @@
                                 type="text"
                                 name="name"
                                 placeholder="eg. John Doe"
+                                v-model="name"
                                 class="rounded-none border-gray-200 p-3 border-2"
                                 required
                               />
@@ -198,6 +223,7 @@
                               ><input
                                 type="email"
                                 name="email"
+                                v-model="email"
                                 placeholder="eg. you@example.com"
                                 class="rounded-none border-gray-200 p-3 border-2"
                                 required
@@ -207,6 +233,7 @@
                               ><input
                                 type="tel"
                                 name="contact"
+                                v-model="contact"
                                 placeholder=""
                                 class="rounded-none border-gray-200 p-3 border-2"
                               />
@@ -215,6 +242,7 @@
                               ><input
                                 type="text"
                                 name="school"
+                                v-model="school"
                                 placeholder="enter school name"
                                 class="rounded-none border-gray-200 p-3 border-2"
                               />
@@ -274,6 +302,16 @@
             </div>
           </div>
         </div>
+        <errornotVue v-if="error" />
+        <successnotificationVue
+          v-if="submitted"
+          header="Registration Successful"
+          :message="
+            'Thank you for registering for ' +
+            selectedCourse +
+            '. Our team will contact you for confirmation and guide you on your next steps to taking this course. Hurray 🎉🎉 to your new exciting journey'
+          "
+        />
       </div>
     </div>
   </div>
@@ -282,8 +320,11 @@
 <script>
 import course from "./course.vue";
 import tvetslide from "../components/tvetslide.vue";
+import errornotVue from "./errornot.vue";
+import successnotificationVue from "./successnotification.vue";
+import axios from "axios";
 export default {
-  components: { course, tvetslide },
+  components: { course, tvetslide, errornotVue, successnotificationVue },
   data() {
     return {
       logos: ["ashesi.jpg", "knust.png", "ktu.jpg", "ucc.png", "uew.png", "ug.png"],
@@ -356,13 +397,45 @@ export default {
       modal: false,
       selectedCourse: "",
       selectedimg: "",
+      submitted: false,
+      error: false,
+      loading: false,
+      name: "",
+      email: "",
+      contact: "",
+      school: "",
     };
   },
   methods: {
-    openmodal: function (x, y) {
+    openmodal: function (name, img) {
       this.modal = true;
-      this.selectedCourse = x;
-      this.selectedimg = y;
+      this.selectedCourse = name;
+      this.selectedimg = img;
+    },
+    sendform: function () {
+      axios
+        .post("https://getform.io/f/0ad3c0c8-9097-4810-9d0c-a4693582d0cf", {
+          name: this.name,
+          email: this.email,
+          contact: this.contact,
+          school: this.school,
+          course: this.selectedCourse,
+        })
+        .then((res) => {
+          this.modal = false;
+
+          this.submitted = true;
+          setTimeout(() => {
+            this.submitted = false;
+          }, 10000);
+        })
+        .catch((err) => {
+          this.modal = false;
+          this.error = true;
+          setTimeout(() => {
+            this.error = false;
+          }, 5000);
+        });
     },
   },
 };

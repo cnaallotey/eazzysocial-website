@@ -140,12 +140,36 @@
                 >
                   <div class="w-full flex flex-col-reverse lg:flex-row">
                     <div class="w-full lg:w-1/2 m-0 lg:m-10">
+                      <div class="w-full hidden lg:flex justify-end">
+                        <button
+                          class="p-3 hover:text-red-500 transition-all ease-linear transform hover:rotate-180 duration-300"
+                          @click="modal = false"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                              clip-rule="evenodd"
+                            />
+                          </svg>
+                        </button>
+                      </div>
                       <h2
                         class="text-gray-900 font-semibold text-2xl tracking-tight text-left mb-2"
                       >
                         Register for Free
                       </h2>
-                      <form action="submit" id="contact_form" class="w-full">
+                      <form
+                        action="submit"
+                        @submit.prevent="sendform()"
+                        id="contact_form"
+                        class="w-full"
+                      >
                         <div class="w-full">
                           <div class="w-full flex flex-col">
                             <label for="name" class="text-sm text-gray-700 mb-1"
@@ -155,12 +179,14 @@
                               name="name"
                               placeholder="eg. John Doe"
                               class="rounded-none border-gray-200 p-3 border-2"
+                              v-model="tvet.name"
                               required
                             />
                             <label for="email" class="text-sm text-gray-700 mb-1 mt-4"
                               >Your email <span class="text-red-500">*</span></label
                             ><input
                               type="email"
+                              v-model="tvet.email"
                               name="email"
                               placeholder="eg. you@example.com"
                               class="rounded-none border-gray-200 p-3 border-2"
@@ -170,6 +196,7 @@
                               >Your phone number</label
                             ><input
                               type="tel"
+                              v-model="tvet.contact"
                               name="contact"
                               placeholder=""
                               class="rounded-none border-gray-200 p-3 border-2"
@@ -179,6 +206,7 @@
                             ><input
                               type="text"
                               name="school"
+                              v-model="tvet.school"
                               placeholder="enter school name"
                               class="rounded-none border-gray-200 p-3 border-2"
                             />
@@ -192,7 +220,9 @@
                             register
                           </button>
                         </div>
-                        <div class="w-full flex flex-row space-x-4 justify-center">
+                        <div
+                          class="w-full flex flex-row space-x-4 justify-center lg:hidden"
+                        >
                           <button
                             type="submit"
                             class="w-full py-3 text-sm font-normal uppercase tracking-wide text-gray-500 bg-white rounded-none hover:-translate-y-1 hover:shadow-xl transition-all duration-200 mx-auto mt-8"
@@ -263,7 +293,11 @@
             <p class="text-base font-normal text-slate-300 leading-6 mt-2">
               Partner with us! Fill the form here
             </p>
-            <form action="submit" class="w-full flex flex-col mt-12 0">
+            <form
+              action="submit"
+              @submit.prevent="registerschool()"
+              class="w-full flex flex-col mt-12 0"
+            >
               <div class="flex flex-col lg:flex-row lg:space-x-5 space-y-4 lg:space-y-0">
                 <div class="w-full flex flex-col">
                   <label
@@ -273,6 +307,8 @@
                   >
                   <input
                     type="text"
+                    required
+                    v-model="school.name"
                     class="p-3 bg-white text-base mt-1 font-normal text-slate-800"
                   />
                 </div>
@@ -284,6 +320,8 @@
               >
               <input
                 type="email"
+                required
+                v-model="school.email"
                 class="p-3 bg-white text-base mt-1 font-normal text-slate-800"
               />
 
@@ -294,6 +332,7 @@
               >
               <input
                 type="text"
+                v-model="school.school"
                 class="p-3 bg-white text-base mt-1 font-normal text-slate-800"
               />
               <label
@@ -303,6 +342,8 @@
               >
               <input
                 type="tel"
+                required
+                v-model="school.contact"
                 class="p-3 bg-white text-base mt-1 font-normal text-slate-800"
               />
               <button
@@ -362,8 +403,6 @@
             :space-between="10"
             class="flex justify-between h-[20rem] mb-10 lg:mb-20 overflow-hidden"
             autoplay=""
-            @swiper="onSwiper"
-            @slideChange="onSlideChange"
           >
             <swiper-slide v-for="image in images" :key="image" class="overflow-hidden">
               <div class="flex flex-col items-center overflow-hidden">
@@ -392,6 +431,16 @@
           </div>
         </div>
       </div>
+      <errornotVue v-if="error" />
+      <successnotificationVue
+        v-if="submitted"
+        header="Registration Successful"
+        :message="
+          'Thank you for registering for ' +
+          selectedCourse +
+          '. Our team will contact you for confirmation and guide you on your next steps to taking this course. Hurray 🎉🎉 to your new exciting journey'
+        "
+      />
     </div>
   </div>
 </template>
@@ -399,6 +448,9 @@
 <script>
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
+
+import errornotVue from "./errornot.vue";
+import successnotificationVue from "./successnotification.vue";
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -413,16 +465,67 @@ import "swiper/css/autoplay";
 import "swiper/css";
 
 import { ref } from "vue";
+import axios from "axios";
 
 export default {
   components: {
     Swiper,
     SwiperSlide,
+    errornotVue,
+    successnotificationVue,
   },
   setup() {
+    const submitted = ref(false);
+    const error = ref(false);
+    const loading = ref(false);
     // const onSwiper = (swiper) => {
     //   console.log(swiper);
+    const tvet = ref({});
+
+    const selectedCourse = "Free Social Media Marketing Training and Business Computing";
     // };
+
+    const sendform = () => {
+      axios
+        .post("https://getform.io/f/0ad3c0c8-9097-4810-9d0c-a4693582d0cf", {
+          ...tvet.value,
+          course: selectedCourse,
+        })
+        .then((res) => {
+          console.log(res);
+          modal.value = false;
+          tvet.value = {};
+
+          submitted.value = true;
+          setTimeout(() => {
+            submitted.value = false;
+          }, 10000);
+        })
+        .catch((err) => {
+          console.log(err);
+          modal.value = false;
+          error.value = true;
+          setTimeout(() => {
+            error.value = false;
+          }, 5000);
+        });
+    };
+
+    const school = ref({});
+
+    const registerschool = () => {
+      //console.log(school.value);
+      axios
+        .post("https://getform.io/f/0ad3c0c8-9097-4810-9d0c-a4693582d0cf", school.value)
+        .then((res) => {
+          console.log(res);
+          school.value = {};
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    };
+
     const modal = ref(false);
 
     const logoimages = ref(["img1.jpeg", "img2.jpeg", "mg3.jpeg", "img4.jpeg"]);
@@ -457,6 +560,14 @@ export default {
       images,
       modal,
       logoimages,
+      submitted,
+      error,
+      loading,
+      tvet,
+      sendform,
+      selectedCourse,
+      school,
+      registerschool,
 
       modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
     };
