@@ -244,11 +244,175 @@
               >
                 Small Business Spotlight
               </p>
-              <div class="grid grid-flow-col grid-cols-3 gap-4 h-[51rem]">
-                <div class="row-span-2 bg-green-400 p-8">1</div>
-                <div class="bg-green-400 row-span-1 p-8">2</div>
-                <div class="bg-green-400 row-span-1 col-span-2 p-8">3</div>
-                <div class="bg-green-400 row-span-1 p-8">4</div>
+              <div
+                class="grid lg:grid-flow-col grid-cols-1 lg:grid-cols-3 gap-4 h-auto lg:h-[51rem]"
+              >
+                <div
+                  class="row-span-1 col-span-1 lg:row-span-2 bg-black relative overflow-hidden group"
+                >
+                  <img
+                    src="../assets/fruits.jpg"
+                    class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-all duration-700 ease-linear object-center absolute top-0"
+                    alt=""
+                  />
+                  <div
+                    class="w-full h-full flex items-end p-8 relative z-10 bg-gradient-to-tr from-slate-900"
+                  >
+                    <div class="w-full pt-20">
+                      <p class="text-base font-semibold text-white">
+                        Infant Prodigy Group
+                      </p>
+                      <p
+                        class="text-2xl lg:text-3xl font-bold mt-4 max-w-md leading-8 text-white"
+                      >
+                        Fruit, Taste and Love; a Perfect Combination.
+                      </p>
+                      <a
+                        href="https://medium.com/@eazzysocial/small-business-spotlight-fruit-taste-and-love-a-perfect-combination-fd1cdf85b370"
+                        target="_blank"
+                        class="mt-4 text-sm flex space-x-2 w-fit font-semibold text-blue-500 group-hover:text-blue-600 transition-all ease-linear duration-200"
+                      >
+                        <span>Read Article</span
+                        ><span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                              clip-rule="evenodd"
+                            /></svg
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-black col-span-1 row-span-1 relative overflow-hidden group"
+                >
+                  <img
+                    src="../assets/relics.jpg"
+                    class="w-full h-full object-cover object-center scale-110 group-hover:scale-100 transition-transform ease-linear duration-700 absolute top-0"
+                    alt=""
+                  />
+                  <div
+                    class="w-full h-full flex items-end p-8 relative z-10 bg-gradient-to-tr from-slate-900"
+                  >
+                    <div class="w-full pt-20">
+                      <p class="text-base font-semibold text-white">Relics and Ribbons</p>
+                      <p
+                        class="text-2xl lg:text-3xl font-bold mt-4 max-w-md leading-8 text-white"
+                      >
+                        Style, Personality and Culture
+                      </p>
+                      <a
+                        href="https://medium.com/@eazzysocial/small-business-spotlight-402687feaaf2"
+                        target="_blank"
+                        class="mt-4 text-sm flex space-x-2 w-fit font-semibold text-blue-500 group-hover:text-blue-600 transition-all ease-linear duration-200"
+                      >
+                        <span>Read Article</span
+                        ><span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                              clip-rule="evenodd"
+                            /></svg
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-black row-span-1 col-span-1 lg:col-span-2 relative overflow-hidden group"
+                >
+                  <img
+                    src="../assets/greatspeed.jpg"
+                    class="w-full h-full object-cover object-center group-hover:scale-100 scale-110 transition-transform ease-linear duration-700 absolute top-0"
+                    alt=""
+                  />
+                  <div
+                    class="w-full h-full p-8 flex items-end relative z-10 bg-gradient-to-tr from-slate-900"
+                  >
+                    <div class="w-full pt-20">
+                      <p class="text-base font-semibold text-white">
+                        Great Speed Enterprise
+                      </p>
+                      <p
+                        class="text-2xl lg:text-3xl font-bold mt-4 max-w-md leading-8 text-white"
+                      >
+                        Luxury and Safety in One Package.
+                      </p>
+                      <a
+                        href="https://medium.com/@eazzysocial/small-business-spotlight-luxury-and-safety-in-one-package-the-story-of-great-speed-enterprise-90a0bfc6d48e"
+                        target="_blank"
+                        class="mt-4 text-sm flex space-x-2 w-fit font-semibold text-blue-500 group-hover:text-blue-600 transition-all ease-linear duration-200"
+                      >
+                        <span>Read Article</span
+                        ><span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                              clip-rule="evenodd"
+                            /></svg
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-black row-span-1 relative overflow-hidden group">
+                  <img
+                    src="../assets/perfumes.jpg"
+                    class="w-full h-full object-cover object-center absolute top-0 scale-110 group-hover:scale-100 transition-transform ease-linear duration-700"
+                    alt=""
+                  />
+                  <div
+                    class="w-full h-full flex items-end p-8 relative z-10 bg-gradient-to-tr from-slate-900"
+                  >
+                    <div class="w-full pt-20">
+                      <p class="text-base font-semibold text-white">SCENTitALL</p>
+                      <p
+                        class="text-2xl lg:text-3xl font-bold mt-4 max-w-md leading-8 text-white"
+                      >
+                        The Beauty in Fragrance.
+                      </p>
+                      <a
+                        href="https://medium.com/@eazzysocial/small-business-spotlight-dcc19755a095"
+                        target="_blank"
+                        class="mt-4 text-sm flex space-x-2 w-fit font-semibold text-blue-500 group-hover:text-blue-600 transition-all ease-linear duration-200"
+                      >
+                        <span>Read Article</span
+                        ><span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                              clip-rule="evenodd"
+                            /></svg
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
