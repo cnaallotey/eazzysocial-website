@@ -487,7 +487,7 @@ export default {
 
     const sendform = () => {
       axios
-        .post("https://getform.io/f/0ad3c0c8-9097-4810-9d0c-a4693582d0cf", {
+        .post("https://getform.io/f/5b88ef6a-7f7e-4c21-8e99-21b454ceedea", {
           ...tvet.value,
           course: selectedCourse,
         })
@@ -516,7 +516,7 @@ export default {
     const registerschool = () => {
       //console.log(school.value);
       axios
-        .post("https://getform.io/f/0ad3c0c8-9097-4810-9d0c-a4693582d0cf", school.value)
+        .post("https://getform.io/f/5b88ef6a-7f7e-4c21-8e99-21b454ceedea", school.value)
         .then((res) => {
           console.log(res);
           school.value = {};

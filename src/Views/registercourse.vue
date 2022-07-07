@@ -315,7 +315,7 @@ export default {
     formsubmit: function () {
       this.loading = true;
       axios
-        .post("https://getform.io/f/0ad3c0c8-9097-4810-9d0c-a4693582d0cf", {
+        .post("https://getform.io/f/d196ec39-49e4-43cd-a605-1d3db953ee9c", {
           name: this.name,
           email: this.email,
           contact: this.contact,
