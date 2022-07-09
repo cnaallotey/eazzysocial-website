@@ -251,7 +251,7 @@
                   class="row-span-1 col-span-1 lg:row-span-2 bg-black relative overflow-hidden group"
                 >
                   <img
-                    src="../assets/fruits.jpg"
+                    src="https://miro.medium.com/max/1400/1*MygmRLQxzKnlJI-O1oQyTQ.jpeg"
                     class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-all duration-700 ease-linear object-center absolute top-0"
                     alt=""
                   />
@@ -294,7 +294,7 @@
                   class="bg-black col-span-1 row-span-1 relative overflow-hidden group"
                 >
                   <img
-                    src="../assets/relics.jpg"
+                    src="https://miro.medium.com/max/1400/1*a9LjXAQIC1qq1OvDnt7b5g.jpeg"
                     class="w-full h-full object-cover object-center scale-110 group-hover:scale-100 transition-transform ease-linear duration-700 absolute top-0"
                     alt=""
                   />
@@ -335,7 +335,7 @@
                   class="bg-black row-span-1 col-span-1 lg:col-span-2 relative overflow-hidden group"
                 >
                   <img
-                    src="../assets/greatspeed.jpg"
+                    src="https://miro.medium.com/max/1400/1*gBW0SqfrSyoaiKppX0yVvQ.jpeg"
                     class="w-full h-full object-cover object-center group-hover:scale-100 scale-110 transition-transform ease-linear duration-700 absolute top-0"
                     alt=""
                   />
@@ -376,7 +376,7 @@
                 </div>
                 <div class="bg-black row-span-1 relative overflow-hidden group">
                   <img
-                    src="../assets/perfumes.jpg"
+                    src="https://miro.medium.com/max/1400/1*tLi2GyxzLCq5gcs0j4Pzkw.jpeg"
                     class="w-full h-full object-cover object-center absolute top-0 scale-110 group-hover:scale-100 transition-transform ease-linear duration-700"
                     alt=""
                   />

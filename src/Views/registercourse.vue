@@ -228,7 +228,8 @@ export default {
             "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
           content:
             "Develop a social media marketing strategy for your small business. Gain a strategic understanding of driving sales traffic through social media. ",
-          brochure: "/brochures/Brochure-Social_Media_Marketing.pdf",
+          brochure:
+            "/brochures/Small_Business_Advanced_Social_Media_Strategy_Crash_Course.pdf",
         },
         {
           name:
