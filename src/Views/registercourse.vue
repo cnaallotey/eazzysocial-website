@@ -275,7 +275,7 @@ export default {
             "https://images.unsplash.com/photo-1570857502809-08184874388e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
           content:
             "Begin a journey as a professional as an online shop attendant. Gain skills in all the areas in managing an online shop ie. Social media, e-commerce, accounting, customer service, product photography etc.  ",
-          brochure: "",
+          brochure: "/brochures/Online_shop_Attendant_Brochure_FIN_33.pdf",
         },
         {
           name: "Executive Social Selling and Digital Selling Crash Course",
