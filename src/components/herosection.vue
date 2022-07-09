@@ -4,7 +4,7 @@
       <div class="max-w-screen-2xl mx-auto px-5 mt-12">
         <div class="w-full flex flex-col-reverse lg:flex-row">
           <img
-            data-twic-src="image:<../assets/heroimage.png>"
+            data-twic-src="image:../assets/heroimage.png"
             class="w-3/3 mt-10 lg:mt-0 lg:w-1/2 mx-auto lg:mx-0"
             alt="heroimage"
           />
