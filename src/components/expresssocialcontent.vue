@@ -162,8 +162,8 @@
                     >
                       Add express social small business social media marketing course to
                       the courses you run. Become current and stand out among your
-                      competitors. Attract more students who can sell using social media
-                      and digital channels. No cost to the school.
+                      competitors. Train more students who can sell using social media and
+                      digital channels. No cost to the school.
                     </p>
                     <div class="mt-5 w-fit ml-3">
                       <button
@@ -194,7 +194,7 @@
                     <div class="flex items-center space-x-2">
                       <div class="w-1 h-10 bg-green-400"></div>
                       <p class="text-2xl font-semibold text-green-500 leading-7">
-                        Large Organizations or Enterprises
+                        Large Organization or Enterprise
                       </p>
                     </div>
 
@@ -202,8 +202,9 @@
                       class="text-lg font-normal ml-3 text-white mt-5 leading-7 max-w-3xl"
                     >
                       Add express social media and digital marketing programs to your
-                      service offering; address their pain points; deepen existing
-                      relationships, increase loyalty and attract new SME clients.
+                      service offering for SMEs; address their pain points; deepen
+                      existing relationships, increase loyalty and attract new SME
+                      clients.
                     </p>
                     <div class="mt-5 ml-3 w-fit">
                       <button
