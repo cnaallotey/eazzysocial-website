@@ -264,7 +264,7 @@ export default {
             "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
           content:
             "Are you a business executive looking to deepen your knowledge in social media and digital marketing? Enrol our Executive course designed in partnership with Koforidua Technical University.  ",
-          brochure: "/brochures/Eazzy_Social_SM_Marketing_Brochure.pdf",
+          brochure: "/brochures/Brochure-Social_Media_Marketing.pdf",
         },
         {
           name: "Online Shop Attendant Crash Course",
