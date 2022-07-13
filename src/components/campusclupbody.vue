@@ -269,9 +269,37 @@
                           <div class="w-full flex flex-row space-x-4 justify-center">
                             <button
                               type="submit"
-                              class="w-full py-3 text-sm font-normal uppercase tracking-wide text-white bg-blue-600 rounded-none hover:-translate-y-1 hover:bg-blue-700 hover:shadow-xl transition-all duration-200 mx-auto mt-8"
+                              class="w-full flex items-center justify-center space-x-2 py-3 text-sm font-normal uppercase tracking-wide text-white bg-blue-600 rounded-none hover:-translate-y-1 hover:bg-blue-700 hover:shadow-xl transition-all duration-200 mx-auto mt-8"
                             >
-                              register
+                              <span>Register</span>
+                              <span v-if="loading"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="20"
+                                  height="20"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  class="feather feather-loader animate-spin"
+                                >
+                                  <line x1="12" y1="2" x2="12" y2="6"></line>
+                                  <line x1="12" y1="18" x2="12" y2="22"></line>
+                                  <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
+                                  <line
+                                    x1="16.24"
+                                    y1="16.24"
+                                    x2="19.07"
+                                    y2="19.07"
+                                  ></line>
+                                  <line x1="2" y1="12" x2="6" y2="12"></line>
+                                  <line x1="18" y1="12" x2="22" y2="12"></line>
+                                  <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
+                                  <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
+                                </svg>
+                              </span>
                             </button>
                           </div>
                         </form>
@@ -413,6 +441,7 @@ export default {
       this.selectedimg = img;
     },
     sendform: function () {
+      this.loading = true;
       axios
         .post("https://getform.io/f/07a9acb7-37a9-4494-b033-52695b576cf1", {
           name: this.name,
@@ -425,12 +454,14 @@ export default {
           this.modal = false;
 
           this.submitted = true;
+          this.loading = false;
           setTimeout(() => {
             this.submitted = false;
           }, 10000);
         })
         .catch((err) => {
           this.modal = false;
+          this.loading = false;
           this.error = true;
           setTimeout(() => {
             this.error = false;

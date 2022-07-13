@@ -30,10 +30,18 @@
               >
             </ul>
             <div class="flex space-x-8 items-center">
-              <a href="https://www.linkedin.com/company/eazzysocial/" target="_blank">
+              <a
+                href="https://www.linkedin.com/company/eazzysocial/"
+                target="_blank"
+                name="linkedin"
+              >
                 <img src="../assets/linkedin.svg" class="w-7 h-7" alt=""
               /></a>
-              <a href="https://www.facebook.com/eazzysocial" target="_blank">
+              <a
+                href="https://www.facebook.com/eazzysocial"
+                target="_blank"
+                name="facebook"
+              >
                 <svg
                   class="text-black w-8 h-8"
                   viewBox="0 0 24 24"
@@ -50,6 +58,7 @@
               <a
                 href="https://www.instagram.com/invites/contact/?i=18s9w62j3ugw4&utm_content=3fp9bk4"
                 target="_blank"
+                name="instagram"
               >
                 <svg
                   viewBox="0 0 24 24"
