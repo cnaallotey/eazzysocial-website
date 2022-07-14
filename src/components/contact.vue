@@ -19,8 +19,10 @@
                   Or you can reach us on the following platforms.
                 </p>
                 <div class="mt-10 flex space-x-2 items-center">
-                  <img src="../assets/facebook.png" class="w-8" alt="" />
-                  <p class="text-base text-slate-200">eazzysocial</p>
+                  <img src="../assets/facebook.png" class="w-8" alt="" /><a
+                    href="https://www.facebook.com/eazzysocial"
+                    ><p class="text-base text-slate-200">eazzysocial</p></a
+                  >
                 </div>
                 <div class="mt-10 flex space-x-2 items-center">
                   <img src="../assets/whatsapp.png" class="w-8" alt="" />
