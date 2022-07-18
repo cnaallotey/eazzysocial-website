@@ -38,8 +38,9 @@
           <p class="text-base text-white leading-7 font-normal">
             Of Africa’s nearly 420 million youth aged 15-35, one-third are unemployed and
             discouraged, another third are vulnerably employed, and only one in six is in
-            wage employment. Youth face roughly doubles the unemployment rate of adults,
-            with significant variation by country. (Source: Africa development bank)
+            wage employment. Youth unemployment roughly doubles the unemployment rate of
+            adults, with significant variation by country. (Source: Africa development
+            bank)
           </p>
         </div>
       </div>

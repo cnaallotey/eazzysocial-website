@@ -87,9 +87,9 @@ export default {
           open: false,
         },
         {
-          que: "Do I get certificates after each course? ",
+          que: "Do I get a certificate after each course? ",
           ans:
-            "Certificates are awarded after completion of each course. Certificates come at 100 cedis and are compulsory for *Job-ready Courses and option for general courses such as CV Writing, Business Computing and LinkedIn for jobs and personal branding. ",
+            "Certificates are awarded after completion of each course. Certificates comes at a cost 50 cedis. ",
           open: false,
         },
         {
