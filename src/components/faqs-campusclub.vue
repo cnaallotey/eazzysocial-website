@@ -89,7 +89,7 @@ export default {
         {
           que: "Do I get a certificate after each course? ",
           ans:
-            "Certificates are awarded after completion of each course. Certificates comes at a cost 50 cedis. ",
+            "Certificates are awarded after completion of each course. Certificates comes at a cost of 50 cedis. ",
           open: false,
         },
         {
