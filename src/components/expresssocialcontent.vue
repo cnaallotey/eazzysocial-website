@@ -9,7 +9,7 @@
             <p class="text-sm font-medium text-slate-500">
               Get your social media page managed for as low as
             </p>
-            <p class="text-9xl bg-semibold text-green-900">$25</p>
+            <p class="text-9xl bg-semibold text-green-900">GHS 194</p>
             <p class="text-sm font-medium text-green-500">per Month</p>
             <div class="w-fit">
               <button
