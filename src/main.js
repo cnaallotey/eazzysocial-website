@@ -10,7 +10,8 @@ import ExpressSocial from "./Views/ExpressSocial.vue"
 import Courses from "./Views/Courses.vue"
 import Campusclub from "./Views/Campusclub.vue"
 import Register from "./Views/registercourse.vue"
-
+import GHhome from "./Views/getHiredhom.vue"
+import GHAbout from "./Views/gethiredabout.vue"
 
 
 const router = createRouter({
@@ -33,6 +34,12 @@ const router = createRouter({
         },
        {
             path:"/courses", name:"courses", component:Courses
+        },
+        {
+            path:"/GetHired", name:"Gethired", component:GHhome
+        },
+        {
+            path:"/GetHiredAbout", name:"GethiredAbout", component:GHAbout
         },
        {
             path:"/campusclub", name:"Campusclub", component:Campusclub
