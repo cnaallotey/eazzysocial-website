@@ -1,6 +1,14 @@
 <template>
-  <div>
-    <section class="bg-white dark:bg-slate-900">
+  <div class="dark relative">
+    <div class="w-full h-full absolute inset-0 -z-10">
+      <img
+        src="https://images.unsplash.com/photo-1588590560438-5e27fe3f6b71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1728&q=80"
+        class="w-full h-full object-cover object-center"
+        alt=""
+      />
+    </div>
+
+    <section class="bg-white dark:bg-slate-900 relative-z-0 dark:bg-opacity-10">
       <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
         <h1
           class="mb-4 text-3xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"

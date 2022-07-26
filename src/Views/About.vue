@@ -2,9 +2,9 @@
   <div>
     <navbar />
     <Herogethiredabout />
-    <abouttext />
+
     <GHaboutcontent />
-    <Eventslide />
+    <Eventslide class="hidden" />
 
     <cta />
     <foot />

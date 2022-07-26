@@ -2,7 +2,7 @@
   <div>
     <Navbar />
     <Herogethiredabout />
-    <GHaboutcontent />
+
     <GhCTA />
     <Foot />
   </div>

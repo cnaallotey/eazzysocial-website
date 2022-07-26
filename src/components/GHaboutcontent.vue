@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="w-full mt-20 mb-5">
+    <div class="w-full mt-20 mb-0">
       <div class="max-w-screen-xl mx-auto px-4">
         <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div class="w-full bg-slate-900 px-4 pt-4">
@@ -28,14 +28,14 @@
           <div class="w-full p-4 shadow-none flex flex-col justify-center">
             <img src="../assets/target.png" class="w-10 mb-5" alt="" />
             <p class="text-xl font-semibold text-blue-600">Acquire</p>
-            <p class="text-gray-500 font-normal text-sm leading-5">
+            <p class="text-gray-500 font-normal text-sm lg:text-base leading-5">
               Help millions of Africans acquire relevant digital skills
             </p>
           </div>
           <div class="w-full p-4 shadow-none flex flex-col justify-center">
             <img src="../assets/skills.png" class="w-10 mb-5" alt="" />
             <p class="text-xl font-semibold text-blue-600">Build</p>
-            <p class="text-gray-500 font-normal text-sm leading-5">
+            <p class="text-gray-500 font-normal text-sm lg:text-base leading-5">
               Build the next generation of digital talents and businesses in Africa for
               generations yet unborn.
             </p>
@@ -43,10 +43,10 @@
           <div class="w-full p-4 shadow-none flex flex-col justify-center">
             <img src="../assets/rocket.png" class="w-10 mb-5" alt="" />
             <p class="text-xl font-semibold text-blue-600">Grow</p>
-            <p class="text-gray-500 font-normal text-sm leading-5">
+            <p class="text-gray-500 font-normal text-sm lg:text-base leading-5">
               Contribute to growing and unlocking the digital potential for a million
               enterprises, professionals, students and small and medium businesses by
-              2024.
+              <span class="font-semibold text-blue-500">2024</span>.
             </p>
           </div>
         </div>
