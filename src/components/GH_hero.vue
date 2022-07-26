@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+const props = defineProps({
+  scrollup: Function,
+});
+</script>
 
 <template>
   <div class="relative bg-white overflow-hidden">
@@ -46,20 +50,20 @@
             </p>
             <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div class="rounded-md shadow">
-                <router-link
-                  to="/campusclub"
+                <button
+                  @click="props.scrollup"
                   class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
                 >
                   Get started
-                </router-link>
+                </button>
               </div>
               <div class="mt-3 sm:mt-0 sm:ml-3 hidden">
-                <router-link
-                  to="/GetHiredAbout"
+                <button
+                  @click="props.scrollup"
                   class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
                 >
                   About Us
-                </router-link>
+                </button>
               </div>
             </div>
           </div>

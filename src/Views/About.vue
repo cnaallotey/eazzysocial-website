@@ -2,10 +2,9 @@
   <div>
     <navbar />
     <Herogethiredabout />
-
     <GHaboutcontent />
     <Eventslide class="hidden" />
-
+    <Clientelle1 />
     <cta />
     <foot />
   </div>
@@ -20,6 +19,7 @@ import abouttext from "./abouttext.vue";
 import Herogethiredabout from "../components/herogethiredabout.vue";
 import GHaboutcontent from "../components/GHaboutcontent.vue";
 import Eventslide from "../components/eventslide.vue";
+import Clientelle1 from "../components/clientelle.vue";
 export default {
   components: {
     navbar,
@@ -30,6 +30,7 @@ export default {
     Herogethiredabout,
     GHaboutcontent,
     Eventslide,
+    Clientelle1,
   },
   created() {
     if ("scrollRestoration" in history) {

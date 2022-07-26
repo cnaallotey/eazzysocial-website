@@ -20,7 +20,7 @@
             <div
               class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-20 lg:w-20 dark:bg-blue-900"
             >
-              <img src="../assets/Cube_01.png" class="w-10 h-auto" alt="" />
+              <img src="../assets/largebusinessone.png" class="w-10 h-auto" alt="" />
               <svg
                 class="w-5 h-5 text-blue-600 hidden lg:w-6 lg:h-6 dark:text-blue-300"
                 fill="currentColor"
@@ -46,7 +46,7 @@
             <div
               class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-20 lg:w-20 dark:bg-blue-900"
             >
-              <img src="../assets/Sphere_2Axis.png" class="w-10 h-auto" alt="" />
+              <img src="../assets/small-business-one.png" class="w-10 h-auto" alt="" />
               <svg
                 class="w-5 h-5 text-blue-600 hidden lg:w-6 lg:h-6 dark:text-blue-300"
                 fill="currentColor"
@@ -72,7 +72,7 @@
             <div
               class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-20 lg:w-20 dark:bg-blue-900"
             >
-              <img src="../assets/HexagonalPrism_01.png" class="w-10 h-auto" alt="" />
+              <img src="../assets/staff-and-recruit-one.png" class="w-10 h-auto" alt="" />
               <svg
                 class="w-5 h-5 text-blue-600 hidden lg:w-6 lg:h-6 dark:text-blue-300"
                 fill="currentColor"

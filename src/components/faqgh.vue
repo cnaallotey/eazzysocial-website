@@ -29,7 +29,7 @@
                 </svg>
                 How does getting a job or internship work?
               </h3>
-              <p class="text-gray-500 l:text-gray-400">
+              <p class="text-gray-500 l:text-gray-400 ml-6">
                 Students have a dedicated 3-4 month period off school where they will
                 apply for internships. This is where they will work full-time hours at a
                 company or work part-time whiles still in school.
@@ -53,7 +53,7 @@
                 </svg>
                 Is the platform free and open to every student?
               </h3>
-              <p class="text-gray-500 l:text-gray-400">
+              <p class="text-gray-500 l:text-gray-400 ml-6">
                 Yes, the platform is open to students studying across Africa. However,
                 students who want to signup first need to get a campus club membership ID
                 which comes at 100cedis per year and covers pre-internship or job
@@ -152,7 +152,7 @@
                 </svg>
                 Is the platform free and open to every student?
               </h3>
-              <p class="text-gray-500 l:text-gray-400">
+              <p class="text-gray-500 l:text-gray-400 ml-6">
                 Yes, the platform is open to students studying across Africa. However,
                 students who want to signup first need to get a campus club membership ID
                 which comes at 100cedis per year and covers pre-internship or job
