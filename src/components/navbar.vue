@@ -240,7 +240,10 @@
                             /></svg
                         ></span>
                       </button>
-                      <div class="text-blue-600 mt-5" v-if="submenu">
+                      <div
+                        class="text-blue-600 mt-5 transition flex flex-col space-y-2"
+                        v-if="submenu"
+                      >
                         <router-link to="/about">About Us</router-link>
                         <router-link to="/expressSocial">Express Social</router-link>
                         <router-link to="/digitizing-TVET"> DIgitizing TVET </router-link>
