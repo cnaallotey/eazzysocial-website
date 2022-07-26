@@ -3,7 +3,7 @@
     <section class="bg-white l:bg-gray-900">
       <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <h2
-          class="mb-8 text-2xl lg:text-4xltracking-tight font-semibold text-gray-900 l:text-white"
+          class="mb-8 text-2xl lg:text-4xl tracking-tight font-semibold text-gray-900 l:text-white"
         >
           Frequently asked questions
         </h2>

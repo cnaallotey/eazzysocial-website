@@ -3,7 +3,7 @@
     <section class="bg-white dark:bg-slate-900">
       <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
         <h1
-          class="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+          class="mb-4 text-3xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
         >
           Preparing today's businesses and professionals for the future of work
         </h1>
@@ -27,7 +27,7 @@
                   </p>
                   <div class="max-w-5xl mx-auto mt-5">
                     <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-10 my-5">
-                      <div class="w-full flex lg:flex-col lg:items-center">
+                      <div class="w-full flex flex-row lg:flex-col items-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           class="w-8 h-8 mr-2 lg:mr-0 lg:h-12 lg:w-12 text-blue-600"
@@ -44,13 +44,13 @@
                           2,000+
                         </p>
                         <h2
-                          class="text-base text-white font-semibold tracking-wide uppercase mt-2"
+                          class="text-base text-white text-left lg:text-center font-semibold tracking-wide uppercase mt-2"
                         >
                           <span class="text-blue-500">3,000+</span>
                           professionals trained
                         </h2>
                       </div>
-                      <div class="w-full flex lg:flex-col lg:items-center">
+                      <div class="w-full flex flex-row lg:flex-col items-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           class="w-8 h-8 mr-2 lg:mr-0 lg:h-12 lg:w-12 text-blue-600"
@@ -69,13 +69,13 @@
                           50,000+
                         </p>
                         <h2
-                          class="text-base text-white font-semibold tracking-wide uppercase mt-2"
+                          class="text-base text-white font-semibold text-left lg:text-center tracking-wide uppercase mt-2"
                         >
                           <span class="text-blue-500">50,000+</span>
                           sme's supported
                         </h2>
                       </div>
-                      <div class="w-full flex lg:flex-col lg:items-center">
+                      <div class="w-full flex flex-row lg:flex-col items-center">
                         <img
                           src="../assets/fa-solid_university.svg"
                           class="w-8 h-8 mr-2 lg:mr-0 lg:h-12 lg:w-12"
@@ -83,7 +83,7 @@
                         />
 
                         <h2
-                          class="text-base text-white font-semibold tracking-wide uppercase mt-2"
+                          class="text-base text-white text-left lg:text-center font-semibold tracking-wide uppercase mt-2"
                         >
                           university Partnership
                         </h2>
