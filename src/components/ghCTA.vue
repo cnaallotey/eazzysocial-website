@@ -1,22 +1,22 @@
 <template>
   <div>
-    <section class="bg-gray-900 dark:bg-gray-900">
+    <section class="bg-slate-900 dark:bg-slate-900">
       <div
-        class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:py-32 lg:px-6"
+        class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-0 lg:py-0 lg:px-6"
       >
         <img
-          class="w-full dark:hidden"
-          src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+          class="w-full hidden lg:block dark:hidden"
+          src="https://img.freepik.com/free-photo/content-black-man-posing-with-laptop_23-2147664280.jpg?size=626&ext=jpg&ga=GA1.2.1494176655.1623843374"
           alt="dashboard image"
         />
         <img
-          class="w-full hidden dark:block"
-          src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+          class="w-[200px] hidden dark:block"
+          src="https://img.freepik.com/free-photo/content-black-man-posing-with-laptop_23-2147664280.jpg?size=626&ext=jpg&ga=GA1.2.1494176655.1623843374"
           alt="dashboard image"
         />
         <div class="mt-4 md:mt-0">
           <h2
-            class="mb-4 text-4xl tracking-tight font-semibold text-white dark:text-white"
+            class="mb-4 text-2xl lg:text-4xl tracking-tight font-semibold text-white dark:text-white"
           >
             Advance your Career with us
           </h2>

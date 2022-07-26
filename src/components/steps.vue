@@ -2,43 +2,61 @@
   <div>
     <section class="bg-gray-900 dark:bg-gray-900 border-t-8 border-blue-500">
       <div
-        class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-32 lg:px-6"
+        class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:pt-20 lg:px-6"
       >
         <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
           <h2
-            class="mb-4 text-4xl tracking-tight font-semibold text-gray-900 dark:text-white"
+            class="mb-4 text-2xl lg:text-4xl tracking-tight font-semibold text-white dark:text-white"
           >
-            How it works
+            How our platform works
           </h2>
           <div class="mt-10 space-y-8">
-            <div
-              class="flex items-start space-x-5"
-              v-for="step in steps"
-              :key="step.step"
-            >
-              <div class="p-4 bg-blue-600 rounded-full text-white">
-                <p class="text-base font-semibold">0{{ step.id }}</p>
-              </div>
-              <div class="space-y-2">
-                <p class="text-lg font-semibold text-white">{{ step.step }}</p>
-                <p class="text-base font-normal text-gray-400 max-w-md">
-                  {{ step.disc }}
-                </p>
+            <div v-for="step in steps" :key="step.step">
+              <div class="flex items-start space-x-5" v-if="step.id == 1 || step.id == 2">
+                <div class="p-4 bg-blue-600 rounded-full text-white">
+                  <p class="text-base font-semibold">0{{ step.id }}</p>
+                </div>
+                <div class="space-y-2">
+                  <p class="text-lg font-semibold text-white">{{ step.step }}</p>
+                  <p class="text-base font-normal text-gray-400 max-w-md">
+                    {{ step.disc }}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-2 gap-4 mt-8">
-          <img
-            class="w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
-            alt="office content 1"
-          />
-          <img
-            class="mt-4 w-full lg:mt-10 rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
-            alt="office content 2"
-          />
+        <div class="grid grid-cols-1 gap-4 mt-8">
+          <img src="../assets/Assistant_bot.png" class="w-full" alt="" />
+        </div>
+      </div>
+      <div
+        class="gap-10 items-center py-8 px-4 mx-auto max-w-screen-xl grid grid-cols-1 lg:grid-cols-2 lg:pb-20 lg:px-6"
+      >
+        <div class="mt-8 order-2 lg:order-1">
+          <img src="../assets/Nice_to_meet_you.png" class="w-full" alt="" />
+        </div>
+        <div
+          class="font-light text-gray-500 sm:text-lg dark:text-gray-400 order-1 lg:order-2"
+        >
+          <div class="space-y-8">
+            <div v-for="step in steps" :key="step.id">
+              <div
+                class="flex items-start space-x-5"
+                v-if="step.id === 3 || step.id == 4"
+              >
+                <div class="p-4 bg-blue-600 rounded-full text-white">
+                  <p class="text-base font-semibold">0{{ step.id }}</p>
+                </div>
+                <div class="space-y-2">
+                  <p class="text-lg font-semibold text-white">{{ step.step }}</p>
+                  <p class="text-base font-normal text-gray-400 max-w-md">
+                    {{ step.disc }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
