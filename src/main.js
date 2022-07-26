@@ -38,9 +38,7 @@ const router = createRouter({
         {
             path:"/GetHired", name:"Gethired", component:GHhome
         },
-        {
-            path:"/GetHiredAbout", name:"GethiredAbout", component:GHAbout
-        },
+       
        {
             path:"/campusclub", name:"Campusclub", component:Campusclub
         },

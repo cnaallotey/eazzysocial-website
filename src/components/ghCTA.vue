@@ -25,8 +25,8 @@
             your interests. Connecting with your friends and family as well as discovering
             new ones is easy with features like Groups.
           </p>
-          <a
-            href="#"
+          <router-link
+            to="/campusclub"
             class="inline-flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center dark:focus:ring-blue-900"
           >
             Get started
@@ -42,7 +42,7 @@
                 clip-rule="evenodd"
               ></path>
             </svg>
-          </a>
+          </router-link>
         </div>
       </div>
     </section>

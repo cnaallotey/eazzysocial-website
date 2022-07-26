@@ -54,12 +54,6 @@
                       >
                         Get Hired
                       </a>
-                      <a
-                        href="/GetHiredAbout"
-                        class="block py-2 px-5 text-base font-semibold text-gray-500 hover:bg-blue hover:bg-opacity-5 hover:text-blue-500"
-                      >
-                        About Get Hired
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -96,7 +90,7 @@
                         href="/about"
                         class="block py-2 px-5 text-base font-semibold text-gray-500 hover:bg-blue hover:bg-opacity-5 hover:text-blue-500"
                       >
-                        About
+                        About Us
                       </a>
                       <a
                         href="/expressSocial"
@@ -224,7 +218,6 @@
 
                   <router-link to="/campusclub">Campus Club</router-link>
                   <router-link to="/GetHired">Get Hired</router-link>
-                  <router-link to="/GetHiredAbout">About Get Hired</router-link>
 
                   <div>
                     <div class="w-full">
@@ -248,7 +241,7 @@
                         ></span>
                       </button>
                       <div class="text-blue-600 mt-5" v-if="submenu">
-                        <router-link to="/about">About</router-link>
+                        <router-link to="/about">About Us</router-link>
                         <router-link to="/expressSocial">Express Social</router-link>
                         <router-link to="/digitizing-TVET"> DIgitizing TVET </router-link>
                       </div>

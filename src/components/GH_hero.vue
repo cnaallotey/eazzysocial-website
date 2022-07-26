@@ -46,14 +46,14 @@
             </p>
             <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div class="rounded-md shadow">
-                <a
-                  href="#"
+                <router-link
+                  to="/campusclub"
                   class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
                 >
-                  Join Today
-                </a>
+                  Get started
+                </router-link>
               </div>
-              <div class="mt-3 sm:mt-0 sm:ml-3">
+              <div class="mt-3 sm:mt-0 sm:ml-3 hidden">
                 <router-link
                   to="/GetHiredAbout"
                   class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
@@ -69,7 +69,7 @@
     <div class="lg:absolute lg:inset-y-0 lg:pl-10 lg:right-0 lg:w-1/2">
       <img
         class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-        src="https://images.unsplash.com/photo-1631131431211-4f768d89087d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        src="../assets/hap.jpg"
         alt=""
       />
     </div>

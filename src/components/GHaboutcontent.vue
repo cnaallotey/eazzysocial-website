@@ -11,7 +11,7 @@
               ><span
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
+                  class="h-5 w-5 rotate-90 lg:rotate-0"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -23,7 +23,7 @@
               ></span>
             </p>
 
-            <img src="../assets/man2.png" class="w-3/4 mt-5 mx-auto" alt="" />
+            <img src="../assets/happy2.png" class="w-3/4 mt-5 mx-auto" alt="" />
           </div>
           <div class="w-full p-4 shadow-none flex flex-col justify-center">
             <img src="../assets/target.png" class="w-10 mb-5" alt="" />
