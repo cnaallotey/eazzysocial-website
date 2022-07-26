@@ -18,7 +18,7 @@
         >
           <div>
             <div
-              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-20 lg:w-20 dark:bg-blue-900"
+              class="flex justify-center items-center mb-4 w-20 h-20 rounded-full bg-blue-100 lg:h-20 lg:w-20 dark:bg-blue-900"
             >
               <img src="../assets/largebusinessone.png" class="w-10 h-auto" alt="" />
               <svg
@@ -44,7 +44,7 @@
           </div>
           <div>
             <div
-              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-20 lg:w-20 dark:bg-blue-900"
+              class="flex justify-center items-center mb-4 w-20 h-20 rounded-full bg-blue-100 lg:h-20 lg:w-20 dark:bg-blue-900"
             >
               <img src="../assets/small-business-one.png" class="w-10 h-auto" alt="" />
               <svg
@@ -70,7 +70,7 @@
           </div>
           <div>
             <div
-              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-20 lg:w-20 dark:bg-blue-900"
+              class="flex justify-center items-center mb-4 w-20 h-20 rounded-full bg-blue-100 lg:h-20 lg:w-20 dark:bg-blue-900"
             >
               <img src="../assets/staff-and-recruit-one.png" class="w-10 h-auto" alt="" />
               <svg
