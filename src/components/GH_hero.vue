@@ -5,7 +5,25 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="relative bg-white overflow-hidden">
+  <div class="relative bg-white overflow-x-hidden">
+    <div class="w-full absolute bottom-0 lg:bottom-0 flex justify-center">
+      <div
+        class="w-10 h-10 lg:w-16 lg:h-16 rounded-full flex items-center justify-center bg-blue-600 text-white animate-bounce bg-opacity-80 z-20"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 lg:h-8 w-6 lg:w-8"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
     <div class="max-w-7xl mx-auto">
       <div
         class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
