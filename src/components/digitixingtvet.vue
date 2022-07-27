@@ -26,17 +26,22 @@
           <div class="w-full lg:w-1/2 pr-8">
             <p class="text-2xl font-semibold text-blue-500 leading-7">The Challenge:</p>
             <p class="text-lg font-normal text-gray-900 mt-5 leading-7 max-w-3xl">
-              The fast pace of digitization Globally coupled with COVID-19 has created
-              vast opportunities for Africans with relevant digital skills. However,
-              digital skills shortages remain a huge gap for most African Youth which
-              impact their ability to tap into the huge global job pool created as a
-              result of digitization.
+              TVET continues to be the cornerstone of Africa's industrial and
+              developmental drive. It inspires millions of young people in Africa to
+              pursue endeavors in the fields of fashion, carpentry and beauty.
             </p>
             <p class="text-lg font-normal text-gray-900 mt-5 leading-7 max-w-3xl">
-              According to the World Economic Forum, future of jobs report, Traditional
-              jobs are getting replaced and giving rise to digital jobs or jobs requiring
-              digital skills such as social media marketing, e-commerce, fintech, digital
-              design etc.
+              The rapid adoption of digitalization together with COVID-19, has expanded
+              opportunities for Africans with suitable digital skills worldwide. For the
+              majority of apprentices or TVET firm, the lack of digital skills continues
+              to be a significant barrier that prevents them from taking advantage of the
+              enormous global economic potential and market that digitization has
+              generated.
+            </p>
+            <p class="text-lg font-normal text-gray-900 mt-5 leading-7 max-w-3xl">
+              Lack of resources prevents TVET centers or schools from delivering
+              comprehensive digital skills programs that would enable apprentices to
+              expand their enterprises in a digital environment.
             </p>
           </div>
         </div>
