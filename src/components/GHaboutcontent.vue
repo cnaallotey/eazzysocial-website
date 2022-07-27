@@ -3,15 +3,17 @@
     <div class="w-full mt-20 mb-0">
       <div class="max-w-screen-xl mx-auto px-4">
         <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          <div class="w-full bg-slate-900 px-4 pt-4">
+          <div
+            class="w-full flex flex-row md:flex-col items-end md:items-start bg-slate-900 pt-4"
+          >
             <p
-              class="text-2xl font-semibold text-white inline-flex items-center space-x-2"
+              class="text-2xl font-semibold text-white md:inline-flex mb-5 md:mb-0 md:items-center space-x-2 px-4"
             >
-              <span>Our commitment</span
+              <span>Our Commitment</span
               ><span
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 rotate-90 lg:rotate-0"
+                  class="h-5 w-5 rotate-90 md:rotate-0"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -22,8 +24,13 @@
                   /></svg
               ></span>
             </p>
-
-            <img src="../assets/happy2.png" class="w-3/4 mt-5 mx-auto" alt="" />
+            <div class="w-[160px] h-[200px] mt-5 mx-auto overflow-hidden">
+              <img
+                src="../assets/happy2.png"
+                class="w-full object-cover object-center"
+                alt=""
+              />
+            </div>
           </div>
           <div class="w-full p-4 shadow-none flex flex-col justify-center">
             <img src="../assets/target.png" class="w-10 mb-5" alt="" />
@@ -72,9 +79,13 @@
             >
               <div>
                 <div
-                  class="flex justify-center items-center mb-4 w-20 h-20 rounded-full bg-blue-100 lg:h-20 lg:w-20 dark:bg-blue-100"
+                  class="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-blue-100 lg:h-20 lg:w-20 dark:bg-blue-100"
                 >
-                  <img src="../assets/largebusinessone.png" class="w-10 h-auto" alt="" />
+                  <img
+                    src="../assets/largebusinessone.png"
+                    class="w-6 lg:w-10 h-auto"
+                    alt=""
+                  />
                   <svg
                     class="w-5 h-5 text-blue-600 hidden lg:w-6 lg:h-6 dark:text-blue-300"
                     fill="currentColor"
@@ -99,11 +110,11 @@
               </div>
               <div>
                 <div
-                  class="flex justify-center items-center mb-4 w-20 h-20 rounded-full bg-blue-100 lg:h-20 lg:w-20 dark:bg-blue-100"
+                  class="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-blue-100 lg:h-20 lg:w-20 dark:bg-blue-100"
                 >
                   <img
                     src="../assets/small-business-one.png"
-                    class="w-10 h-auto"
+                    class="w-6 lg:w-10 h-auto"
                     alt=""
                   />
                   <svg
@@ -129,11 +140,11 @@
               </div>
               <div>
                 <div
-                  class="flex justify-center items-center mb-4 w-20 h-20 rounded-full bg-blue-100 lg:h-20 lg:w-20 dark:bg-blue-100"
+                  class="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-blue-100 lg:h-20 lg:w-20 dark:bg-blue-100"
                 >
                   <img
                     src="../assets/studentorprofessionalone.png"
-                    class="w-10 h-auto"
+                    class="w-6 lg:w-10 h-auto"
                     alt=""
                   />
                   <svg
