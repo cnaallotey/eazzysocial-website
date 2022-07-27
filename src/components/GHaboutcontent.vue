@@ -4,7 +4,7 @@
       <div class="max-w-screen-xl mx-auto px-4">
         <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div
-            class="w-full flex flex-row md:flex-col items-end md:items-start bg-slate-900 pt-4"
+            class="w-full flex flex-row md:flex-col justify-between items-end md:items-start bg-slate-900 pt-4"
           >
             <p
               class="text-2xl font-semibold text-white md:inline-flex mb-5 md:mb-0 md:items-center space-x-2 px-4"
@@ -25,7 +25,7 @@
               ></span>
             </p>
             <div
-              class="w-[120px] lg:w-[160px] h-[160px] lg:h-[200px] md:mt-5 mx-auto overflow-hidden"
+              class="w-[120px] lg:w-[160px] h-[160px] lg:h-[200px] md:mt-5 mr-5 md:mx-auto overflow-hidden"
             >
               <img
                 src="../assets/happy2.png"
