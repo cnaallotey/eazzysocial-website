@@ -16,7 +16,7 @@
           Preparing today's businesses and professionals for the future of work
         </h1>
         <p
-          class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
+          class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-200"
         >
           We equip organizations, small-medium businesses and professionals with relevant
           digital skills and position them for the future.
