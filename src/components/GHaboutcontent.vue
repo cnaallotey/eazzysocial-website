@@ -24,7 +24,9 @@
                   /></svg
               ></span>
             </p>
-            <div class="w-[160px] h-[200px] md:mt-5 mx-auto overflow-hidden">
+            <div
+              class="w-[120px] lg:w-[160px] h-[160px] lg:h-[200px] md:mt-5 mx-auto overflow-hidden"
+            >
               <img
                 src="../assets/happy2.png"
                 class="w-full object-cover object-center"
