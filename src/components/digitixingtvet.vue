@@ -28,7 +28,7 @@
             <p class="text-lg font-normal text-gray-900 mt-5 leading-7 max-w-3xl">
               TVET continues to be the cornerstone of Africa's industrial and
               developmental drive. It inspires millions of young people in Africa to
-              pursue endeavors in the fields of fashion, carpentry and beauty.
+              pursue endeavors in the fields of Fashion, carpentry, beauty etc..
             </p>
             <p class="text-lg font-normal text-gray-900 mt-5 leading-7 max-w-3xl">
               The rapid adoption of digitalization together with COVID-19, has expanded
