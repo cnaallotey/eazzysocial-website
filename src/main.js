@@ -12,6 +12,9 @@ import Campusclub from "./Views/Campusclub.vue"
 import Register from "./Views/registercourse.vue"
 import GHhome from "./Views/getHiredhom.vue"
 import GHAbout from "./Views/gethiredabout.vue"
+import VueGtag from "vue-gtag";
+
+import VueAnalytics from 'vue-analytics';
 
 
 const router = createRouter({
@@ -56,4 +59,4 @@ const router = createRouter({
 })
 
 
-createApp(App).use(router).mount('#app')
+createApp(App).use(router).use(VueGtag,{config: { id: "G-D394SN23TD" }},router ).mount('#app')

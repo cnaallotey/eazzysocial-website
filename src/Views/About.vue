@@ -39,5 +39,9 @@ export default {
     // This is needed if the user scrolls down during page load and you want to make sure the page is scrolled to the top once it's fully loaded. This has Cross-browser support.
     window.scrollTo(0, 0);
   },
+  // mounted() {
+  //   console.log(`${this.$route.params.id}`);
+  //   this.$ga.page(`/${this.$route.params.id}`);
+  // },
 };
 </script>
