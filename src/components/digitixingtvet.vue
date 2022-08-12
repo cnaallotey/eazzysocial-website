@@ -486,13 +486,14 @@ export default {
     // const onSwiper = (swiper) => {
     //   console.log(swiper);
     const tvet = ref({});
+    const token = "0vndjk1KYI";
 
     const selectedCourse = "Free Social Media Marketing Training and Business Computing";
     // };
 
     const sendform = () => {
       axios
-        .post("https://getform.io/f/5b88ef6a-7f7e-4c21-8e99-21b454ceedea", {
+        .post(`https://app.headlessforms.cloud/api/v1/form-submission/${token}`, {
           ...tvet.value,
           course: selectedCourse,
         })
@@ -521,7 +522,9 @@ export default {
     const registerschool = () => {
       //console.log(school.value);
       axios
-        .post("https://getform.io/f/5b88ef6a-7f7e-4c21-8e99-21b454ceedea", school.value)
+        .post(`https://app.headlessforms.cloud/api/v1/form-submission/${token}`, {
+          ...school.value,
+        })
         .then((res) => {
           console.log(res);
           school.value = {};

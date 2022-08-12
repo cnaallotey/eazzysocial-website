@@ -455,8 +455,9 @@ export default {
     },
     sendform: function () {
       this.loading = true;
+      const token = "LRIp0GUh5X";
       axios
-        .post("https://getform.io/f/07a9acb7-37a9-4494-b033-52695b576cf1", {
+        .post(`https://app.headlessforms.cloud/api/v1/form-submission/${token}`, {
           name: this.name,
           email: this.email,
           contact: this.contact,
