@@ -201,7 +201,7 @@ export default {
       );
     },
     sendform: function (contact) {
-      const token = "YPHu3rbSXb";
+      const token = "QnuUxEORss";
       this.loading = true;
       axios
         .post(`https://app.headlessforms.cloud/api/v1/form-submission/${token}`, {
