@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="py-24 2xl:pt-40 2xl:pb-40 bg-white">
+    <section class="pb-24 lg:pb-40 bg-white">
       <div class="container max-w-screen-xl px-4 mx-auto">
         <div class="flex flex-wrap -mx-4">
           <div class="w-full lg:w-2/5 px-4 mb-20 lg:mb-0">
@@ -27,10 +27,10 @@
                 More
               </button>
               <button
-                class="py-3 px-5 w-full md:w-auto text-sm leading-none text-white font-medium tracking-tighter font-heading bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl"
+                class="py-4 px-5 w-full md:w-auto text-sm leading-none text-white font-medium tracking-tighter font-heading bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-none"
                 type="button"
               >
-                Get started
+                Book a Demo
               </button>
             </div>
             <p class="text-lg leading-6 text-darkBlueGray-400 font-normal">
@@ -86,9 +86,6 @@
                     class="absolute left-1/2 -bottom-3 transform -translate-x-1/2 w-11/12 h-24 border border-black border-opacity-10 rounded-3xl"
                   ></div>
                 </div>
-                <div
-                  class="absolute left-1/2 -bottom-3 transform -translate-x-1/2 w-11/12 h-24 border border-black border-opacity-10 rounded-3xl"
-                ></div>
               </div>
               <div class="w-full md:w-1/2 px-4">
                 <div class="w-full relative">

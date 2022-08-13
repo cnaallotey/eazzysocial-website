@@ -5,10 +5,10 @@
         <div class="flex flex-wrap -m-6 lg:items-center">
           <div class="w-full lg:w-1/2 p-6">
             <div
-              class="bg-gradient-orange mx-auto max-w-lg h-96 relative border border-blue-500"
+              class="bg-gradient-orange mx-auto max-w-lg lg:h-96 relative border border-black border-opacity-10 rounded-3xl"
             >
               <img
-                class="absolute inset-4 mt-1 mx-auto transform w-full transition ease-in-out duration-500"
+                class="lg:absolute lg:inset-4 mt-1 mx-auto transform w-full transition ease-in-out duration-500 rounded-3xl"
                 src="https://images.unsplash.com/photo-1528123778681-01e39b42808e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=100"
                 alt=""
               />

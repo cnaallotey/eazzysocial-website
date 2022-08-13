@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="relative py-44 overflow-hidden">
+    <section class="relative pb-20 lg:pb-40 overflow-hidden">
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap -m-6">
           <div class="w-full lg:w-1/2 p-6">
@@ -18,7 +18,7 @@
               <p
                 class="mb-16 lg:mb-20 text-base lg:text-lg mt-3 leading-relaxed font-heading font-medium"
               >
-                Let's take the hurdle from you.
+                Let's take the hurdle from you. Contact us!
               </p>
               <ul>
                 <li
@@ -40,7 +40,7 @@
             <div class="bg-gradient-orange mx-auto max-w-lg h-96 rounded-3xl">
               <div class="max-w-2xl rounded-lg relative">
                 <div
-                  class="w-full h-full p-4 lg:p-8 rounded-2xl bg-slate-800 relative overflow-hidden"
+                  class="w-full h-full p-4 lg:p-8 rounded-3xl bg-slate-800 relative overflow-hidden"
                 >
                   <div
                     class="h-[400px] w-[400px] bg-orange-500 bg-opacity-40 -mr-[320px] -mb-[200px] rounded-full absolute bottom-0 right-0"

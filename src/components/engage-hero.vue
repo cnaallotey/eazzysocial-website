@@ -6,7 +6,9 @@
           <span class="font-semibold text-xs text-blue-500 p-2 rounded-sm bg-blue-100"
             >What&apos;s new at Eazzysocial</span
           >
-          <h2 class="mt-8 mb-6 lg:mb-12 text-4xl lg:text-5xl font-semibold text-gray-900">
+          <h2
+            class="mt-8 mb-6 lg:mb-12 text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900"
+          >
             engage by Eazzysocial
           </h2>
           <div class="max-w-lg mb-6 lg:mb-12">
@@ -17,32 +19,35 @@
           </div>
           <div class="flex flex-wrap">
             <a
-              class="inline-block px-6 py-4 mb-3 mr-4 text-sm font-medium leading-normal bg-blue-500 hover:bg-blue-600 text-white rounded transition duration-200"
+              class="inline-block px-6 py-4 mb-3 mr-4 text-sm font-medium leading-normal bg-blue-500 hover:bg-blue-600 text-white transition duration-200"
               href="#"
               >Get Started</a
             ><a
-              class="inline-block px-6 py-4 mb-3 text-sm font-medium leading-normal hover:text-gray-700 rounded border"
+              class="inline-block px-6 py-4 mb-3 hidden text-sm font-medium leading-normal hover:text-gray-700 rounded border"
               href="#"
               >Learn More</a
             >
           </div>
         </div>
-        <div class="relative w-full md:w-1/2 px-4">
-          <img
-            class="hidden lg:block lg:absolute top-0 right-0 z-10 lg:mt-28"
-            src=""
-            alt=""
-          />
-          <img
-            class="relative"
-            src="https://images.unsplash.com/photo-1528123778681-01e39b42808e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=100"
-            alt=""
-          />
-          <img
-            class="hidden lg:block lg:absolute bottom-0 lg:left-0 lg:ml-6 lg:mb-20"
-            src=""
-            alt=""
-          />
+        <div
+          class="relative w-full h-full md:w-1/2 px-4 rounded-3xl grid grid-cols-2 gap-4 lg:gap-10"
+        >
+          <div
+            class="w-full h-[400px] translate-y-5 lg:translate-y-10 border-none rounded-3xl overflow-hidden"
+          >
+            <img
+              class="relative w-full h-full object-cover object-left"
+              src="https://images.unsplash.com/photo-1573164574001-518958d9baa2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHN1cHBvcnQlMjBibGFja3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
+              alt=""
+            />
+          </div>
+          <div class="w-full h-full rounded-3xl border-none overflow-hidden">
+            <img
+              class="relative w-full h-full object-cover"
+              src="https://img.freepik.com/free-photo/woman-wearing-wireless-earbuds-using-mobile-phone_53876-97084.jpg?w=1800&t=st=1660416791~exp=1660417391~hmac=1f2713031bbcbc23a7d903c583097164e48ab4c23b5d115e7489bad7334650f7"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
