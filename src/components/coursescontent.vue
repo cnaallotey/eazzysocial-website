@@ -47,16 +47,6 @@ export default {
     return {
       courses: [
         {
-          name: "Social Media Marketing Training and Advertising Support for SMEs",
-          params: "smmta",
-          type: "Crash Course",
-          price: "Free",
-          content:
-            "Access a completely free social media marketing program, e-commerce and gain daily support in driving sales, growing your customers and engaging your followers.",
-          img:
-            "https://images.unsplash.com/photo-1610473199899-fc0ec6e204bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        },
-        {
           name: "Small Business Advanced Social Media Strategy Crash Course",
           price: "GHC 250",
           params: "sbsmmc",
@@ -127,6 +117,16 @@ export default {
             "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
           content:
             "Protect the image of your business online through advanced social listening and bury negative information about your business in search through Advance search engine optimization.  ",
+        },
+        {
+          name: "Social Media Marketing Training and Advertising Support for SMEs",
+          params: "smmta",
+          type: "Crash Course",
+          price: "Free",
+          content:
+            "Access a completely free social media marketing program, e-commerce and gain daily support in driving sales, growing your customers and engaging your followers.",
+          img:
+            "https://images.unsplash.com/photo-1610473199899-fc0ec6e204bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         },
       ],
     };

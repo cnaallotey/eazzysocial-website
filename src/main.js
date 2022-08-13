@@ -11,6 +11,7 @@ import Courses from "./Views/Courses.vue"
 import Campusclub from "./Views/Campusclub.vue"
 import Register from "./Views/registercourse.vue"
 import GHhome from "./Views/getHiredhom.vue"
+import Engage from "./Views/Engage.vue"
 import GHAbout from "./Views/gethiredabout.vue"
 import VueGtag from "vue-gtag";
 
@@ -50,6 +51,9 @@ const router = createRouter({
         },
         {
             path:"/registercourse/:id", name:"registercourse", component:Register
+        },
+        {
+            path:"/engage", name:"engage", component:Engage
         },
     
     
