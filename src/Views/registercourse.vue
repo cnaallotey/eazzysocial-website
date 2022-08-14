@@ -22,7 +22,7 @@
             /> -->
           </div>
           <div
-            class="w-full h-screen overflow-y-auto flex flex-col items-start p-4 lg:p-20"
+            class="w-full h-screen overflow-y-auto overflow-x-hidden flex flex-col items-start p-4 lg:p-20 relative"
           >
             <div class="lg:max-w-xl py-10 lg:py-0">
               <router-link to="/">
@@ -33,7 +33,7 @@
               >
 
               <p class="text-3xl font-semibold mt-2 text-white tracking-normal">
-                Register for {{ course.name }}
+                {{ course.name }}
               </p>
               <p
                 class="py-1 px-3 text-lg font-semibold w-fit bg-rose-600 text-white mt-5"
@@ -44,7 +44,19 @@
                 class="text-base font-normal text-slate-300 leading-6 mt-2"
                 v-if="!submited"
               >
-                Partner with us! Fill the form here
+                Fill the form here
+              </p>
+              <p
+                class="text-sm font-normal text-white px-10 py-1 leading-6 mt-2 absolute top-6 right-0 -mr-12 rotate-45 bg-amber-500"
+                v-if="!submited"
+              >
+                Discount Available
+              </p>
+              <p
+                class="text-sm font-normal hidden text-white px-5 py-1 leading-6 mt-2 w-fit bg-amber-500"
+                v-if="!submited"
+              >
+                Discount Available
               </p>
               <div
                 class="w-full space-y-4 flex flex-col items-start mt-12"

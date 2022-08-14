@@ -8,16 +8,22 @@
           <div class="w-full h-52 relative">
             <img :src="img" class="w-full h-full object-cover" alt="" />
             <div
-              class="absolute w-full h-full hidden top-0 bg-black bg-opacity-40 flex items-center justify-center invisible group-hover:visible transition-all ease-out duration-150"
-            >
-              <div>
-                <button class="p-2 text-white text-sm font-normal border border-white">
-                  Download Brochure
-                </button>
+              class="absolute w-full h-full top-0 bg-gradient-to-t from-black opacity-50 flex items-end justify-start p-4 lg:p-8 transition-all ease-out duration-150"
+            ></div>
+            <div>
+              <div class="flex absolute bottom-8 right-4 lg:right-8 items-center">
+                <p class="text-sm font-normal mr-2 text-white">
+                  Certificate from <span class="font-bold">KTU</span>
+                </p>
+                <img
+                  src="../../public/images/campusclub/ktu.jpg"
+                  class="w-6 h-6"
+                  alt=""
+                />
               </div>
             </div>
           </div>
-          <div class="w-full px-8 pt-8">
+          <div class="w-full px-4 md:px-8 pt-8">
             <div class="w-fit">
               <p
                 class="text-sm font-semibold space-x-1 text-orange-600 p-2 bg-orange-100 flex items-center"
@@ -38,8 +44,35 @@
             </div>
           </div>
         </div>
-        <div class="w-full mt-4 px-8">
-          <p class="text-lg leading-6 font-bold text-gray-900">{{ price }}</p>
+        <div class="w-full mt-4 px-4 md:px-8">
+          <div class="w-full flex items-center justify-between">
+            <div class="flex items-center space-x-1">
+              <p class="text-sm leading-6 font-medium text-gray-400 line-through">
+                {{ price }}
+              </p>
+              <p class="text-lg leading-6 font-bold text-gray-900">
+                {{ discounted_price }}
+              </p>
+            </div>
+
+            <p class="w-fit inline-flex text-sm font-normal text-gray-600">
+              <span class="mr-2"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-orange-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                    clip-rule="evenodd"
+                  /></svg
+              ></span>
+              <span>{{ duration }}</span>
+            </p>
+          </div>
+
           <div class="mt-4">
             <button
               class="text-blue-500 text-xs hidden font-semibold uppercase tracking-wide flex space-x-1 items-center"
@@ -62,10 +95,10 @@
           </div>
         </div>
         <button
-          class="w-full text-center bg-blue-600 py-2 text-base font-normal text-white uppercase"
+          class="w-full text-center bg-blue-600 py-3 text-sm font-semibold text-white"
           @click="goto(link)"
         >
-          Register
+          Download Brochure
         </button>
       </div>
     </div>
@@ -91,6 +124,12 @@ export default {
       type: String,
     },
     type: {
+      type: String,
+    },
+    duration: {
+      type: String,
+    },
+    discounted_price: {
       type: String,
     },
   },
