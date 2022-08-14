@@ -35,11 +35,32 @@
               <p class="text-3xl font-semibold mt-2 text-white tracking-normal">
                 {{ course.name }}
               </p>
-              <p
-                class="py-1 px-3 text-lg font-semibold w-fit bg-rose-600 text-white mt-5"
-              >
-                {{ course.price }}
-              </p>
+              <div class="w-full flex items-center space-x-3 mt-5">
+                <p class="py-1 px-3 text-lg font-semibold w-fit bg-rose-600 text-white">
+                  {{ course.price_discount }}
+                </p>
+                <p
+                  class="px-4 py-1 border-l inline-flex items-center space-x-1 border-gray-200 text-white font-normal text-lg"
+                >
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 text-orange-400"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      /></svg
+                  ></span>
+                  <span>{{ course.duration }}</span>
+                </p>
+              </div>
+
               <p
                 class="text-base font-normal text-slate-300 leading-6 mt-2"
                 v-if="!submited"
@@ -223,7 +244,9 @@ export default {
           name: "Social Media Marketing Training and Advertising Support for SMEs",
           params: "smmta",
           type: "Crash Course",
-          price: "Free",
+          price: "GHC 250",
+          price_discount: "Free",
+          duration: "1 Day",
           content:
             "Access a completely free social media marketing program, e-commerce and gain daily support in driving sales, growing your customers and engaging your followers.",
           img:
@@ -234,6 +257,8 @@ export default {
         {
           name: "Small Business Advanced Social Media Strategy Crash Course",
           price: "GHC 250",
+          price_discount: "GHC 250",
+          duration: "2 Days",
           params: "sbsmmc",
           type: "Crash Course",
           img:
@@ -247,7 +272,9 @@ export default {
           name:
             "Complete Certification in Social Media Marketing with an option in Graphic Design and Photography",
           price: "GHC 4,500",
+          price_discount: "GHC 4,500",
           type: "Complete Certification",
+          duration: "6 Months",
           params: "sdmgdp",
           img:
             "https://images.unsplash.com/photo-1613479205646-c0dc1ee8511f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
@@ -259,8 +286,10 @@ export default {
           name:
             "Complete Certification in SEO with an option in WordPress Website Development ",
           price: "GHC 4,000",
+          price_discount: "GHC 4,000",
           params: "pcseowwd",
           type: "Complete Certification",
+          duration: "6 Months",
           img:
             "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80",
           content:
@@ -270,8 +299,10 @@ export default {
         {
           name: "Executive Social Media and Digital Marketing Crash Course",
           price: "GHC 1,000",
+          price_discount: "GHC 700",
           params: "escdmc",
           type: "Crash Course",
+          duration: "1 Month",
           img:
             "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
           content:
@@ -280,9 +311,11 @@ export default {
         },
         {
           name: "Online Shop Attendant Crash Course",
-          price: "GHC 1,000",
+          price: "GHC 2,500",
+          price_discount: "GHC 1,000",
           params: "osac",
           type: "Crash Course",
+          duration: "1 Month",
           img:
             "https://images.unsplash.com/photo-1570857502809-08184874388e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
           content:
@@ -292,8 +325,10 @@ export default {
         {
           name: "Executive Social Selling and Digital Selling Crash Course",
           price: "GHC 1,200",
+          price_discount: "GHC 899",
           params: "essdsc",
           type: "Crash Course",
+          duration: "1 Month",
           img:
             "https://images.unsplash.com/photo-1573162915955-6a8ba9d2fe20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
           content:
@@ -302,9 +337,11 @@ export default {
         },
         {
           name: "Online Reputation Management and Applied SEO Crash Course",
-          price: "GHC 2,500",
+          price: "GHC 5,000",
+          price_discount: "GHC 2,500",
           params: "ormaseow",
           type: "Crash Course",
+          duration: "1 Month",
           img:
             "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
           content:
