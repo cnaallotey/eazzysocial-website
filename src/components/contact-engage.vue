@@ -94,6 +94,6 @@ import { computed } from "@vue/runtime-core";
 const amount = ref(1);
 
 const amountPaid = computed(() => {
-  return amount.value * 0.03;
+  return (amount.value * 0.03).toFixed(2);
 });
 </script>
