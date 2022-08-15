@@ -46,7 +46,7 @@
                       <span class="text-2xl font-bold">1</span>
                     </div>
                     <h2
-                      class="mb-4 text-xl lg:text-2xl leading-tight font-medium font-heading group-hover:text-orange-400"
+                      class="mb-4 text-xl lg:text-2xl leading-tight font-medium font-heading"
                     >
                       Create an Account
                     </h2>
@@ -59,7 +59,7 @@
                     class="absolute left-1/2 -bottom-3 group-hover:bg-blue-500 transform -translate-x-1/2 w-11/12 h-24 border border-black border-opacity-10 rounded-3xl"
                   ></div>
                 </div>
-                <div class="w-full relative mt-5">
+                <div class="w-full relative mt-5 group">
                   <div
                     class="relative pt-16 pb-20 px-8 md:px-12 2xl:px-16 -mx-1 bg-white border border-black border-opacity-10 z-10 rounded-3xl"
                   >
@@ -79,12 +79,12 @@
                     </p>
                   </div>
                   <div
-                    class="absolute left-1/2 -bottom-3 transform -translate-x-1/2 w-11/12 h-24 border border-black border-opacity-10 rounded-3xl"
+                    class="absolute left-1/2 -bottom-3 group-hover:bg-blue-500 transform -translate-x-1/2 w-11/12 h-24 border border-black border-opacity-10 rounded-3xl"
                   ></div>
                 </div>
               </div>
               <div class="w-full md:w-1/2 px-4">
-                <div class="w-full relative">
+                <div class="w-full relative group">
                   <div
                     class="relative pt-16 pb-20 px-8 md:px-12 2xl:px-16 -mx-1 bg-white border border-black border-opacity-10 z-10 rounded-3xl"
                   >
@@ -104,10 +104,10 @@
                     </p>
                   </div>
                   <div
-                    class="absolute left-1/2 -bottom-3 transform -translate-x-1/2 w-11/12 h-24 border border-black border-opacity-10 rounded-3xl"
+                    class="absolute left-1/2 -bottom-3 group-hover:bg-blue-500 transform -translate-x-1/2 w-11/12 h-24 border border-black border-opacity-10 rounded-3xl"
                   ></div>
                 </div>
-                <div class="w-full relative mt-5">
+                <div class="w-full relative mt-5 group">
                   <div
                     class="relative pt-16 pb-20 px-8 md:px-12 2xl:px-16 -mx-1 bg-white border border-black border-opacity-10 z-10 rounded-3xl"
                   >
@@ -127,7 +127,7 @@
                     </p>
                   </div>
                   <div
-                    class="absolute left-1/2 -bottom-3 transform -translate-x-1/2 w-11/12 h-24 border border-black border-opacity-10 rounded-3xl"
+                    class="absolute left-1/2 -bottom-3 transform group-hover:bg-blue-500 -translate-x-1/2 w-11/12 h-24 border border-black border-opacity-10 rounded-3xl"
                   ></div>
                 </div>
               </div>
