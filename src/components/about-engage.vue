@@ -1,9 +1,9 @@
 <template>
   <div>
-    <section class="relative py-20 lg:py-40 overflow-hidden">
+    <section class="relative py-10 md:py-20 lg:py-40 overflow-hidden">
       <div class="container max-w-screen-xl mx-auto px-4">
         <h2
-          class="mb-6 font-heading font-semibold text-3xl text-center lg:text-4xl text-gray-900"
+          class="mb-6 font-heading font-semibold text-3xl md:text-center lg:text-4xl text-gray-900"
         >
           Preferred by over thousands of small business owners
         </h2>
@@ -26,7 +26,7 @@
               >
                 Increase product awareness
               </h2>
-              <p class="mb-20 text-base text-gray-600">
+              <p class="lg:mb-20 text-base text-gray-600">
                 Engage helps small businesses deliver automated, personalized and
                 customized SMS to increase their product visibility. With the help of a
                 wide range of affordable marketing tools, Engage makes it easier for you
@@ -43,7 +43,7 @@
               >
                 Increase Sales
               </h2>
-              <p class="mb-20 text-base text-gray-600">
+              <p class="lg:mb-20 text-base text-gray-600">
                 Our technology allows you and yyour business to send a large number of
                 messages in an inexpensive and quick manner, which increases revenue and
                 leads generation.

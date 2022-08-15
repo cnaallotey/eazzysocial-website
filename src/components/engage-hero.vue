@@ -30,7 +30,7 @@
           </div>
         </div>
         <div
-          class="relative w-full h-full md:w-1/2 px-4 rounded-3xl grid grid-cols-2 gap-4 lg:gap-10"
+          class="relative w-full h-full md:w-1/2 px-4 rounded-3xl lg:grid grid-cols-2 gap-4 lg:gap-10 hidden"
         >
           <div
             class="w-full h-[400px] translate-y-5 lg:translate-y-10 border-none rounded-3xl overflow-hidden"
