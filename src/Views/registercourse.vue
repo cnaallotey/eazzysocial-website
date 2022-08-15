@@ -35,7 +35,7 @@
               <p class="text-3xl font-semibold mt-2 text-white tracking-normal">
                 {{ course.name }}
               </p>
-              <div class="w-full flex items-center space-x-3 mt-5">
+              <div class="w-full flex flex-wrap items-center space-x-3 mt-5">
                 <p
                   class="py-1 px-3 text-base font-semibold w-fit line-through decoration-4 decoration-red-500 text-white"
                 >
