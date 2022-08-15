@@ -36,6 +36,11 @@
                 {{ course.name }}
               </p>
               <div class="w-full flex items-center space-x-3 mt-5">
+                <p
+                  class="py-1 px-3 text-base font-semibold w-fit line-through decoration-4 decoration-red-500 text-white"
+                >
+                  {{ course.price }}
+                </p>
                 <p class="py-1 px-3 text-lg font-semibold w-fit bg-rose-600 text-white">
                   {{ course.price_discount }}
                 </p>
@@ -68,7 +73,7 @@
                 Fill the form here
               </p>
               <p
-                class="text-sm font-normal text-white px-10 py-1 leading-6 mt-2 absolute top-6 right-0 -mr-12 rotate-45 bg-amber-500"
+                class="text-sm font-normal hidden text-white px-10 py-1 leading-6 mt-2 absolute top-6 right-0 -mr-12 rotate-45 bg-amber-500"
                 v-if="!submited"
               >
                 Discount Available
@@ -178,9 +183,9 @@
                 />
                 <button
                   type="submit"
-                  class="w-full flex flex-row items-center justify-center space-x-2 text-base font-normal uppercase tracking-wider bg-blue-600 mt-10 text-white py-3"
+                  class="w-full flex flex-row items-center justify-center space-x-2 text-sm font-semibold tracking-wider bg-blue-600 mt-10 text-white py-3"
                 >
-                  Register
+                  Download Brochure
                   <span
                     ><svg
                       v-if="!loading"
@@ -256,7 +261,7 @@ export default {
         },
         {
           name: "Small Business Advanced Social Media Strategy Crash Course",
-          price: "GHC 250",
+          price: "GHC 500",
           price_discount: "GHC 250",
           duration: "2 Days",
           params: "sbsmmc",
@@ -264,14 +269,14 @@ export default {
           img:
             "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
           content:
-            "Develop a social media marketing strategy for your small business. Gain a strategic understanding of driving sales traffic through social media. ",
+            "Develop a social media marketing strategy for your small business. Gain a strategic understanding in driving sales traffic through social media. ",
           brochure:
             "/brochures/Small_Business_Advanced_Social_Media_Strategy_Crash_Course.pdf",
         },
         {
           name:
             "Complete Certification in Social Media Marketing with an option in Graphic Design and Photography",
-          price: "GHC 4,500",
+          price: "GHC 6,000",
           price_discount: "GHC 4,500",
           type: "Complete Certification",
           duration: "6 Months",
@@ -285,7 +290,7 @@ export default {
         {
           name:
             "Complete Certification in SEO with an option in WordPress Website Development ",
-          price: "GHC 4,000",
+          price: "GHC 6,000",
           price_discount: "GHC 4,000",
           params: "pcseowwd",
           type: "Complete Certification",
