@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="relative pb-20 lg:pb-40 overflow-hidden">
-      <div class="container mx-auto px-4">
+      <div class="container max-w-screen-xl mx-auto px-4">
         <div class="flex flex-wrap -m-6">
           <div class="w-full lg:w-1/2 p-6">
             <div class="lg:max-w-lg">

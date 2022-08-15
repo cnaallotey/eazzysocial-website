@@ -3,7 +3,7 @@
     <section class="pb-24 lg:pb-40 bg-white">
       <div class="container max-w-screen-xl px-4 mx-auto">
         <div class="flex flex-wrap -mx-4">
-          <div class="w-full lg:w-2/5 px-4 mb-20 lg:mb-0">
+          <div class="w-full lg:w-2/5 px-4 mb-0 lg:mb-0">
             <span
               class="mb-6 font-heading font-semibold text-3xl lg:text-4xl text-gray-900"
               >How it works</span
@@ -14,10 +14,9 @@
               Easy to use. Really
             </h2>
             <p
-              class="mb-16 lg:mb-20 text-base lg:text-lg mt-3 leading-relaxed font-heading font-medium"
+              class="mb-5 lg:mb-20 text-base lg:text-lg mt-3 leading-relaxed font-heading font-medium"
             >
-              Phasellus eget pretium mi, vestibulum lobortis neque. Nulla bibendum tempor
-              velit, at hendrerit massa fringilla.
+              Start powering your Business with Engage with these four simple steps
             </p>
             <div class="mb-12 font-heading">
               <button
@@ -27,30 +26,27 @@
                 More
               </button>
               <button
-                class="py-4 px-5 w-full md:w-auto text-sm leading-none text-white font-medium tracking-tighter font-heading bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-none"
+                class="py-4 px-5 hidden w-full md:w-auto text-sm leading-none text-white font-medium tracking-tighter font-heading bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-none"
                 type="button"
               >
                 Book a Demo
               </button>
             </div>
-            <p class="text-lg leading-6 text-darkBlueGray-400 font-normal">
-              Explore the plaftorm right here.
-            </p>
           </div>
           <div class="w-full lg:w-3/5 px-4">
             <div class="flex flex-wrap -mx-4 items-start">
-              <div class="w-full md:w-1/2 px-4 mb-12 md:mb-0 md:mt-20 relative">
+              <div class="w-full md:w-1/2 px-4 mb-12 md:mb-0 lg:mt-20 relative">
                 <div class="w-full relative group">
                   <div
                     class="relative pt-16 pb-20 px-8 md:px-12 2xl:px-16 -mx-1 bg-white border border-black border-opacity-10 z-10 rounded-3xl"
                   >
                     <div
-                      class="relative inline-flex items-center justify-center mb-8 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full"
+                      class="relative inline-flex items-center justify-center mb-4 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full"
                     >
                       <span class="text-2xl font-bold">1</span>
                     </div>
                     <h2
-                      class="mb-8 text-xl lg:text-2xl leading-tight font-medium font-heading group-hover:text-orange-400"
+                      class="mb-4 text-xl lg:text-2xl leading-tight font-medium font-heading group-hover:text-orange-400"
                     >
                       Create an Account
                     </h2>
@@ -68,12 +64,12 @@
                     class="relative pt-16 pb-20 px-8 md:px-12 2xl:px-16 -mx-1 bg-white border border-black border-opacity-10 z-10 rounded-3xl"
                   >
                     <div
-                      class="relative inline-flex items-center justify-center mb-8 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full"
+                      class="relative inline-flex items-center justify-center mb-4 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full"
                     >
                       <span class="text-2xl font-bold">2</span>
                     </div>
                     <h2
-                      class="mb-8 text-xl lg:text-2xl leading-tight font-medium font-heading"
+                      class="mb-4 text-xl lg:text-2xl leading-tight font-medium font-heading"
                     >
                       Top Up SMS credits
                     </h2>
@@ -93,12 +89,12 @@
                     class="relative pt-16 pb-20 px-8 md:px-12 2xl:px-16 -mx-1 bg-white border border-black border-opacity-10 z-10 rounded-3xl"
                   >
                     <div
-                      class="relative inline-flex items-center justify-center mb-8 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full"
+                      class="relative inline-flex items-center justify-center mb-4 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full"
                     >
                       <span class="text-2xl font-bold">3</span>
                     </div>
                     <h2
-                      class="mb-8 text-xl lg:text-2xl leading-tight font-medium font-heading"
+                      class="mb-4 text-xl lg:text-2xl leading-tight font-medium font-heading"
                     >
                       Upload Contact List
                     </h2>
@@ -116,12 +112,12 @@
                     class="relative pt-16 pb-20 px-8 md:px-12 2xl:px-16 -mx-1 bg-white border border-black border-opacity-10 z-10 rounded-3xl"
                   >
                     <div
-                      class="relative inline-flex items-center justify-center mb-8 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full"
+                      class="relative inline-flex items-center justify-center mb-4 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full"
                     >
                       <span class="text-2xl font-bold">4</span>
                     </div>
                     <h2
-                      class="mb-8 text-xl lg:text-2xl leading-tight font-medium font-heading"
+                      class="mb-4 text-xl lg:text-2xl leading-tight font-medium font-heading"
                     >
                       Start Sending
                     </h2>

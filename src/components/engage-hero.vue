@@ -36,8 +36,8 @@
             class="w-full h-[400px] translate-y-5 lg:translate-y-10 border-none rounded-3xl overflow-hidden"
           >
             <img
-              class="relative w-full h-full object-cover object-left"
-              src="https://images.unsplash.com/photo-1573164574001-518958d9baa2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHN1cHBvcnQlMjBibGFja3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
+              class="relative w-full h-full object-cover object-right"
+              src="https://images.unsplash.com/photo-1604933762021-54a5858c9832?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=100"
               alt=""
             />
           </div>
