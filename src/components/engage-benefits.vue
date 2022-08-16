@@ -22,7 +22,7 @@
             class="w-full bg-gradient-to-br from-blue-700 to-blue-900 rounded-3xl p-4 md:p-6 lg:p-8 relative overflow-hidden group"
           >
             <p
-              class="text-white text-xl lg:text-2xl font-medium leading-6 max-w-sm mb-40"
+              class="text-white text-xl lg:text-2xl font-medium leading-6 max-w-sm mb-40 relative z-10"
             >
               Enjoy 99.99% delivery of your messages sent to your customers
             </p>
