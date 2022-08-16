@@ -40,7 +40,7 @@
             <div class="bg-gradient-orange mx-auto max-w-lg h-96 rounded-3xl">
               <div class="max-w-2xl rounded-lg relative">
                 <div
-                  class="w-full h-full p-4 lg:p-8 rounded-3xl bg-slate-800 relative overflow-hidden"
+                  class="w-full h-full p-4 lg:p-8 rounded-3xl bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden"
                 >
                   <div
                     class="h-[400px] w-[400px] bg-orange-500 bg-opacity-40 -mr-[320px] -mb-[200px] rounded-full absolute bottom-0 right-0"
@@ -48,12 +48,12 @@
                   <div
                     class="h-[220px] w-[220px] bg-blue-500 rounded-full bg-opacity-75 -mr-[100px] -mb-[140px] absolute bottom-0 right-0"
                   ></div>
-                  <p class="text-blue-500 text-lg font-semibold text-center leading-7">
+                  <p class="text-blue-100 text-lg font-semibold text-center leading-7">
                     Calculate how much you will pay for your SMS
                   </p>
                   <div class="flex items-end my-4 w-fit mx-auto text-white">
                     <p class="text-3xl lg:text-5xl font-semibold">GHC 0.03</p>
-                    <p class="text-sm font-normal">per sms</p>
+                    <p class="text-sm font-normal ml-1 text-orange-500">per sms</p>
                   </div>
                   <input
                     type="number"
@@ -63,17 +63,17 @@
                   />
                   <div class="flex items-center my-4 w-fit mx-auto">
                     <p class="text-sm font-normal text-white">you pay:</p>
-                    <p class="text-2xl lg:text-2xl ml-2 font-semibold text-orange-500">
+                    <p class="text-2xl lg:text-2xl ml-2 font-semibold text-orange-400">
                       GHC {{ amountPaid }}
                     </p>
                   </div>
                   <p
-                    class="text-center font-normal text-xs leading-5 text-gray-200 mt-10"
+                    class="text-center font-normal text-xs leading-5 text-orange-400 mt-10"
                   >
                     Sending over 100,000 sms?
                   </p>
                   <button
-                    class="text-blue-500 font-medium text-sm w-full mx-auto text-center py-3"
+                    class="text-blue-100 font-medium text-sm w-full mx-auto text-center py-3"
                   >
                     Contact us for a discount!
                   </button>

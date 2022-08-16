@@ -100,7 +100,7 @@
                       </a>
                       <a
                         href="javascript:void(0)"
-                        class="block py-2 px-5 text-base font-semibold text-gray-500 hover:bg-blue hover:bg-opacity-5 hover:text-blue-500"
+                        class="block py-2 px-5 hidden text-base font-semibold text-gray-500 hover:bg-blue hover:bg-opacity-5 hover:text-blue-500"
                       >
                         News and events
                       </a>
@@ -112,7 +112,7 @@
                       </a>
                       <a
                         href="javascript:void(0)"
-                        class="block py-2 px-5 text-base font-semibold text-gray-500 hover:bg-blue hover:bg-opacity-5 hover:text-blue-500"
+                        class="block py-2 hidden px-5 text-base font-semibold text-gray-500 hover:bg-blue hover:bg-opacity-5 hover:text-blue-500"
                       >
                         Digital Trainers Hub
                       </a>

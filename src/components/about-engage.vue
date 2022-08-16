@@ -1,13 +1,13 @@
 <template>
   <div>
-    <section class="relative py-10 md:py-20 lg:py-40 overflow-hidden">
+    <section class="relative py-10 md:py-20 lg:py-40 pb-20 lg:pb-20 overflow-hidden">
       <div class="container max-w-screen-xl mx-auto px-4">
         <h2
           class="mb-6 font-heading font-semibold text-3xl md:text-center lg:text-4xl text-gray-900"
         >
           Preferred by over thousands of small business owners
         </h2>
-        <div class="flex flex-wrap -m-6 lg:items-center">
+        <div class="flex lg:flex-wrap flex-wrap-reverse -m-6 lg:items-center">
           <div class="w-full lg:w-1/2 p-6">
             <div
               class="bg-gradient-orange mx-auto w-[300px] lg:w-auto lg:max-w-lg lg:h-96 relative border-none border-black border-opacity-10 rounded-3xl"
@@ -35,7 +35,7 @@
             </div>
           </div>
         </div>
-        <div class="flex lg:flex-wrap flex-wrap-reverse -m-6 lg:items-center">
+        <div class="flex flex-wrap -m-6 lg:items-center mt-10">
           <div class="w-full lg:w-1/2 p-6">
             <div class="lg:max-w-md">
               <h2
@@ -44,7 +44,7 @@
                 Increase Sales
               </h2>
               <p class="lg:mb-20 text-base text-gray-600">
-                Our technology allows you and yyour business to send a large number of
+                Our technology allows you and your business to send a large number of
                 messages in an inexpensive and quick manner, which increases revenue and
                 leads generation.
               </p>
@@ -62,7 +62,7 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-wrap -m-6 lg:items-center">
+        <div class="flex flex-wrap-reverse lg:flex-wrap -m-6 lg:items-center mt-10">
           <div class="w-full lg:w-1/2 p-6">
             <div
               class="bg-gradient-orange mx-auto w-[300px] lg:w-auto lg:max-w-lg lg:h-96 relative border-none border-black border-opacity-10 rounded-3xl"
@@ -81,7 +81,7 @@
               >
                 Retain your Customers
               </h2>
-              <p class="mb-20 text-base text-gray-600">
+              <p class="lg:mb-20 text-base text-gray-600">
                 Our business solution addresses the needs of every small business by
                 automating their bulk SMS campaigns, increasing customer retention and
                 loyalty.

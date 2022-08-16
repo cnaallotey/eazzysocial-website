@@ -13,8 +13,12 @@
           </h2>
           <div class="max-w-lg mb-6 lg:mb-12">
             <p class="text-xl text-gray-500">
-              Send bulk messages to your customers whenever, wherever priced as low as 2-3
-              pesewas per SMS
+              Send bulk messages to your customers whenever, wherever!
+            </p>
+            <p class="text-base text-gray-500 mt-2">
+              Priced as low as
+              <span class="font-bold text-orange-500 text-2xl"> 2-3 pesewas </span> per
+              SMS
             </p>
           </div>
           <div class="flex flex-wrap">

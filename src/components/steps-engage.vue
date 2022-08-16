@@ -51,8 +51,7 @@
                       Create an Account
                     </h2>
                     <p class="text-lg text-slate-700">
-                      Proin nec nunc felis. In non tellus ultricies, rutrum lacus et,
-                      pharetra elit.
+                      Fill in a few details to help us understand you and your business
                     </p>
                   </div>
                   <div
@@ -74,8 +73,7 @@
                       Top Up SMS credits
                     </h2>
                     <p class="text-lg text-slate-700">
-                      Proin nec nunc felis. In non tellus ultricies, rutrum lacus et,
-                      pharetra elit.
+                      Purchase credits from our platform with our payment system
                     </p>
                   </div>
                   <div
@@ -99,8 +97,8 @@
                       Upload Contact List
                     </h2>
                     <p class="text-lg text-slate-700">
-                      Proin nec nunc felis. In non tellus ultricies, rutrum lacus et,
-                      pharetra elit.
+                      Just upload all contacts you would be sending your sms to in a
+                      simple excel sheet.
                     </p>
                   </div>
                   <div
@@ -122,8 +120,7 @@
                       Start Sending
                     </h2>
                     <p class="text-lg text-slate-700">
-                      Proin nec nunc felis. In non tellus ultricies, rutrum lacus et,
-                      pharetra elit.
+                      Hurray you are all done. Now you can start sending!!
                     </p>
                   </div>
                   <div
