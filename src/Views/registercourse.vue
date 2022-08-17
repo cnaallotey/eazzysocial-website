@@ -174,7 +174,7 @@
                   v-model="contact"
                   class="p-3 bg-white text-base mt-1 font-normal text-slate-800"
                 />
-                <label for="Phone" class="text-sm text-gray-700 mb-1 mt-4"
+                <label for="Phone" class="text-sm text-slate-300 mb-1 mt-4"
                   >Whatsapp number</label
                 ><input
                   type="tel"
