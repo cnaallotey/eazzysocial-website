@@ -13,6 +13,7 @@ import Register from "./Views/registercourse.vue"
 import GHhome from "./Views/getHiredhom.vue"
 import Engage from "./Views/Engage.vue"
 import GHAbout from "./Views/gethiredabout.vue"
+import webinar from "./Views/Webinar.vue"
 import VueGtag from "vue-gtag";
 
 import VueAnalytics from 'vue-analytics';
@@ -55,6 +56,10 @@ const router = createRouter({
         {
             path:"/engage", name:"engage", component:Engage
         },
+        {
+            path:"/webinar", name:"webinar", component:webinar
+        },
+    
     
     
        
