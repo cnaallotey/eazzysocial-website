@@ -237,6 +237,17 @@
                                 placeholder=""
                                 class="rounded-none border-gray-200 p-3 border-2"
                               />
+                              <label
+                                for="whatsapp"
+                                class="text-sm text-gray-700 mb-1 mt-4"
+                                >Your whatsapp number</label
+                              ><input
+                                type="tel"
+                                name="whatsapp"
+                                v-model="whatsapp"
+                                placeholder=""
+                                class="rounded-none border-gray-200 p-3 border-2"
+                              />
                               <label for="School" class="text-sm text-gray-700 mb-1 mt-4"
                                 >Your School</label
                               ><input
@@ -445,6 +456,7 @@ export default {
       email: "",
       contact: "",
       school: "",
+      whatsapp: "",
     };
   },
   methods: {
@@ -463,6 +475,7 @@ export default {
           contact: this.contact,
           school: this.school,
           course: this.selectedCourse,
+          whatsapp: this.whatsapp,
         })
         .then((res) => {
           this.modal = false;

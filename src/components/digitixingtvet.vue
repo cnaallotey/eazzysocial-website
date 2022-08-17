@@ -206,6 +206,15 @@
                               placeholder=""
                               class="rounded-none border-gray-200 p-3 border-2"
                             />
+                            <label for="Phone" class="text-sm text-gray-700 mb-1 mt-4"
+                              >Your Whatsapp number</label
+                            ><input
+                              type="tel"
+                              name="whatsapp"
+                              v-model="tvet.whatsapp"
+                              placeholder=""
+                              class="rounded-none border-gray-200 p-3 border-2"
+                            />
                             <label for="School" class="text-sm text-gray-700 mb-1 mt-4"
                               >Your School</label
                             ><input
@@ -350,6 +359,15 @@
                 required
                 v-model="school.contact"
                 class="p-3 bg-white text-base mt-1 font-normal text-slate-800"
+              />
+              <label for="Phone" class="text-sm text-gray-700 mb-1 mt-5"
+                >Whatsapp number</label
+              ><input
+                type="tel"
+                name="whatsapp"
+                v-model="school.whatsapp"
+                placeholder=""
+                class="rounded-none border-gray-200 p-3 border-2"
               />
               <button
                 class="w-full flex flex-row items-center justify-center space-x-2 text-base font-normal uppercase tracking-wider bg-blue-600 mt-10 text-white py-3"

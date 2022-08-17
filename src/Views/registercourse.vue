@@ -174,6 +174,15 @@
                   v-model="contact"
                   class="p-3 bg-white text-base mt-1 font-normal text-slate-800"
                 />
+                <label for="Phone" class="text-sm text-gray-700 mb-1 mt-4"
+                  >Whatsapp number</label
+                ><input
+                  type="tel"
+                  name="whatsapp"
+                  v-model="whatsapp"
+                  placeholder=""
+                  class="rounded-none border-gray-200 p-3 border-2"
+                />
                 <label
                   for="course "
                   class="text-slate-300 font-normal mt-5 text-sm leading-5"
@@ -365,6 +374,7 @@ export default {
       name: "",
       email: "",
       contact: "",
+      whatsapp: "",
     };
   },
   methods: {
@@ -380,6 +390,7 @@ export default {
           email: this.email,
           contact: this.contact,
           course: this.course.name,
+          whatsapp: this.whatsapp,
         })
         .then((res) => {
           console.log(res);
