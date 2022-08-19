@@ -2,8 +2,8 @@
   <div>
     <div class="w-full">
       <div class="max-w-screen-xl mx-auto px-4">
-        <div class="w-full grid grid-cols-3">
-          <div class="col-span-3 lg:col-span-2 order-2 lg:order-1">
+        <div class="w-full grid grid-cols-3 gap-10 lg:gap-0">
+          <div class="col-span-3 lg:col-span-2 order-1 lg:order-1">
             <h2
               class="text-2xl font-bold leading-7 text-left text-gray-900 sm:text-3xl sm:tracking-tight sm:truncate mt-20"
             >
@@ -26,7 +26,7 @@
               <h2
                 class="text-2xl font-bold leading-7 text-left text-gray-900 sm:text-3xl sm:tracking-tight sm:truncate mt-20"
               >
-                Things you will learn
+                What you will learn
               </h2>
               <div class="mt-5 flex items-center space-x-2">
                 <svg
@@ -46,7 +46,7 @@
             </div>
           </div>
           <div
-            class="w-fill col-span-3 lg:col-span-1 border border-gray-200 order-1 lg:order-2"
+            class="w-fill col-span-3 lg:col-span-1 border border-gray-200 order-2 lg:order-2"
           >
             <div class="w-full p-4 bg-blue-900">
               <p class="text-xl font-bold text-white leading-6 text-center">

@@ -15,14 +15,16 @@
                   </h2>
                 </div>
                 <div class="max-w-3xl mx-auto lg:mx-0 mt-8">
-                  <div class="flex items-center w-fit mx-auto lg:mx-0">
+                  <div
+                    class="mb-6 flex flex-col md:flex-row items-center w-fit mx-auto lg:mx-0"
+                  >
                     <p
-                      class="mb-6 text-white uppercase tracking-wide leading-loose bg-orange-600 px-3 py-1 hidden md:block"
+                      class="text-white uppercase tracking-wide leading-loose bg-orange-600 px-3 py-1 w-full md:w-auto"
                     >
                       Upcoming Live
                     </p>
                     <p
-                      class="mb-6 text-gray-900 uppercase tracking-wide leading-loose bg-white px-2 py-1"
+                      class="text-gray-900 uppercase tracking-wide leading-loose bg-white px-2 py-1"
                     >
                       August 17, 2022 06:00 PM GMT
                     </p>

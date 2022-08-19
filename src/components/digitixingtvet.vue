@@ -293,7 +293,7 @@
         >
           <div class="w-full hidden lg:flex lg:w-3/4">
             <img
-              src="../assets/gift-habeshaw-kSTcz5gE018-unsplash.jpg"
+              src="https://images.unsplash.com/photo-1612299273045-362a39972259?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=100"
               class="w-full h-[35rem] object-cover object-center"
               alt=""
             />
@@ -392,7 +392,7 @@
         </div>
       </div>
     </div>
-    <div class="w-full my-10 lg:my-32 bg-gradient-to-t from-blue-50">
+    <div class="w-full my-10 lg:my-40 bg-gradient-to-t from-blue-50">
       <div class="max-w-screen-xl mx-auto px-5">
         <p
           class="mt-2 text-3xl leading-8 font-extrabold tracking-tight mb-10 text-gray-900 sm:text-4xl max-w-2xl mx-auto lg:text-center"

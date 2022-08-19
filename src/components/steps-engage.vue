@@ -42,11 +42,23 @@
                   <div
                     class="relative pt-16 pb-20 px-8 md:px-12 2xl:px-16 -mx-1 bg-white border border-black border-opacity-10 z-10 rounded-3xl"
                   >
-                    <div
-                      class="relative inline-flex items-center justify-center mb-4 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full"
-                    >
-                      <span class="text-2xl font-bold">1</span>
+                    <div class="flex relative items-end">
+                      <div
+                        class="relative inline-flex items-center justify-center mb-4 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full z-10"
+                      >
+                        <span class="text-2xl font-bold">1</span>
+                      </div>
+                      <div
+                        class="bg-slate-100 w-[100px] h-[100px] rounded-full relative -ml-5 overflow-hidden"
+                      >
+                        <img
+                          src="https://images.unsplash.com/photo-1615985250029-f6c6be15745b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=100"
+                          class="w-full h-full object-cover object-center"
+                          alt=""
+                        />
+                      </div>
                     </div>
+
                     <h2
                       class="mb-4 text-xl lg:text-2xl leading-tight font-medium font-heading"
                     >
@@ -64,10 +76,21 @@
                   <div
                     class="relative pt-16 pb-20 px-8 md:px-12 2xl:px-16 -mx-1 bg-white border border-black border-opacity-10 z-10 rounded-3xl"
                   >
-                    <div
-                      class="relative inline-flex items-center justify-center mb-4 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full"
-                    >
-                      <span class="text-2xl font-bold">2</span>
+                    <div class="flex relative items-end">
+                      <div
+                        class="relative inline-flex items-center justify-center mb-4 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full z-10"
+                      >
+                        <span class="text-2xl font-bold">2</span>
+                      </div>
+                      <div
+                        class="bg-slate-100 w-[100px] h-[100px] rounded-full relative -ml-5 overflow-hidden"
+                      >
+                        <img
+                          src="https://images.unsplash.com/photo-1616077167555-51f6bc516dfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=100"
+                          class="object-cover object-center w-full h-full"
+                          alt=""
+                        />
+                      </div>
                     </div>
                     <h2
                       class="mb-4 text-xl lg:text-2xl leading-tight font-medium font-heading"
@@ -75,7 +98,7 @@
                       Top Up SMS credits
                     </h2>
                     <p class="text-lg text-slate-700">
-                      Purchase credits from our platform with our payment system
+                      Purchase credits from our platform using Mobile Money, Card or Bank.
                     </p>
                   </div>
                   <div
@@ -88,10 +111,21 @@
                   <div
                     class="relative pt-16 pb-20 px-8 md:px-12 2xl:px-16 -mx-1 bg-white border border-black border-opacity-10 z-10 rounded-3xl"
                   >
-                    <div
-                      class="relative inline-flex items-center justify-center mb-4 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full"
-                    >
-                      <span class="text-2xl font-bold">3</span>
+                    <div class="flex relative items-end">
+                      <div
+                        class="relative inline-flex items-center justify-center mb-4 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full z-10"
+                      >
+                        <span class="text-2xl font-bold">3</span>
+                      </div>
+                      <div
+                        class="bg-slate-100 w-[100px] h-[100px] rounded-full relative -ml-5 overflow-hidden"
+                      >
+                        <img
+                          src="https://images.pexels.com/photos/3769004/pexels-photo-3769004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                          class="object-cover object-center w-full h-full"
+                          alt=""
+                        />
+                      </div>
                     </div>
                     <h2
                       class="mb-4 text-xl lg:text-2xl leading-tight font-medium font-heading"
@@ -111,10 +145,21 @@
                   <div
                     class="relative pt-16 pb-20 px-8 md:px-12 2xl:px-16 -mx-1 bg-white border border-black border-opacity-10 z-10 rounded-3xl"
                   >
-                    <div
-                      class="relative inline-flex items-center justify-center mb-4 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full"
-                    >
-                      <span class="text-2xl font-bold">4</span>
+                    <div class="flex relative items-end">
+                      <div
+                        class="relative inline-flex items-center justify-center mb-4 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full z-10"
+                      >
+                        <span class="text-2xl font-bold">4</span>
+                      </div>
+                      <div
+                        class="bg-slate-100 w-[100px] h-[100px] rounded-full relative -ml-5 overflow-hidden"
+                      >
+                        <img
+                          src="https://images.pexels.com/photos/3206080/pexels-photo-3206080.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                          class="object-cover object-center w-full h-full"
+                          alt=""
+                        />
+                      </div>
                     </div>
                     <h2
                       class="mb-4 text-xl lg:text-2xl leading-tight font-medium font-heading"
