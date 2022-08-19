@@ -17,7 +17,7 @@
             <p
               class="text-2xl font-bold bg-opacity-80 text-slate-900 max-w-sm p-16 bg-white absolute bottom-0 left-0"
             >
-              Joining the winning Digital Marketing Training Team
+              Join the winning Digital Marketing Training Team
             </p>
             <!-- <img
               src="../assets/dark-skinned-woman-colleagues-corporate-start-up-office-working-finish-project-diverse-team-business-people-analyzing-company-financial-reports-from-computer.jpg"

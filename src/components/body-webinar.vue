@@ -65,7 +65,12 @@
                   type="text"
                   class="w-full border border-gray-300 rounded p-2 text-sm font-normal mt-1 mb-4"
                 />
-                <label for="company">Company</label
+                <label for="email">Email</label
+                ><input
+                  type="email"
+                  class="w-full border border-gray-300 rounded p-2 text-sm font-normal mt-1 mb-4"
+                />
+                <label for="company">Profession</label
                 ><input
                   type="text"
                   class="w-full border border-gray-300 rounded p-2 text-sm font-normal mt-1 mb-4"

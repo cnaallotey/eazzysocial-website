@@ -34,15 +34,15 @@
           </div>
         </div>
         <div
-          class="relative w-full h-full md:w-1/2 px-4 rounded-3xl lg:grid grid-cols-2 gap-4 lg:gap-10"
+          class="relative w-full h-full md:w-1/2 px-4 rounded-3xl grid grid-cols-2 gap-4 lg:gap-10"
         >
           <img
-            class="relative w-full col-span-2 lg:hidden h-full object-cover object-right"
+            class="relative w-full col-span-2 hidden h-full object-cover object-right"
             src="https://images.unsplash.com/photo-1573164573938-c9a3db2e84ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=100"
             alt=""
           />
           <div
-            class="w-full h-[400px] translate-y-5 lg:translate-y-10 border-none rounded-3xl overflow-hidden hidden lg:block"
+            class="w-full h-[300px] lg:h-[400px] translate-y-5 lg:translate-y-10 border-none rounded-3xl overflow-hidden"
           >
             <img
               class="relative w-full h-full object-cover object-right"
@@ -50,9 +50,7 @@
               alt=""
             />
           </div>
-          <div
-            class="w-full h-full rounded-3xl border-none overflow-hidden hidden lg:block"
-          >
+          <div class="w-full h-full rounded-3xl border-none overflow-hidden">
             <img
               class="relative w-full h-full object-cover"
               src="https://img.freepik.com/free-photo/woman-wearing-wireless-earbuds-using-mobile-phone_53876-97084.jpg?w=1800&t=st=1660416791~exp=1660417391~hmac=1f2713031bbcbc23a7d903c583097164e48ab4c23b5d115e7489bad7334650f7"

@@ -14,7 +14,7 @@ app.use(cors())
 //configuring body parser middle ware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
+npm 
 
 //here we are configuring dist to serve app files
 app.use('/', serveStatic(path.join(__dirname, '/dist')))

@@ -16,8 +16,8 @@
                 <div class="w-full">
                   <div class="w-full h-64 bg-gray-200">
                     <img
-                      src="../assets/gadnew.png"
-                      class="h-full w-full object-contain object-center"
+                      src="../assets/gad1.webp"
+                      class="h-full w-full object-cover object-top"
                       alt=""
                     />
                   </div>

@@ -2,7 +2,7 @@
   <div class="mb-20 lg:mb-0">
     <div class="w-full h-[29.125rem] relative overflow-hidden mb-10 lg:mb-0">
       <img
-        src="../assets/tvet.png"
+        src="https://images.unsplash.com/photo-1642693252481-0af33a3f8c99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1127&q=100"
         class="w-full h-full object-cover object-center"
         alt=""
       />

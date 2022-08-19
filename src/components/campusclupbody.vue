@@ -101,6 +101,19 @@
                               </p>
                             </div>
                             <div class="w-full px-8 pt-8">
+                              <div class="w-fit">
+                                <p
+                                  class="text-sm font-semibold space-x-1 text-orange-600 p-2 bg-orange-100 flex items-center"
+                                >
+                                  <span
+                                    ><img
+                                      src="../assets/badge.png"
+                                      class="w-4 hidden"
+                                      alt=""
+                                  /></span>
+                                  <span>Certificate upon completion</span>
+                                </p>
+                              </div>
                               <div class="mt-4 w-full">
                                 <div>
                                   <h3 class="text-lg leading-6 font-medium text-gray-900">

@@ -2,8 +2,10 @@
   <div>
     <section class="pb-24 lg:pb-40 bg-white">
       <div class="container max-w-screen-xl px-4 mx-auto">
-        <div class="flex flex-wrap -mx-4">
-          <div class="w-full lg:w-2/5 px-4 mb-0 lg:mb-0">
+        <div class="flex flex-wrap -mx-4 h-full">
+          <div
+            class="w-full lg:w-2/5 px-4 mb-0 lg:mb-0 flex flex-1 flex-col justify-center"
+          >
             <span
               class="mb-6 font-heading font-semibold text-3xl lg:text-4xl text-gray-900"
               >How it works</span
