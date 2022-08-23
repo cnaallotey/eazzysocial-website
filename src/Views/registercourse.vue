@@ -284,7 +284,7 @@ export default {
           content:
             "Develop a social media marketing strategy for your small business. Gain a strategic understanding in driving sales traffic through social media. ",
           brochure:
-            "/brochures/Small_Business_Advanced_Social_Media_Strategy_Crash_Course.pdf",
+            "/brochures/Exe_Advanced_Social_Media_Strategy_Course_for_Small_Business.pdf",
         },
         {
           name:
@@ -325,7 +325,7 @@ export default {
             "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=100",
           content:
             "Are you a business executive looking to deepen your knowledge in social media and digital marketing? Enrol our Executive course designed in partnership with Koforidua Technical University.  ",
-          brochure: "/brochures/Brochure-Social_Media_Marketing.pdf",
+          brochure: "/brochures/Executive_SM_and_DM_Crash_Course_22.pdf",
         },
         {
           name: "Online Shop Attendant Crash Course",
