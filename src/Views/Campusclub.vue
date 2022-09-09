@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Banner />
     <navbar />
     <hero />
     <content />
@@ -18,8 +19,9 @@ import foote from "../components/foot.vue";
 import hero from "../components/campuscluhero.vue";
 import content from "../components/campusclupbody.vue";
 import faqs from "../components/faqs-campusclub.vue";
+import Banner from "../components/banner.vue";
 export default {
-  components: { navbar, cta, foote, hero, content, faqs },
+  components: { navbar, cta, foote, hero, content, faqs, Banner },
   created() {
     if ("scrollRestoration" in history) {
       history.scrollRestoration = "manual";

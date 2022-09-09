@@ -22,6 +22,7 @@ import experts from "../components/experts.vue";
 import clientelle from "../components/clientelle.vue";
 import cta from "../components/cta.vue";
 import foot from "../components/foot.vue";
+
 export default {
   components: {
     navbar,
