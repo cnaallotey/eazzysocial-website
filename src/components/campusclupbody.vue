@@ -367,7 +367,7 @@
               <p
                 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight mb-10 text-gray-900 sm:text-4xl max-w-2xl mx-auto lg:text-center"
               >
-                Trusted by Students in Ghana’s Best Tertiary Institutions
+                Trusted by Students in Africa's Best Tertiary Institutions
               </p>
               <tvetslide />
             </div>
