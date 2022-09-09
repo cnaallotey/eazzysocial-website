@@ -2,8 +2,8 @@
   <div>
     <div class="w-full h-[29.125rem] relative overflow-hidden">
       <img
-        src="../assets/group-afro-americans-working-together.jpg"
-        class="w-full h-full object-cover object-top"
+        src="https://images.unsplash.com/photo-1655720357872-ce227e4164ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        class="w-full h-full object-cover object-center"
         alt=""
       />
       <div class="w-full h-full absolute top-0 bg-green-500 bg-opacity-60 px-5">

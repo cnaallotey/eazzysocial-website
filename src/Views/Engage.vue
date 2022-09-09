@@ -4,6 +4,7 @@
 
     <EngageHero />
     <AboutEngage />
+    <EngageBenefits />
     <StepsEngage />
     <ContactEngage />
 
@@ -20,4 +21,5 @@ import StepsEngage from "../components/steps-engage.vue";
 import ContactEngage from "../components/contact-engage.vue";
 import Cta from "../components/cta.vue";
 import Foot from "../components/foot.vue";
+import EngageBenefits from "../components/engage-benefits.vue";
 </script>

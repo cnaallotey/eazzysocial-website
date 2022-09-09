@@ -6,14 +6,18 @@
         <div class="w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-y-10">
           <div class="w-full h-screen hidden lg:flex relative">
             <img
-              src="../assets/african-blogger-waving-audience-while-filming-podcast-air-production-internet-broadcast-host-streaming-live-content-recording-digital-social-media.jpg"
+              :src="
+                course.img
+                  ? course.img
+                  : '../assets/african-blogger-waving-audience-while-filming-podcast-air-production-internet-broadcast-host-streaming-live-content-recording-digital-social-media.jpg'
+              "
               class="w-full h-full object-cover object-center"
               alt=""
             />
             <p
               class="text-2xl font-bold bg-opacity-80 text-slate-900 max-w-sm p-16 bg-white absolute bottom-0 left-0"
             >
-              Joining the winning Digital Marketing Training Team
+              Join the winning Digital Marketing Training Team
             </p>
             <!-- <img
               src="../assets/dark-skinned-woman-colleagues-corporate-start-up-office-working-finish-project-diverse-team-business-people-analyzing-company-financial-reports-from-computer.jpg"
@@ -35,11 +39,37 @@
               <p class="text-3xl font-semibold mt-2 text-white tracking-normal">
                 {{ course.name }}
               </p>
-              <p
-                class="py-1 px-3 text-lg font-semibold w-fit bg-rose-600 text-white mt-5"
-              >
-                {{ course.price }}
-              </p>
+              <div class="w-full flex flex-wrap items-center space-x-3 mt-5">
+                <p
+                  class="py-1 px-3 text-base font-semibold w-fit line-through decoration-4 decoration-red-500 text-white"
+                >
+                  {{ course.price }}
+                </p>
+                <p class="py-1 px-3 text-lg font-semibold w-fit bg-rose-600 text-white">
+                  {{ course.price_discount }}
+                </p>
+                <p
+                  class="px-4 py-1 border-l inline-flex items-center space-x-1 border-gray-200 text-white font-normal text-lg"
+                >
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 text-orange-400"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      /></svg
+                  ></span>
+                  <span>{{ course.duration }}</span>
+                </p>
+              </div>
+
               <p
                 class="text-base font-normal text-slate-300 leading-6 mt-2"
                 v-if="!submited"
@@ -47,7 +77,7 @@
                 Fill the form here
               </p>
               <p
-                class="text-sm font-normal text-white px-10 py-1 leading-6 mt-2 absolute top-6 right-0 -mr-12 rotate-45 bg-amber-500"
+                class="text-sm font-normal hidden text-white px-10 py-1 leading-6 mt-2 absolute top-6 right-0 -mr-12 rotate-45 bg-amber-500"
                 v-if="!submited"
               >
                 Discount Available
@@ -144,6 +174,15 @@
                   v-model="contact"
                   class="p-3 bg-white text-base mt-1 font-normal text-slate-800"
                 />
+                <label for="Phone" class="text-sm text-slate-300 mb-1 mt-4"
+                  >Whatsapp number</label
+                ><input
+                  type="tel"
+                  name="whatsapp"
+                  v-model="whatsapp"
+                  placeholder=""
+                  class="rounded-none border-gray-200 p-3 border-2"
+                />
                 <label
                   for="course "
                   class="text-slate-300 font-normal mt-5 text-sm leading-5"
@@ -157,9 +196,9 @@
                 />
                 <button
                   type="submit"
-                  class="w-full flex flex-row items-center justify-center space-x-2 text-base font-normal uppercase tracking-wider bg-blue-600 mt-10 text-white py-3"
+                  class="w-full flex flex-row items-center justify-center space-x-2 text-sm font-semibold tracking-wider bg-blue-600 mt-10 text-white py-3"
                 >
-                  Register
+                  Download Brochure
                   <span
                     ><svg
                       v-if="!loading"
@@ -223,34 +262,40 @@ export default {
           name: "Social Media Marketing Training and Advertising Support for SMEs",
           params: "smmta",
           type: "Crash Course",
-          price: "Free",
+          price: "GHC 250",
+          price_discount: "Free",
+          duration: "1 Day",
           content:
             "Access a completely free social media marketing program, e-commerce and gain daily support in driving sales, growing your customers and engaging your followers.",
           img:
-            "https://images.unsplash.com/photo-1610473199899-fc0ec6e204bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "https://images.unsplash.com/photo-1610473199899-fc0ec6e204bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100",
           brochure:
             "/brochures/Free_Social_Media_Marketing_Training_and_Advertising_Support_for_SMEs.pdf",
         },
         {
           name: "Small Business Advanced Social Media Strategy Crash Course",
-          price: "GHC 250",
+          price: "GHC 500",
+          price_discount: "GHC 250",
+          duration: "2 Days",
           params: "sbsmmc",
           type: "Crash Course",
           img:
-            "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=100",
           content:
-            "Develop a social media marketing strategy for your small business. Gain a strategic understanding of driving sales traffic through social media. ",
+            "Develop a social media marketing strategy for your small business. Gain a strategic understanding in driving sales traffic through social media. ",
           brochure:
-            "/brochures/Small_Business_Advanced_Social_Media_Strategy_Crash_Course.pdf",
+            "/brochures/Exe_Advanced_Social_Media_Strategy_Course_for_Small_Business.pdf",
         },
         {
           name:
             "Complete Certification in Social Media Marketing with an option in Graphic Design and Photography",
-          price: "GHC 4,500",
+          price: "GHC 6,000",
+          price_discount: "GHC 4,500",
           type: "Complete Certification",
+          duration: "6 Months",
           params: "sdmgdp",
           img:
-            "https://images.unsplash.com/photo-1613479205646-c0dc1ee8511f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+            "https://images.unsplash.com/photo-1613479205646-c0dc1ee8511f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=100",
           content:
             "Launch a successful career as a social media marketing manager with top firms. Gain relevant skills in all the areas of social media marketing. ",
           brochure: "/brochures/Eazzy_Social_SM_Marketing_Brochure.pdf",
@@ -258,11 +303,13 @@ export default {
         {
           name:
             "Complete Certification in SEO with an option in WordPress Website Development ",
-          price: "GHC 4,000",
+          price: "GHC 6,000",
+          price_discount: "GHC 4,000",
           params: "pcseowwd",
           type: "Complete Certification",
+          duration: "6 Months",
           img:
-            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80",
+            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=100",
           content:
             "Search Engine Optimization specialists are in high demand across the Globe. Gain relevant skills in all the areas of SEO and work for top firms. Develop practical skills in building a website and optimizing. ",
           brochure: "/brochures/Eazzy_Social_SEO_Brochure.pdf",
@@ -270,21 +317,25 @@ export default {
         {
           name: "Executive Social Media and Digital Marketing Crash Course",
           price: "GHC 1,000",
+          price_discount: "GHC 700",
           params: "escdmc",
           type: "Crash Course",
+          duration: "1 Month",
           img:
-            "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+            "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=100",
           content:
             "Are you a business executive looking to deepen your knowledge in social media and digital marketing? Enrol our Executive course designed in partnership with Koforidua Technical University.  ",
-          brochure: "/brochures/Brochure-Social_Media_Marketing.pdf",
+          brochure: "/brochures/Executive_SM_and_DM_Crash_Course_22.pdf",
         },
         {
           name: "Online Shop Attendant Crash Course",
-          price: "GHC 1,000",
+          price: "GHC 2,500",
+          price_discount: "GHC 1,000",
           params: "osac",
           type: "Crash Course",
+          duration: "1 Month",
           img:
-            "https://images.unsplash.com/photo-1570857502809-08184874388e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+            "https://images.unsplash.com/photo-1570857502809-08184874388e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=100",
           content:
             "Begin a journey as a professional as an online shop attendant. Gain skills in all the areas in managing an online shop ie. Social media, e-commerce, accounting, customer service, product photography etc.  ",
           brochure: "/brochures/Online_shop_Attendant_Brochure_FIN_33.pdf",
@@ -292,21 +343,25 @@ export default {
         {
           name: "Executive Social Selling and Digital Selling Crash Course",
           price: "GHC 1,200",
+          price_discount: "GHC 899",
           params: "essdsc",
           type: "Crash Course",
+          duration: "1 Month",
           img:
-            "https://images.unsplash.com/photo-1573162915955-6a8ba9d2fe20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+            "https://images.unsplash.com/photo-1573162915955-6a8ba9d2fe20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=100",
           content:
             "Be a digital sales leader. Increase sales velocity and engage more prospects using social media platforms. The course is in partnership with Koforidua Technical University.  ",
           brochure: "/brochures/SOCIAL_SELLING_CRASH_COURSE_BROCHURE.pdf",
         },
         {
           name: "Online Reputation Management and Applied SEO Crash Course",
-          price: "GHC 2,500",
+          price: "GHC 5,000",
+          price_discount: "GHC 2,500",
           params: "ormaseow",
           type: "Crash Course",
+          duration: "1 Month",
           img:
-            "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100",
           content:
             "Protect the image of your business online through advanced social listening and bury negative information about your business in search through Advance search engine optimization.  ",
           brochure: "/brochures/Eazzy_Social_Online_Reputation_Brochure_new.pdf",
@@ -319,6 +374,7 @@ export default {
       name: "",
       email: "",
       contact: "",
+      whatsapp: "",
     };
   },
   methods: {
@@ -334,6 +390,7 @@ export default {
           email: this.email,
           contact: this.contact,
           course: this.course.name,
+          whatsapp: this.whatsapp,
         })
         .then((res) => {
           console.log(res);

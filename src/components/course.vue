@@ -11,7 +11,10 @@
               class="absolute w-full h-full top-0 bg-gradient-to-t from-black opacity-50 flex items-end justify-start p-4 lg:p-8 transition-all ease-out duration-150"
             ></div>
             <div>
-              <div class="flex absolute bottom-8 right-4 lg:right-8 items-center">
+              <div
+                class="flex absolute bottom-8 right-4 lg:right-8 items-center"
+                v-if="discounted_price != 'Free'"
+              >
                 <p class="text-sm font-normal mr-2 text-white">
                   Certificate from <span class="font-bold">KTU</span>
                 </p>
@@ -29,7 +32,9 @@
                 class="text-sm font-semibold space-x-1 text-orange-600 p-2 bg-orange-100 flex items-center"
               >
                 <span><img src="../assets/badge.png" class="w-4 hidden" alt="" /></span>
-                <span>Certificate upon completion</span>
+                <span>{{
+                  discounted_price == "Free" ? "Virtual" : "In-person / Virtual"
+                }}</span>
               </p>
             </div>
             <div class="mt-4 w-full">

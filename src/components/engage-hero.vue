@@ -13,8 +13,12 @@
           </h2>
           <div class="max-w-lg mb-6 lg:mb-12">
             <p class="text-xl text-gray-500">
-              Send bulk messages to your customers whenever, wherever priced as low as 2-3
-              pesewas per SMS
+              Send bulk messages to your customers whenever, wherever!
+            </p>
+            <p class="text-base text-gray-500 mt-2">
+              Priced as low as
+              <span class="font-bold text-orange-500 text-2xl"> 2-3 pesewas </span> per
+              SMS
             </p>
           </div>
           <div class="flex flex-wrap">
@@ -32,12 +36,17 @@
         <div
           class="relative w-full h-full md:w-1/2 px-4 rounded-3xl grid grid-cols-2 gap-4 lg:gap-10"
         >
+          <img
+            class="relative w-full col-span-2 hidden h-full object-cover object-right"
+            src="https://images.unsplash.com/photo-1573164573938-c9a3db2e84ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=100"
+            alt=""
+          />
           <div
-            class="w-full h-[400px] translate-y-5 lg:translate-y-10 border-none rounded-3xl overflow-hidden"
+            class="w-full h-[300px] lg:h-[400px] translate-y-5 lg:translate-y-10 border-none rounded-3xl overflow-hidden"
           >
             <img
-              class="relative w-full h-full object-cover object-left"
-              src="https://images.unsplash.com/photo-1573164574001-518958d9baa2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHN1cHBvcnQlMjBibGFja3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
+              class="relative w-full h-full object-cover object-right"
+              src="https://images.unsplash.com/photo-1604933762021-54a5858c9832?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=100"
               alt=""
             />
           </div>

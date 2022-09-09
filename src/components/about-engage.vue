@@ -1,15 +1,75 @@
 <template>
   <div>
-    <section class="relative py-20 lg:py-40 overflow-hidden">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-wrap -m-6 lg:items-center">
+    <section class="relative py-10 md:py-20 lg:py-40 pb-20 lg:pb-20 overflow-hidden">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <h2
+          class="mb-6 font-heading font-semibold text-3xl md:text-center lg:text-4xl text-gray-900"
+        >
+          Preferred by over thousands of small business owners
+        </h2>
+        <div class="flex lg:flex-wrap flex-wrap-reverse -m-6 lg:items-center">
           <div class="w-full lg:w-1/2 p-6">
             <div
-              class="bg-gradient-orange mx-auto max-w-lg lg:h-96 relative border border-black border-opacity-10 rounded-3xl"
+              class="bg-gradient-orange mx-auto w-[300px] lg:w-auto lg:max-w-lg lg:h-96 relative border-none border-black border-opacity-10 rounded-3xl"
             >
               <img
                 class="lg:absolute lg:inset-4 mt-1 mx-auto transform w-full transition ease-in-out duration-500 rounded-3xl"
-                src="https://images.unsplash.com/photo-1528123778681-01e39b42808e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=100"
+                src="../assets/kiki.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 p-6">
+            <div class="lg:max-w-md">
+              <h2
+                class="mb-4 font-heading font-semibold text-xl lg:text-2xl text-gray-900"
+              >
+                Increase product awareness
+              </h2>
+              <p class="lg:mb-20 text-base text-gray-600">
+                Engage helps small businesses deliver automated, personalized and
+                customized SMS to increase their product visibility. With the help of a
+                wide range of affordable marketing tools, Engage makes it easier for you
+                to reach out and communicate with your customers.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap -m-6 lg:items-center mt-10">
+          <div class="w-full lg:w-1/2 p-6">
+            <div class="lg:max-w-md">
+              <h2
+                class="mb-4 font-heading font-semibold text-xl lg:text-2xl text-gray-900"
+              >
+                Increase Sales
+              </h2>
+              <p class="lg:mb-20 text-base text-gray-600">
+                Our technology allows you and your business to send a large number of
+                messages in an inexpensive and quick manner, which increases revenue and
+                leads generation.
+              </p>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 p-6">
+            <div
+              class="bg-gradient-orange mx-auto w-[300px] lg:w-auto lg:max-w-lg lg:h-96 relative border-none border-black border-opacity-10 rounded-3xl"
+            >
+              <img
+                class="lg:absolute lg:inset-4 mt-1 mx-auto transform w-full transition ease-in-out duration-500 rounded-3xl"
+                src="../assets/tasty.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap-reverse lg:flex-wrap -m-6 lg:items-center mt-10">
+          <div class="w-full lg:w-1/2 p-6">
+            <div
+              class="bg-gradient-orange mx-auto w-[300px] lg:w-auto lg:max-w-lg lg:h-96 relative border-none border-black border-opacity-10 rounded-3xl"
+            >
+              <img
+                class="lg:absolute lg:inset-4 mt-1 mx-auto transform w-full transition ease-in-out duration-500 rounded-3xl"
+                src="../assets/game.png"
                 alt=""
               />
             </div>
@@ -17,68 +77,15 @@
           <div class="w-full lg:w-1/2 p-6">
             <div class="lg:max-w-lg">
               <h2
-                class="mb-6 font-heading font-semibold text-3xl lg:text-4xl text-gray-900"
+                class="mb-4 font-heading font-semibold text-xl lg:text-2xl text-gray-900"
               >
-                Preferred by over thousands of small business owners
+                Retain your Customers
               </h2>
-              <p class="mb-20 text-base text-gray-600 hidden">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                Velit officia consequat duis enim velit mollit. Exercitation veniam
-                consequat.
+              <p class="lg:mb-20 text-base text-gray-600">
+                Our business solution addresses the needs of every small business by
+                automating their bulk SMS campaigns, increasing customer retention and
+                loyalty.
               </p>
-              <ul>
-                <li
-                  class="mb-4 flex items-center font-heading font-semibold text-lg text-gray-900"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-8 w-8 mr-2 text-green-500"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <p>Increase product awareness</p>
-                </li>
-                <li
-                  class="mb-4 flex items-center font-heading font-semibold text-lg text-gray-900"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-8 w-8 mr-2 text-green-500"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <p>Increase Sales</p>
-                </li>
-                <li
-                  class="mb-4 flex items-center font-heading font-semibold text-lg text-gray-900"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-8 w-8 mr-2 text-green-500"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <p>Retain your customers</p>
-                </li>
-              </ul>
             </div>
           </div>
         </div>

@@ -49,6 +49,8 @@ export default {
         {
           name: "Small Business Advanced Social Media Strategy Crash Course",
           price: "GHC 500",
+          price_usd:"75 ",
+          price_discount_usd:"25 ",
           price_discount: "GHC 250",
           params: "sbsmmc",
           type: "Crash Course",
@@ -62,6 +64,8 @@ export default {
           name:
             "Complete Certification in Social Media Marketing with an option in Graphic Design and Photography",
           price: "GHC 6,500",
+          price_usd:"800",
+          price_discount_usd:"399",
           price_discount: "GHC 4,500",
           type: "Complete Certification",
           params: "sdmgdp",
@@ -75,6 +79,8 @@ export default {
           name:
             "Complete Certification in SEO with an option in WordPress Website Development",
           price: "GHC 6,000",
+          price_usd:"700",
+          price_discount_usd:"399",
           price_discount: "GHC 4,000",
           params: "pcseowwd",
           type: "Complete Certification",
@@ -87,6 +93,8 @@ export default {
         {
           name: "Executive Social Media and Digital Marketing Crash Course",
           price: "GHC 1,000",
+          price_usd:"200",
+          price_discount_usd:"99",
           price_discount: "GHC 700",
           params: "escdmc",
           type: "Crash Course",
@@ -99,6 +107,8 @@ export default {
         {
           name: "Online Shop Attendant Crash Course",
           price: "GHC 2,500",
+          price_usd:"200",
+          price_discount_usd:"99",
           price_discount: "GHC 1,000",
           params: "osac",
           type: "Crash Course",
@@ -111,6 +121,8 @@ export default {
         {
           name: "Executive Social Selling and Digital Selling Crash Course",
           price: "GHC 1,200",
+          price_usd:"250",
+          price_discount_usd:"150",
           price_discount: "GHC 899",
           params: "essdsc",
           type: "Crash Course",
@@ -123,6 +135,8 @@ export default {
         {
           name: "Online Reputation Management and Applied SEO Crash Course",
           price: "GHC 5,000",
+          price_usd:"500",
+          price_discount_usd:"250",
           price_discount: "GHC 2,500",
           params: "ormaseow",
           type: "Crash Course",
@@ -135,6 +149,8 @@ export default {
         {
           name: "Social Media Marketing Training and Advertising Support for SMEs",
           params: "smmta",
+          price_usd:"50",
+          price_discount_usd:"free",
           price_discount: "Free",
           type: "Crash Course",
           price: "GHC 250",

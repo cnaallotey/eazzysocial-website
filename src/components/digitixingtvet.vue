@@ -2,7 +2,7 @@
   <div class="mb-20 lg:mb-0">
     <div class="w-full h-[29.125rem] relative overflow-hidden mb-10 lg:mb-0">
       <img
-        src="../assets/tvet.png"
+        src="https://images.unsplash.com/photo-1642693252481-0af33a3f8c99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1127&q=100"
         class="w-full h-full object-cover object-center"
         alt=""
       />
@@ -206,6 +206,15 @@
                               placeholder=""
                               class="rounded-none border-gray-200 p-3 border-2"
                             />
+                            <label for="Phone" class="text-sm text-gray-700 mb-1 mt-4"
+                              >Your Whatsapp number</label
+                            ><input
+                              type="tel"
+                              name="whatsapp"
+                              v-model="tvet.whatsapp"
+                              placeholder=""
+                              class="rounded-none border-gray-200 p-3 border-2"
+                            />
                             <label for="School" class="text-sm text-gray-700 mb-1 mt-4"
                               >Your School</label
                             ><input
@@ -284,7 +293,7 @@
         >
           <div class="w-full hidden lg:flex lg:w-3/4">
             <img
-              src="../assets/gift-habeshaw-kSTcz5gE018-unsplash.jpg"
+              src="https://images.unsplash.com/photo-1612299273045-362a39972259?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=100"
               class="w-full h-[35rem] object-cover object-center"
               alt=""
             />
@@ -351,6 +360,15 @@
                 v-model="school.contact"
                 class="p-3 bg-white text-base mt-1 font-normal text-slate-800"
               />
+              <label for="Phone" class="text-sm text-slate-300 mb-1 mt-5"
+                >Whatsapp number</label
+              ><input
+                type="tel"
+                name="whatsapp"
+                v-model="school.whatsapp"
+                placeholder=""
+                class="rounded-none border-gray-200 p-3 border-2"
+              />
               <button
                 class="w-full flex flex-row items-center justify-center space-x-2 text-base font-normal uppercase tracking-wider bg-blue-600 mt-10 text-white py-3"
               >
@@ -374,7 +392,7 @@
         </div>
       </div>
     </div>
-    <div class="w-full my-10 lg:my-32 bg-gradient-to-t from-blue-50">
+    <div class="w-full my-10 lg:my-40 bg-gradient-to-t from-blue-50">
       <div class="max-w-screen-xl mx-auto px-5">
         <p
           class="mt-2 text-3xl leading-8 font-extrabold tracking-tight mb-10 text-gray-900 sm:text-4xl max-w-2xl mx-auto lg:text-center"

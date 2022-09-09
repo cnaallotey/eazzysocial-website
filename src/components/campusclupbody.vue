@@ -107,6 +107,19 @@
                               </p>
                             </div>
                             <div class="w-full px-8 pt-8">
+                              <div class="w-fit">
+                                <p
+                                  class="text-sm font-semibold space-x-1 text-orange-600 p-2 bg-orange-100 flex items-center"
+                                >
+                                  <span
+                                    ><img
+                                      src="../assets/badge.png"
+                                      class="w-4 hidden"
+                                      alt=""
+                                  /></span>
+                                  <span>Certificate upon completion</span>
+                                </p>
+                              </div>
                               <div class="mt-4 w-full">
                                 <div>
                                   <h3 class="text-lg leading-6 font-medium text-gray-900">
@@ -240,6 +253,17 @@
                                 type="tel"
                                 name="contact"
                                 v-model="contact"
+                                placeholder=""
+                                class="rounded-none border-gray-200 p-3 border-2"
+                              />
+                              <label
+                                for="whatsapp"
+                                class="text-sm text-gray-700 mb-1 mt-4"
+                                >Your whatsapp number</label
+                              ><input
+                                type="tel"
+                                name="whatsapp"
+                                v-model="whatsapp"
                                 placeholder=""
                                 class="rounded-none border-gray-200 p-3 border-2"
                               />
@@ -459,6 +483,7 @@ export default {
       email: "",
       contact: "",
       school: "",
+      whatsapp: "",
     };
   },
   methods: {
@@ -477,6 +502,7 @@ export default {
           contact: this.contact,
           school: this.school,
           course: this.selectedCourse,
+          whatsapp: this.whatsapp,
         })
         .then((res) => {
           this.modal = false;

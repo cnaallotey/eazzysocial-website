@@ -2,8 +2,10 @@
   <div>
     <section class="pb-24 lg:pb-40 bg-white">
       <div class="container max-w-screen-xl px-4 mx-auto">
-        <div class="flex flex-wrap -mx-4">
-          <div class="w-full lg:w-2/5 px-4 mb-20 lg:mb-0">
+        <div class="flex flex-wrap -mx-4 h-full">
+          <div
+            class="w-full lg:w-2/5 px-4 mb-0 lg:mb-0 flex flex-1 flex-col justify-center"
+          >
             <span
               class="mb-6 font-heading font-semibold text-3xl lg:text-4xl text-gray-900"
               >How it works</span
@@ -14,10 +16,9 @@
               Easy to use. Really
             </h2>
             <p
-              class="mb-16 lg:mb-20 text-base lg:text-lg mt-3 leading-relaxed font-heading font-medium"
+              class="mb-5 lg:mb-20 text-base lg:text-lg mt-3 leading-relaxed font-heading font-medium"
             >
-              Phasellus eget pretium mi, vestibulum lobortis neque. Nulla bibendum tempor
-              velit, at hendrerit massa fringilla.
+              Start powering your Business with Engage with these four simple steps
             </p>
             <div class="mb-12 font-heading">
               <button
@@ -27,111 +28,150 @@
                 More
               </button>
               <button
-                class="py-4 px-5 w-full md:w-auto text-sm leading-none text-white font-medium tracking-tighter font-heading bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-none"
+                class="py-4 px-5 hidden w-full md:w-auto text-sm leading-none text-white font-medium tracking-tighter font-heading bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-none"
                 type="button"
               >
                 Book a Demo
               </button>
             </div>
-            <p class="text-lg leading-6 text-darkBlueGray-400 font-normal">
-              Explore the plaftorm right here.
-            </p>
           </div>
           <div class="w-full lg:w-3/5 px-4">
             <div class="flex flex-wrap -mx-4 items-start">
-              <div class="w-full md:w-1/2 px-4 mb-12 md:mb-0 md:mt-20 relative">
+              <div class="w-full md:w-1/2 px-4 mb-12 md:mb-0 lg:mt-20 relative">
                 <div class="w-full relative group">
                   <div
                     class="relative pt-16 pb-20 px-8 md:px-12 2xl:px-16 -mx-1 bg-white border border-black border-opacity-10 z-10 rounded-3xl"
                   >
-                    <div
-                      class="relative inline-flex items-center justify-center mb-8 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full"
-                    >
-                      <span class="text-2xl font-bold">1</span>
+                    <div class="flex relative items-end">
+                      <div
+                        class="relative inline-flex items-center justify-center mb-4 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full z-10"
+                      >
+                        <span class="text-2xl font-bold">1</span>
+                      </div>
+                      <div
+                        class="bg-slate-100 w-[100px] h-[100px] rounded-full relative -ml-5 overflow-hidden"
+                      >
+                        <img
+                          src="https://images.unsplash.com/photo-1615985250029-f6c6be15745b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=100"
+                          class="w-full h-full object-cover object-center"
+                          alt=""
+                        />
+                      </div>
                     </div>
+
                     <h2
-                      class="mb-8 text-xl lg:text-2xl leading-tight font-medium font-heading group-hover:text-orange-400"
+                      class="mb-4 text-xl lg:text-2xl leading-tight font-medium font-heading"
                     >
                       Create an Account
                     </h2>
                     <p class="text-lg text-slate-700">
-                      Proin nec nunc felis. In non tellus ultricies, rutrum lacus et,
-                      pharetra elit.
+                      Fill in a few details to help us understand you and your business
                     </p>
                   </div>
                   <div
                     class="absolute left-1/2 -bottom-3 group-hover:bg-blue-500 transform -translate-x-1/2 w-11/12 h-24 border border-black border-opacity-10 rounded-3xl"
                   ></div>
                 </div>
-                <div class="w-full relative mt-5">
+                <div class="w-full relative mt-5 group">
                   <div
                     class="relative pt-16 pb-20 px-8 md:px-12 2xl:px-16 -mx-1 bg-white border border-black border-opacity-10 z-10 rounded-3xl"
                   >
-                    <div
-                      class="relative inline-flex items-center justify-center mb-8 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full"
-                    >
-                      <span class="text-2xl font-bold">2</span>
+                    <div class="flex relative items-end">
+                      <div
+                        class="relative inline-flex items-center justify-center mb-4 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full z-10"
+                      >
+                        <span class="text-2xl font-bold">2</span>
+                      </div>
+                      <div
+                        class="bg-slate-100 w-[100px] h-[100px] rounded-full relative -ml-5 overflow-hidden"
+                      >
+                        <img
+                          src="https://images.unsplash.com/photo-1616077167555-51f6bc516dfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=100"
+                          class="object-cover object-center w-full h-full"
+                          alt=""
+                        />
+                      </div>
                     </div>
                     <h2
-                      class="mb-8 text-xl lg:text-2xl leading-tight font-medium font-heading"
+                      class="mb-4 text-xl lg:text-2xl leading-tight font-medium font-heading"
                     >
                       Top Up SMS credits
                     </h2>
                     <p class="text-lg text-slate-700">
-                      Proin nec nunc felis. In non tellus ultricies, rutrum lacus et,
-                      pharetra elit.
+                      Purchase credits from our platform using Mobile Money, Card or Bank.
                     </p>
                   </div>
                   <div
-                    class="absolute left-1/2 -bottom-3 transform -translate-x-1/2 w-11/12 h-24 border border-black border-opacity-10 rounded-3xl"
+                    class="absolute left-1/2 -bottom-3 group-hover:bg-blue-500 transform -translate-x-1/2 w-11/12 h-24 border border-black border-opacity-10 rounded-3xl"
                   ></div>
                 </div>
               </div>
               <div class="w-full md:w-1/2 px-4">
-                <div class="w-full relative">
+                <div class="w-full relative group">
                   <div
                     class="relative pt-16 pb-20 px-8 md:px-12 2xl:px-16 -mx-1 bg-white border border-black border-opacity-10 z-10 rounded-3xl"
                   >
-                    <div
-                      class="relative inline-flex items-center justify-center mb-8 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full"
-                    >
-                      <span class="text-2xl font-bold">3</span>
+                    <div class="flex relative items-end">
+                      <div
+                        class="relative inline-flex items-center justify-center mb-4 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full z-10"
+                      >
+                        <span class="text-2xl font-bold">3</span>
+                      </div>
+                      <div
+                        class="bg-slate-100 w-[100px] h-[100px] rounded-full relative -ml-5 overflow-hidden"
+                      >
+                        <img
+                          src="https://images.pexels.com/photos/3769004/pexels-photo-3769004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                          class="object-cover object-center w-full h-full"
+                          alt=""
+                        />
+                      </div>
                     </div>
                     <h2
-                      class="mb-8 text-xl lg:text-2xl leading-tight font-medium font-heading"
+                      class="mb-4 text-xl lg:text-2xl leading-tight font-medium font-heading"
                     >
                       Upload Contact List
                     </h2>
                     <p class="text-lg text-slate-700">
-                      Proin nec nunc felis. In non tellus ultricies, rutrum lacus et,
-                      pharetra elit.
+                      Just upload all contacts you would be sending your sms to in a
+                      simple excel sheet.
                     </p>
                   </div>
                   <div
-                    class="absolute left-1/2 -bottom-3 transform -translate-x-1/2 w-11/12 h-24 border border-black border-opacity-10 rounded-3xl"
+                    class="absolute left-1/2 -bottom-3 group-hover:bg-blue-500 transform -translate-x-1/2 w-11/12 h-24 border border-black border-opacity-10 rounded-3xl"
                   ></div>
                 </div>
-                <div class="w-full relative mt-5">
+                <div class="w-full relative mt-5 group">
                   <div
                     class="relative pt-16 pb-20 px-8 md:px-12 2xl:px-16 -mx-1 bg-white border border-black border-opacity-10 z-10 rounded-3xl"
                   >
-                    <div
-                      class="relative inline-flex items-center justify-center mb-8 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full"
-                    >
-                      <span class="text-2xl font-bold">4</span>
+                    <div class="flex relative items-end">
+                      <div
+                        class="relative inline-flex items-center justify-center mb-4 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full z-10"
+                      >
+                        <span class="text-2xl font-bold">4</span>
+                      </div>
+                      <div
+                        class="bg-slate-100 w-[100px] h-[100px] rounded-full relative -ml-5 overflow-hidden"
+                      >
+                        <img
+                          src="https://images.pexels.com/photos/3206080/pexels-photo-3206080.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                          class="object-cover object-center w-full h-full"
+                          alt=""
+                        />
+                      </div>
                     </div>
                     <h2
-                      class="mb-8 text-xl lg:text-2xl leading-tight font-medium font-heading"
+                      class="mb-4 text-xl lg:text-2xl leading-tight font-medium font-heading"
                     >
                       Start Sending
                     </h2>
                     <p class="text-lg text-slate-700">
-                      Proin nec nunc felis. In non tellus ultricies, rutrum lacus et,
-                      pharetra elit.
+                      Hurray you are all done. Now you can start sending!!
                     </p>
                   </div>
                   <div
-                    class="absolute left-1/2 -bottom-3 transform -translate-x-1/2 w-11/12 h-24 border border-black border-opacity-10 rounded-3xl"
+                    class="absolute left-1/2 -bottom-3 transform group-hover:bg-blue-500 -translate-x-1/2 w-11/12 h-24 border border-black border-opacity-10 rounded-3xl"
                   ></div>
                 </div>
               </div>

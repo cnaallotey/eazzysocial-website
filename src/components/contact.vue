@@ -98,6 +98,15 @@
                     class="p-3 text-sm font-normal rounded-md text-gray-900 border-2 bg-gray-50 border-gray-200"
                     v-model="contact.tel"
                   />
+                  <label for="Phone" class="text-sm text-gray-700 mb-1 mt-4"
+                    >Your Whatsapp number</label
+                  ><input
+                    type="tel"
+                    name="whatsapp"
+                    v-model="contact.whatsapp"
+                    placeholder=""
+                    class="rounded-none border-gray-200 p-3 border-2"
+                  />
                   <label for="country" class="font-normal text-sm text-gray-700 mb-1 mt-4"
                     >Country</label
                   >
