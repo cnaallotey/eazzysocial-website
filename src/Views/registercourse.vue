@@ -40,14 +40,12 @@
                 {{ course.name }}
               </p>
               <div class="w-full flex flex-wrap items-center space-x-3 mt-5">
-                <p
-                  class="py-1 px-3 text-base font-semibold w-fit line-through decoration-4 decoration-red-500 text-white"
-                >
-                  {{ course.price }}
-                </p>
-                <p class="py-1 px-3 text-lg font-semibold w-fit bg-rose-600 text-white">
-                  {{ course.price_discount }}
-                </p>
+                <Price
+                  :price="course.price"
+                  :price_discount="course.price_discount"
+                  :price_usd="course.price_usd"
+                  :discount_price_usd="course.price_discount_usd"
+                />
                 <p
                   class="px-4 py-1 border-l inline-flex items-center space-x-1 border-gray-200 text-white font-normal text-lg"
                 >
@@ -251,8 +249,9 @@ import waves from "../components/waves.vue";
 import errornotVue from "../components/errornot.vue";
 import axios from "axios";
 import Errornot from "../components/errornot.vue";
+import Price from "../components/price.vue";
 export default {
-  components: { waves, errornotVue },
+  components: { waves, errornotVue, Price },
   data() {
     Errornot;
     return {
@@ -263,6 +262,8 @@ export default {
           params: "smmta",
           type: "Crash Course",
           price: "GHC 250",
+          price_usd: "50",
+          price_discount_usd: "free",
           price_discount: "Free",
           duration: "1 Day",
           content:
@@ -276,6 +277,8 @@ export default {
           name: "Small Business Advanced Social Media Strategy Crash Course",
           price: "GHC 500",
           price_discount: "GHC 250",
+          price_usd: "75",
+          price_discount_usd: "25",
           duration: "2 Days",
           params: "sbsmmc",
           type: "Crash Course",
@@ -292,6 +295,8 @@ export default {
           price: "GHC 6,000",
           price_discount: "GHC 4,500",
           type: "Complete Certification",
+          price_usd: "800",
+          price_discount_usd: "399",
           duration: "6 Months",
           params: "sdmgdp",
           img:
@@ -305,6 +310,8 @@ export default {
             "Complete Certification in SEO with an option in WordPress Website Development ",
           price: "GHC 6,000",
           price_discount: "GHC 4,000",
+          price_usd: "",
+          price_discount_usd: "",
           params: "pcseowwd",
           type: "Complete Certification",
           duration: "6 Months",
@@ -318,6 +325,8 @@ export default {
           name: "Executive Social Media and Digital Marketing Crash Course",
           price: "GHC 1,000",
           price_discount: "GHC 700",
+          price_usd: "200",
+          price_discount_usd: "99",
           params: "escdmc",
           type: "Crash Course",
           duration: "1 Month",
@@ -331,6 +340,8 @@ export default {
           name: "Online Shop Attendant Crash Course",
           price: "GHC 2,500",
           price_discount: "GHC 1,000",
+          price_usd: "200",
+          price_discount_usd: "99",
           params: "osac",
           type: "Crash Course",
           duration: "1 Month",
@@ -344,6 +355,8 @@ export default {
           name: "Executive Social Selling and Digital Selling Crash Course",
           price: "GHC 1,200",
           price_discount: "GHC 899",
+          price_usd: "250",
+          price_discount_usd: "150",
           params: "essdsc",
           type: "Crash Course",
           duration: "1 Month",
@@ -357,6 +370,8 @@ export default {
           name: "Online Reputation Management and Applied SEO Crash Course",
           price: "GHC 5,000",
           price_discount: "GHC 2,500",
+          price_usd: "500",
+          price_discount_usd: "250",
           params: "ormaseow",
           type: "Crash Course",
           duration: "1 Month",

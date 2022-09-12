@@ -51,7 +51,16 @@
         </div>
         <div class="w-full mt-4 px-4 md:px-8">
           <div class="w-full flex items-center justify-between">
-            <div class="flex items-center space-x-1">
+            <div class="flex items-center space-x-1" v-if="store.country != 'GH'">
+              <p class="text-sm leading-6 font-medium text-gray-400 line-through">
+                {{ price_usd }} USD
+              </p>
+              <p class="text-lg leading-6 font-bold text-gray-900">
+                {{ price_discount_usd }} {{ price_discount_usd == "free" ? "" : "USD" }}
+              </p>
+            </div>
+
+            <div class="flex items-center space-x-1" v-else>
               <p class="text-sm leading-6 font-medium text-gray-400 line-through">
                 {{ price }}
               </p>
@@ -110,38 +119,45 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    name: {
-      type: String,
-    },
-    price: {
-      type: String,
-    },
-    content: {
-      type: String,
-    },
-    img: {
-      type: String,
-    },
-    link: {
-      type: String,
-    },
-    type: {
-      type: String,
-    },
-    duration: {
-      type: String,
-    },
-    discounted_price: {
-      type: String,
-    },
+<script setup>
+import { router } from "../main";
+import { useStore } from "../store";
+const props = defineProps({
+  name: {
+    type: String,
   },
-  methods: {
-    goto: function (x) {
-      this.$router.push(`/registercourse/${x}`);
-    },
+  price: {
+    type: String,
   },
+  content: {
+    type: String,
+  },
+  img: {
+    type: String,
+  },
+  link: {
+    type: String,
+  },
+  type: {
+    type: String,
+  },
+  duration: {
+    type: String,
+  },
+  discounted_price: {
+    type: String,
+  },
+  price_usd: {
+    type: String,
+  },
+  price_discount_usd: {
+    type: String,
+  },
+});
+
+const store = useStore();
+
+const goto = (x) => {
+  router.push(`/registercourse/${x}`);
 };
 </script>

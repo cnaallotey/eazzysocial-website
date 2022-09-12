@@ -15,8 +15,11 @@ import Engage from "./Views/Engage.vue"
 import GHAbout from "./Views/gethiredabout.vue"
 import webinar from "./Views/Webinar.vue"
 import VueGtag from "vue-gtag";
+import { createPinia } from 'pinia'
 
 import VueAnalytics from 'vue-analytics';
+
+const pinia = createPinia()
 
 
 const router = createRouter({
@@ -68,4 +71,6 @@ const router = createRouter({
 })
 
 
-createApp(App).use(router).use(VueGtag,{config: { id: "G-D394SN23TD" }},router ).mount('#app')
+createApp(App).use(router).use(VueGtag,{config: { id: "G-D394SN23TD" }},router ).use(pinia).mount('#app')
+
+export {router}

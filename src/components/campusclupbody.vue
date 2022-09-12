@@ -419,7 +419,7 @@ export default {
             "https://images.unsplash.com/photo-1586880244386-8b3e34c8382c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZWNvbW1lcmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
         },
         {
-          name: "Business Blogging ",
+          name: "Business Blogging and SEO ",
           job_ready: true,
           opened: true,
           content:
