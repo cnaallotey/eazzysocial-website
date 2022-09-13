@@ -1,9 +1,16 @@
 <template>
   <div>
-    <Banner />
+    <Banner @scrolls="scrollstocontent" />
     <navbar />
     <hero />
-    <content />
+    <content
+      :scrollto="scrollto"
+      @changeval="
+        (n) => {
+          scrollto = n;
+        }
+      "
+    />
 
     <faqs />
     <cta />
@@ -22,6 +29,18 @@ import faqs from "../components/faqs-campusclub.vue";
 import Banner from "../components/banner.vue";
 export default {
   components: { navbar, cta, foote, hero, content, faqs, Banner },
+  data() {
+    return {
+      scrollto: false,
+    };
+  },
+  methods: {
+    scrollstocontent() {
+      //console.log("hello");
+      this.scrollto = true;
+      console.log(this.scrollto);
+    },
+  },
   created() {
     if ("scrollRestoration" in history) {
       history.scrollRestoration = "manual";

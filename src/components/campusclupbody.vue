@@ -62,7 +62,7 @@
               </div>
             </div>
           </div>
-          <div class="w-full bg-blue-50 py-20">
+          <div class="w-full bg-blue-50 py-20" id="view">
             <div class="max-w-screen-xl mx-auto px-5">
               <div>
                 <div class="w-full">
@@ -480,6 +480,7 @@ import successnotificationVue from "./successnotification.vue";
 import axios from "axios";
 export default {
   components: { course, tvetslide, errornotVue, successnotificationVue },
+  props: { scrollto: Boolean },
   data() {
     return {
       logos: ["ashesi.jpg", "knust.png", "ktu.jpg", "ucc.png", "uew.png", "ug.png"],
@@ -578,6 +579,15 @@ export default {
       whatsapp: "",
     };
   },
+  watch: {
+    // whenever question changes, this function will run
+    scrollto(newValue) {
+      if (newValue) {
+        this.scrollstocontent();
+        this.$emit("changeval", false);
+      }
+    },
+  },
   methods: {
     openmodal: function (name, img) {
       this.modal = true;
@@ -611,6 +621,11 @@ export default {
       //console.log(pdf);
       const letter = `/brochures/campusclub/${this.courses[pdf].letter}`;
       this.downloadWithAxios(letter, this.selectedCourse);
+    },
+    scrollstocontent() {
+      //console.log("hello");
+      const el = document.getElementById("view");
+      el.scrollIntoView({ behavior: "smooth" });
     },
     sendform: function () {
       this.loading = true;
