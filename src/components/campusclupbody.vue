@@ -404,6 +404,7 @@ export default {
           name: "Social Media Marketing (Community Management) ",
           job_ready: true,
           opened: true,
+          letter: "Congratsocialmedia.pdf",
           content:
             "Acquire relevant skills needed in starting a career in social media marketing. Gain and jobs and internships with companies globally. Earn monthly stipends while in school.",
           img:
@@ -413,6 +414,7 @@ export default {
           name: "E-commerce Management and SEO ",
           job_ready: true,
           opened: false,
+          letter: "Congratecommerce.pdf",
           content:
             "Acquire relevant skills in e-commerce and search engine optimization. Gain jobs and internships with companies globally. Earn monthly stipends while in school.",
           img:
@@ -422,6 +424,7 @@ export default {
           name: "Business Blogging and SEO ",
           job_ready: true,
           opened: true,
+          letter: "Congratblogging.pdf",
           content:
             "Turn your passion for writing into a profitable venture writing articles and stories for businesses and while learning the secret of blogging.",
           img:
@@ -431,6 +434,7 @@ export default {
           name: "Data Science and Analytics",
           job_ready: true,
           opened: true,
+          letter: "Congratdatascience.pdf",
           content:
             "Start a journey with data science and business analytics. Gain jobs and internships with companies globally. Earn monthly stipends while in school. ",
           img:
@@ -440,6 +444,7 @@ export default {
           name: "UX and UI Design Fundamentals",
           job_ready: true,
           opened: true,
+          letter: "CongratUXdesign.pdf",
           content:
             "Learn the basics of designing websites and apps through human-centred interaction design. Gain jobs and internships with companies globally. Earn monthly stipends while in school.",
           img:
@@ -449,6 +454,7 @@ export default {
           name: "LinkedIn for Jobs and Personal Branding ",
           job_ready: false,
           opened: false,
+          letter: "Congratlinkedin.pdf",
           content:
             "Build an effective personal brand for your career as a student. Increases your chances of getting jobs through Social Media and LinkedIn. ",
           img:
@@ -458,6 +464,7 @@ export default {
           name: "CV Writing ",
           job_ready: false,
           opened: false,
+          letter: "Congratcvwriting.pdf",
           content:
             "Learn advanced techniques in writing an effective CV that increases your chances of landing a job. Gain support in re-writing your CV.",
           img:
@@ -467,6 +474,7 @@ export default {
           name: "Business Computing (Microsoft Word, Excel, PowerPoint…)",
           job_ready: true,
           opened: false,
+          letter: "Congratbusinesscomputing.pdf",
           content:
             "Strengthen your skills in using ICT for business. Gain advanced knowledge in Excel, Microsoft Word etc. ",
           img:
@@ -492,6 +500,26 @@ export default {
       this.selectedCourse = name;
       this.selectedimg = img;
     },
+    forceFileDownload(response, title) {
+      //console.log(title);
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", title);
+      document.body.appendChild(link);
+      link.click();
+    },
+    downloadWithAxios(url, title) {
+      axios({
+        method: "get",
+        url,
+        responseType: "arraybuffer",
+      })
+        .then((response) => {
+          this.forceFileDownload(response, title);
+        })
+        .catch(() => console.log("error occured"));
+    },
     sendform: function () {
       this.loading = true;
       const token = "LRIp0GUh5X";
@@ -509,6 +537,12 @@ export default {
 
           this.submitted = true;
           this.loading = false;
+          const pdf = this.courses.findIndex(
+            (element) => element.name === this.selectedCourse
+          );
+          console.log(pdf);
+          const letter = `/brochures/campusclub/${this.courses[pdf].letter}`;
+          this.downloadWithAxios(letter, this.selectedCourse);
           setTimeout(() => {
             this.submitted = false;
           }, 10000);
