@@ -594,6 +594,7 @@ export default {
       this.selectedCourse = name;
       this.selectedimg = img;
     },
+
     forceFileDownload(response, title) {
       //console.log(title);
       const url = window.URL.createObjectURL(new Blob([response.data]));
@@ -620,7 +621,7 @@ export default {
       );
       //console.log(pdf);
       const letter = `/brochures/campusclub/${this.courses[pdf].letter}`;
-      this.downloadWithAxios(letter, this.selectedCourse);
+      window.open(letter, "Download");
     },
     scrollstocontent() {
       //console.log("hello");
