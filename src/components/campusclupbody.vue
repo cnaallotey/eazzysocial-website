@@ -228,7 +228,7 @@
                           <div class="w-full">
                             <div class="w-full flex flex-col">
                               <label for="name" class="text-sm text-gray-700 mb-1"
-                                >Your name <span class="text-red-500">*</span></label
+                                >Your name </label
                               ><input
                                 type="text"
                                 name="name"
@@ -238,7 +238,7 @@
                                 required
                               />
                               <label for="email" class="text-sm text-gray-700 mb-1 mt-4"
-                                >Your email <span class="text-red-500">*</span></label
+                                >Your email </label
                               ><input
                                 type="email"
                                 name="email"
