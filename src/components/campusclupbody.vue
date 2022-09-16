@@ -253,6 +253,7 @@
                                 type="tel"
                                 name="contact"
                                 v-model="contact"
+                                required
                                 placeholder=""
                                 class="rounded-none border-gray-200 p-3 border-2"
                               />
@@ -264,6 +265,7 @@
                                 type="tel"
                                 name="whatsapp"
                                 v-model="whatsapp"
+                                required
                                 placeholder=""
                                 class="rounded-none border-gray-200 p-3 border-2"
                               />
@@ -273,9 +275,39 @@
                                 type="text"
                                 name="school"
                                 v-model="school"
+                                required
                                 placeholder="enter school name"
                                 class="rounded-none border-gray-200 p-3 border-2"
                               />
+                              <label for="level" class="text-sm text-gray-700 mb-1 mt-4"
+                                >Currently studying for a Postgraduate Degree?</label
+                              ><select
+                                type="text"
+                                name="school"
+                                v-model="postgrad"
+                                required
+                                placeholder="enter school name"
+                                class="rounded-none border-gray-200 p-3 border-2"
+                              >
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                              </select>
+                              <label
+                                for="completion"
+                                class="text-sm text-gray-700 mb-1 mt-4"
+                                >Year of completion</label
+                              ><select
+                                type="text"
+                                name="school"
+                                v-model="year"
+                                required
+                                placeholder="enter school name"
+                                class="rounded-none border-gray-200 p-3 border-2"
+                              >
+                                <option v-for="year in years" :value="year" selected>
+                                  {{ year }}
+                                </option>
+                              </select>
                             </div>
                             <div class="w-full mt-4 flex flex-col">
                               <label for="course" class="text-sm text-gray-700 mb-1"
@@ -575,6 +607,9 @@ export default {
       name: "",
       email: "",
       contact: "",
+      postgrad: "No",
+      year: "",
+      completion: "",
       school: "",
       whatsapp: "",
     };
@@ -639,6 +674,8 @@ export default {
           school: this.school,
           course: this.selectedCourse,
           whatsapp: this.whatsapp,
+          postgrad: this.postgrad,
+          CompletionYear: this.year,
         })
         .then((res) => {
           this.modal = false;
@@ -654,6 +691,12 @@ export default {
             this.error = false;
           }, 5000);
         });
+    },
+  },
+  computed: {
+    years() {
+      const year = new Date().getFullYear() + 10;
+      return Array.from({ length: year - 2010 }, (value, index) => 2011 + index);
     },
   },
 };
