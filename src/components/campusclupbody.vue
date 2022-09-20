@@ -234,7 +234,7 @@
                                 name="name"
                                 placeholder="eg. John Doe"
                                 v-model="name"
-                                class="rounded-none border-gray-200 p-3 border-2"
+                                class="rounded-none border-gray-200 px-3 py-2 border-2"
                                 required
                               />
                               <label for="email" class="text-sm text-gray-700 mb-1 mt-4"
@@ -244,7 +244,7 @@
                                 name="email"
                                 v-model="email"
                                 placeholder="eg. you@example.com"
-                                class="rounded-none border-gray-200 p-3 border-2"
+                                class="rounded-none border-gray-200 px-3 py-2 border-2"
                                 required
                               />
                               <label for="Phone" class="text-sm text-gray-700 mb-1 mt-4"
@@ -255,8 +255,13 @@
                                 v-model="contact"
                                 required
                                 placeholder=""
-                                class="rounded-none border-gray-200 p-3 border-2"
+                                class="rounded-none hidden border-gray-200 px-3 py-2 border-2"
                               />
+                              <vue-tel-input
+                                v-model="contact"
+                                mode="'international'"
+                                v-on:country-changed="(n) => checkcountry(n)"
+                              ></vue-tel-input>
                               <label
                                 for="whatsapp"
                                 class="text-sm text-gray-700 mb-1 mt-4"
@@ -267,8 +272,13 @@
                                 v-model="whatsapp"
                                 required
                                 placeholder=""
-                                class="rounded-none border-gray-200 p-3 border-2"
+                                class="rounded-none hidden border-gray-200 p-3 border-2"
                               />
+                              <vue-tel-input
+                                v-model="whatsapp"
+                                mode="'international'"
+                              ></vue-tel-input>
+
                               <label for="School" class="text-sm text-gray-700 mb-1 mt-4"
                                 >Your School</label
                               ><input
@@ -277,7 +287,7 @@
                                 v-model="school"
                                 required
                                 placeholder="enter school name"
-                                class="rounded-none border-gray-200 p-3 border-2"
+                                class="rounded-none border-gray-200 px-3 py-2 border-2"
                               />
                               <label for="level" class="text-sm text-gray-700 mb-1 mt-4"
                                 >Currently studying for a Postgraduate Degree?</label
@@ -287,7 +297,7 @@
                                 v-model="postgrad"
                                 required
                                 placeholder="enter school name"
-                                class="rounded-none border-gray-200 p-3 border-2"
+                                class="rounded-none border-gray-200 px-3 py-2 border-2"
                               >
                                 <option value="No" selected>No</option>
                                 <option value="Yes">Yes</option>
@@ -302,7 +312,7 @@
                                 v-model="year"
                                 required
                                 placeholder="enter school name"
-                                class="rounded-none border-gray-200 p-3 border-2"
+                                class="rounded-none border-gray-200 px-3 py-2 border-2"
                               >
                                 <option v-for="year in years" :value="year" selected>
                                   {{ year }}
@@ -314,7 +324,7 @@
                                 >Course <span class="text-red-500">*</span></label
                               ><select
                                 name="course"
-                                class="p-3 border-2 text-base font-normal appearance-none border-gray-200 text-gray-800"
+                                class="px-3 py-2 border-2 text-base font-normal appearance-none border-gray-200 text-gray-800"
                                 id=""
                                 v-model="selectedCourse"
                               >
@@ -510,9 +520,14 @@ import tvetslide from "../components/tvetslide.vue";
 import errornotVue from "./errornot.vue";
 import successnotificationVue from "./successnotification.vue";
 import axios from "axios";
+import { VueTelInput } from "vue-tel-input";
 export default {
-  components: { course, tvetslide, errornotVue, successnotificationVue },
-  props: { scrollto: Boolean },
+  components: { course, tvetslide, errornotVue, successnotificationVue, VueTelInput },
+  props: {
+    scrollto: {
+      type: Boolean,
+    },
+  },
   data() {
     return {
       logos: ["ashesi.jpg", "knust.png", "ktu.jpg", "ucc.png", "uew.png", "ug.png"],
@@ -606,12 +621,14 @@ export default {
       loading: false,
       name: "",
       email: "",
-      contact: "",
+      contact: null,
       postgrad: "No",
       year: "",
       completion: "",
       school: "",
-      whatsapp: "",
+      whatsapp: null,
+      country: null,
+      dialCode: null,
     };
   },
   watch: {
@@ -650,6 +667,11 @@ export default {
         })
         .catch(() => console.log("error occured"));
     },
+    checkcountry(n) {
+      //console.log(n);
+      this.country = n.name;
+      this.dialCode = n.dialCode;
+    },
     downloadLetter() {
       const pdf = this.courses.findIndex(
         (element) => element.name === this.selectedCourse
@@ -676,6 +698,8 @@ export default {
           whatsapp: this.whatsapp,
           postgrad: this.postgrad,
           CompletionYear: this.year,
+          country: this.country,
+          code: this.dialCode,
         })
         .then((res) => {
           this.modal = false;

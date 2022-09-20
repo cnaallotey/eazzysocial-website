@@ -16,6 +16,8 @@ import GHAbout from "./Views/gethiredabout.vue"
 import webinar from "./Views/Webinar.vue"
 import VueGtag from "vue-gtag";
 import { createPinia } from 'pinia'
+import VueTelInput from 'vue3-tel-input'
+import 'vue3-tel-input/dist/vue3-tel-input.css'
 
 import VueAnalytics from 'vue-analytics';
 
@@ -71,6 +73,6 @@ const router = createRouter({
 })
 
 
-createApp(App).use(router).use(VueGtag,{config: { id: "G-D394SN23TD" }},router ).use(pinia).mount('#app')
+createApp(App).use(router).use(VueGtag,{config: { id: "G-D394SN23TD" }},router ).use(VueTelInput).use(pinia).mount('#app')
 
 export {router}

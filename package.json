@@ -18,7 +18,9 @@
     "vue": "^3.2.25",
     "vue-analytics": "^5.22.1",
     "vue-gtag": "^2.0.1",
-    "vue-router": "^4.0.15"
+    "vue-router": "^4.0.15",
+    "vue-tel-input": "^6.0.5",
+    "vue3-tel-input": "^1.0.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
