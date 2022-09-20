@@ -260,6 +260,7 @@
                               <vue-tel-input
                                 v-model="contact"
                                 mode="'international'"
+                                inputOptions="{required:true}"
                                 v-on:country-changed="(n) => checkcountry(n)"
                               ></vue-tel-input>
                               <label
@@ -277,6 +278,7 @@
                               <vue-tel-input
                                 v-model="whatsapp"
                                 mode="'international'"
+                                inputOptions="{required:true}"
                               ></vue-tel-input>
 
                               <label for="School" class="text-sm text-gray-700 mb-1 mt-4"
