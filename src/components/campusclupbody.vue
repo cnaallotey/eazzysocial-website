@@ -265,7 +265,7 @@
                               ></vue-tel-input>
                               <label
                                 for="whatsapp"
-                                class="text-sm text-gray-700 mb-1 mt-4"
+                                class="text-sm text-gray-700 mb-0 mt-4"
                                 >Your whatsapp number</label
                               ><input
                                 type="tel"
@@ -275,10 +275,19 @@
                                 placeholder=""
                                 class="rounded-none hidden border-gray-200 p-3 border-2"
                               />
+                              <p
+                                class="text-xs mb-2 font-light text-gray-400"
+                                v-if="alert"
+                              >
+                                Please ensure whatsapp number is active. Eazzysocial will
+                                contact you to provide further information via whatsapp
+                              </p>
                               <vue-tel-input
                                 v-model="whatsapp"
                                 mode="'international'"
                                 inputOptions="{required:true}"
+                                @focusin="alert = true"
+                                @focusout="alert = false"
                               ></vue-tel-input>
 
                               <label for="School" class="text-sm text-gray-700 mb-1 mt-4"
@@ -631,6 +640,7 @@ export default {
       whatsapp: null,
       country: null,
       dialCode: null,
+      alert: false,
     };
   },
   watch: {
