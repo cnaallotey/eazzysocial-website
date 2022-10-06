@@ -574,6 +574,26 @@ export default {
             "https://images.unsplash.com/photo-1604933762023-7213af7ff7a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxvZ2dpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
         },
         {
+          name: "Graphic Design",
+          job_ready: true,
+          opened: false,
+          letter: "Congratgraphicdesign.pdf",
+          content:
+            "Build your first design portfolio using Adobe Photoshop and illustrator.Access to internship and mentorship after training. ",
+          img:
+            "https://images.unsplash.com/photo-1519408469771-2586093c3f14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1302&q=80",
+        },
+        {
+          name: "Social Media Advertising and Campaign Planning",
+          job_ready: true,
+          opened: false,
+          letter: "Congratsocialmediaadvertising.pdf",
+          content:
+            "BLearn how to run social media adverts and start a career as a Social Media Advertising Manager. Drive business performance through ads that convert. Earn stipends while in school. ",
+          img:
+            "https://images.unsplash.com/photo-1533895328642-8035bacd565a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+        },
+        {
           name: "Data Science and Analytics",
           job_ready: true,
           opened: true,
