@@ -247,6 +247,15 @@
                                 class="rounded-none border-gray-200 px-3 py-2 border-2"
                                 required
                               />
+                              <label for="country" class="text-sm text-gray-700 mb-1 mt-4"
+                                >Select Country</label
+                              >
+                              <country-select
+                                v-model="country"
+                                :country="country"
+                                topCountry="US"
+                                class="rounded-none border-gray-200 px-3 py-2 border-2 text-sm"
+                              />
                               <label for="Phone" class="text-sm text-gray-700 mb-1 mt-4"
                                 >Your phone number</label
                               ><input
@@ -526,6 +535,7 @@
 </template>
 
 <script>
+import vueCountryRegionSelect from "vue3-country-region-select";
 import course from "./course.vue";
 import tvetslide from "../components/tvetslide.vue";
 import errornotVue from "./errornot.vue";
@@ -576,7 +586,7 @@ export default {
         {
           name: "Graphic Design",
           job_ready: true,
-          opened: false,
+          opened: true,
           letter: "Congratgraphicdesign.pdf",
           content:
             "Build your first design portfolio using Adobe Photoshop and illustrator.Access to internship and mentorship after training. ",
@@ -701,7 +711,6 @@ export default {
     },
     checkcountry(n) {
       //console.log(n);
-      this.country = n.name;
       this.dialCode = n.dialCode;
     },
     downloadLetter() {

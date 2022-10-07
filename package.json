@@ -20,6 +20,7 @@
     "vue-gtag": "^2.0.1",
     "vue-router": "^4.0.15",
     "vue-tel-input": "^6.0.5",
+    "vue3-country-region-select": "^1.0.0",
     "vue3-tel-input": "^1.0.4"
   },
   "devDependencies": {
