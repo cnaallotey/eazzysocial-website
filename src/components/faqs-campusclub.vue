@@ -89,7 +89,7 @@ export default {
         {
           que: "Do I get a certificate after each course? ",
           ans:
-            "Certificates are awarded after completion of each course. Certificates comes at a cost of 50 cedis. ",
+            "Certificates comes at a cost of 50cedis for students in Ghana and USD5 for students outside Ghana. Certificate are compulsory to have ",
           open: false,
         },
         {
