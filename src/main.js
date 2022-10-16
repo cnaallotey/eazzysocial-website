@@ -17,6 +17,7 @@ import webinar from "./Views/Webinar.vue"
 import VueGtag from "vue-gtag";
 import { createPinia } from 'pinia'
 import VueTelInput from 'vue3-tel-input'
+import courseregistration from './Views/courseregistration.vue'
 import 'vue3-tel-input/dist/vue3-tel-input.css'
 import vueCountryRegionSelect from 'vue3-country-region-select'
 
@@ -64,6 +65,9 @@ const router = createRouter({
         },
         {
             path:"/webinar", name:"webinar", component:webinar
+        },
+        {
+            path:'/campusclub/:id', name:'campusclubcourse', component:courseregistration, props: route => ({ affiliate: route.query.affiliate })
         },
     
     

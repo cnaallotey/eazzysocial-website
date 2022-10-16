@@ -1,0 +1,102 @@
+{ "courses":[
+    {
+      "name": "Social Media Marketing (Community Management) ",
+      "job_ready": true,
+      "opened": true,
+      "letter": "Congratsocialmedia.pdf",
+      "content":
+        "Acquire relevant skills needed in starting a career in social media marketing. Gain and jobs and internships with companies globally. Earn monthly stipends while in school.",
+      "img":
+        "https://images.unsplash.com/photo-1537731121640-bc1c4aba9b80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      "name": "E-commerce Management and SEO ",
+     "job_ready": true,
+      "opened": false,
+      "letter": "Congratecommerce.pdf",
+      "content":
+        "Acquire relevant skills in e-commerce and search engine optimization. Gain jobs and internships with companies globally. Earn monthly stipends while in school.",
+      "img":
+        "https://images.unsplash.com/photo-1586880244386-8b3e34c8382c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZWNvbW1lcmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "name": "Business Blogging and SEO ",
+      "job_ready": true,
+      "opened": true,
+      "letter": "Congratblogging.pdf",
+      "content":
+        "Turn your passion for writing into a profitable venture writing articles and stories for businesses and while learning the secret of blogging.",
+      "img":
+        "https://images.unsplash.com/photo-1604933762023-7213af7ff7a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxvZ2dpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "name": "Graphic Design",
+     "job_ready": true,
+      "opened": true,
+      "letter": "Congratgraphicdesign.pdf",
+      "content":
+        "Build your first design portfolio using Adobe Photoshop and illustrator.Access to internship and mentorship after training. ",
+      "img":
+        "https://images.unsplash.com/photo-1519408469771-2586093c3f14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1302&q=80"
+    },
+    {
+      "name": "Social Media Advertising and Campaign Planning",
+      "job_ready": true,
+      "opened": false,
+      "letter": "Congratsocialmediaadvertising.pdf",
+      "content":
+        "Learn how to run social media adverts and start a career as a Social Media Advertising Manager. Drive business performance through ads that convert. Earn stipends while in school. ",
+      "img":
+        "https://images.unsplash.com/photo-1533895328642-8035bacd565a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
+    },
+    {
+      "name": "Data Science and Analytics",
+      "job_ready": true,
+      "opened": true,
+      "letter": "Congratdatascience.pdf",
+      "content":
+        "Start a journey with data science and business analytics. Gain jobs and internships with companies globally. Earn monthly stipends while in school. ",
+      "img":
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGF0YSUyMHNjaWVuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "name": "UX and UI Design Fundamentals",
+      "job_ready": true,
+      "opened": true,
+      "letter": "CongratUXdesign.pdf",
+      "content":
+        "Learn the basics of designing websites and apps through human-centred interaction design. Gain jobs and internships with companies globally. Earn monthly stipends while in school.",
+      "img":
+        "https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dWklMjBkZXNpZ258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "name": "LinkedIn for Jobs and Personal Branding ",
+      "job_ready": false,
+      "opened": false,
+      "letter": "Congratlinkedin.pdf",
+      "content":
+        "Build an effective personal brand for your career as a student. Increases your chances of getting jobs through Social Media and LinkedIn. ",
+      "img":
+        "https://images.unsplash.com/photo-1616469829581-73993eb86b02?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlua2VkaW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "name": "CV Writing ",
+      "job_ready": false,
+      "opened": false,
+      "letter": "Congratcvwriting.pdf",
+      "content":
+        "Learn advanced techniques in writing an effective CV that increases your chances of landing a job. Gain support in re-writing your CV.",
+      "img":
+        "https://images.unsplash.com/photo-1602407294553-6ac9170b3ed0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y3Z8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "name": "Business Computing (Microsoft Word, Excel, PowerPoint…)",
+      "job_ready": true,
+      "opened": false,
+      "letter": "Congratbusinesscomputing.pdf",
+      "content":
+        "Strengthen your skills in using ICT for business. Gain advanced knowledge in Excel, Microsoft Word etc. ",
+      "img":
+        "https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbXB1dGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    }
+ ]}
