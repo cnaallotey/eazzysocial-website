@@ -297,6 +297,7 @@ import errornotVue from "./errornot.vue";
 import successnotificationVue from "./successnotification.vue";
 import { courses } from "../assets/campusclubcourses.json";
 import axios from "axios";
+import { router } from "../main";
 export default {
   components: { VueTelInput, successnotificationVue, errornotVue },
   data() {
@@ -375,7 +376,8 @@ export default {
     this.found = this.courses.find(
       (element) => element.name.split(" ").slice(0, 2).join("_") === this.$route.params.id
     );
-    console.log(this.found);
+    if (this.found !== undefined) return;
+    this.$router.push("/");
   },
 };
 </script>
