@@ -149,13 +149,8 @@
               </h3>
               <p class="text-gray-500 l:text-gray-400 ml-6">
                 Yes, the platform is open to students studying across Africa. However,
-                students who want to signup first need to get a campus club membership ID
-                which comes at 100cedis per year and covers pre-internship or job
-                development workshops ie. Soft skills training ( communication, workplace
-                management, time management etc), Customizing and building your CV, and
-                helping transfer your digital skills into building sample projects. Also,
-                students must have acquired functional digital skills through any of our
-                free digital courses with certificates as proof.
+                must have acquired functional digital skills through any of our free
+                digital courses with certificates as proof.
               </p>
             </div>
             <div class="mb-10 hidden">
