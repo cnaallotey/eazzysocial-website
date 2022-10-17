@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section>
-      <div class="min-h-screen grid grid-cols-1 lg:grid-cols-2">
+    <section class="h-full flex flex-col">
+      <div class="flex-1 grid grid-cols-1 lg:grid-cols-2">
         <div
           class="w-full flex justify-end py-12 px-4 sm:px-4 items-end lg:px-10 xl:px-10"
         >
@@ -11,6 +11,11 @@
             >
               Register for {{ found.name }}
             </h2>
+            <p class="text-sm font-normal text-blue-500 bg-blue-50 my-5 p-3 leading-5">
+              <span class="text-black">Please note:</span> A certification fee of 50 Ghana
+              Cedis or its equivalent in your Country’s Currency will be required at the
+              start of the course to help with Job transition after the course
+            </p>
             <form
               action="submit"
               @submit.prevent="sendform()"
@@ -373,11 +378,9 @@ export default {
     },
   },
   mounted() {
-    this.found = this.courses.find(
-      (element) => element.name.split(" ").slice(0, 2).join("_") === this.$route.params.id
-    );
+    this.found = this.courses.find((element) => element.link === this.$route.params.id);
     if (this.found !== undefined) return;
-    this.$router.push("/");
+    this.$router.push("/campusclub");
   },
 };
 </script>
