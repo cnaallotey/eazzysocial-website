@@ -1,4 +1,15 @@
 { "courses":[
+  {
+    "name": "Graphic Design",
+    "link": "graphic_design",
+   "job_ready": true,
+    "opened": true,
+    "letter": "Congratgraphicdesign.pdf",
+    "content":
+      "Build your first design portfolio using Adobe Photoshop and illustrator.Access to internship and mentorship after training. ",
+    "img":
+      "https://images.unsplash.com/photo-1519408469771-2586093c3f14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1302&q=100"
+  },
     {
       "name": "Social Media Marketing (Community Management) ",
       "link": "social_media_marketing",
@@ -31,17 +42,6 @@
         "Turn your passion for writing into a profitable venture writing articles and stories for businesses and while learning the secret of blogging.",
       "img":
         "https://images.unsplash.com/photo-1604933762023-7213af7ff7a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxvZ2dpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=100"
-    },
-    {
-      "name": "Graphic Design",
-      "link": "graphic_design",
-     "job_ready": true,
-      "opened": true,
-      "letter": "Congratgraphicdesign.pdf",
-      "content":
-        "Build your first design portfolio using Adobe Photoshop and illustrator.Access to internship and mentorship after training. ",
-      "img":
-        "https://images.unsplash.com/photo-1519408469771-2586093c3f14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1302&q=100"
     },
     {
       "name": "Social Media Advertising and Campaign Planning",
