@@ -10,6 +10,28 @@
     "img":
       "https://images.unsplash.com/photo-1519408469771-2586093c3f14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1302&q=100"
   },
+  {
+    "name": "Business Blogging and SEO ",
+    "link": "business_blogging_and_seo",
+    "job_ready": true,
+    "opened": true,
+    "letter": "Congratblogging.pdf",
+    "content":
+      "Turn your passion for writing into a profitable venture writing articles and stories for businesses and while learning the secret of blogging.",
+    "img":
+      "https://images.unsplash.com/photo-1604933762023-7213af7ff7a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxvZ2dpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=100"
+  },
+  {
+    "name": "UX and UI Design Fundamentals",
+    "link": "UX_and_UI_fundamentals",
+    "job_ready": true,
+    "opened": true,
+    "letter": "CongratUXdesign.pdf",
+    "content":
+      "Learn the basics of designing websites and apps through human-centred interaction design. Gain jobs and internships with companies globally. Earn monthly stipends while in school.",
+    "img":
+      "https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dWklMjBkZXNpZ258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=100"
+  },
     {
       "name": "Social Media Marketing (Community Management) ",
       "link": "social_media_marketing",
@@ -33,17 +55,6 @@
         "https://images.unsplash.com/photo-1586880244386-8b3e34c8382c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZWNvbW1lcmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=100"
     },
     {
-      "name": "Business Blogging and SEO ",
-      "link": "business_blogging_and_seo",
-      "job_ready": true,
-      "opened": true,
-      "letter": "Congratblogging.pdf",
-      "content":
-        "Turn your passion for writing into a profitable venture writing articles and stories for businesses and while learning the secret of blogging.",
-      "img":
-        "https://images.unsplash.com/photo-1604933762023-7213af7ff7a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxvZ2dpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=100"
-    },
-    {
       "name": "Social Media Advertising and Campaign Planning",
       "link": "social_media_advertising_and_campaign_planning",
       "job_ready": true,
@@ -64,17 +75,6 @@
         "Start a journey with data science and business analytics. Gain jobs and internships with companies globally. Earn monthly stipends while in school. ",
       "img":
         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGF0YSUyMHNjaWVuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=100"
-    },
-    {
-      "name": "UX and UI Design Fundamentals",
-      "link": "UX_and_UI_fundamentals",
-      "job_ready": true,
-      "opened": true,
-      "letter": "CongratUXdesign.pdf",
-      "content":
-        "Learn the basics of designing websites and apps through human-centred interaction design. Gain jobs and internships with companies globally. Earn monthly stipends while in school.",
-      "img":
-        "https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dWklMjBkZXNpZ258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=100"
     },
     {
       "name": "LinkedIn for Jobs and Personal Branding ",
