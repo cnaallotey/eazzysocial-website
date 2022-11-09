@@ -34,6 +34,17 @@
       "https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dWklMjBkZXNpZ258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=100"
   },
   {
+    "name": "Social Media Marketing (Community Management) ",
+    "link": "social_media_marketing",
+    "job_ready": true,
+    "opened": true,
+    "letter": "Congratsocialmedia-December.pdf",
+    "content":
+      "Acquire relevant skills needed in starting a career in social media marketing. Gain and jobs and internships with companies globally. Earn monthly stipends while in school.",
+    "img":
+      "https://images.unsplash.com/photo-1537731121640-bc1c4aba9b80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100"
+  },
+  {
     "name": "Graphic Design",
     "link": "graphic_design",
    "job_ready": true,
@@ -44,17 +55,6 @@
     "img":
       "https://images.unsplash.com/photo-1519408469771-2586093c3f14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1302&q=100"
   },
-    {
-      "name": "Social Media Marketing (Community Management) ",
-      "link": "social_media_marketing",
-      "job_ready": true,
-      "opened": true,
-      "letter": "Congratsocialmedia-December.pdf",
-      "content":
-        "Acquire relevant skills needed in starting a career in social media marketing. Gain and jobs and internships with companies globally. Earn monthly stipends while in school.",
-      "img":
-        "https://images.unsplash.com/photo-1537731121640-bc1c4aba9b80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100"
-    },
     {
       "name": "E-commerce Management and SEO ",
       "link": "ecommerce_marketing_and_seo",
