@@ -76,6 +76,11 @@
                   >
                     Access to job ready courses to help you gain functional skills
                   </p>
+                  <p
+                    class="w-fit lg:mx-auto p-2 bg-orange-100 text-sm font-semibold text-orange-500 mt-4 rounded-md"
+                  >
+                    Please note, you can register for one course per cohort
+                  </p>
                   <div class="w-full mt-10">
                     <div
                       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-10"

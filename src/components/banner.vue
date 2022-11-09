@@ -42,11 +42,11 @@ onMounted(() => {
             </span>
             <p class="ml-3 tte font-medium text-white">
               <span class="md:hidden text-sm"
-                >Admission to free digital skills courses for the November cohort is now
+                >Admission to free digital skills courses for the December cohort is now
                 open! Register for courses tagged "Admission Open."</span
               >
               <span class="hidden md:inline"
-                >Big news! Admission to free digital skills courses for the November
+                >Big news! Admission to free digital skills courses for the December
                 cohort is now open! Register for courses tagged "Admission Open."</span
               >
             </p>
