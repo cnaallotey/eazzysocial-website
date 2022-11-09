@@ -12,6 +12,17 @@
       "https://images.unsplash.com/photo-1533895328642-8035bacd565a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=100"
   },
   {
+    "name": "Data Science and Analytics",
+    "link": "data_science_and_analytics",
+    "job_ready": true,
+    "opened": true,
+    "letter": "Congratdatascience-December.pdf",
+    "content":
+      "Start a journey with data science and business analytics. Gain jobs and internships with companies globally. Earn monthly stipends while in school. ",
+    "img":
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGF0YSUyMHNjaWVuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=100"
+  },
+  {
     "name": "UX and UI Design Fundamentals",
     "link": "UX_and_UI_fundamentals",
     "job_ready": true,
@@ -65,17 +76,6 @@
         "Turn your passion for writing into a profitable venture writing articles and stories for businesses and while learning the secret of blogging.",
       "img":
         "https://images.unsplash.com/photo-1604933762023-7213af7ff7a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxvZ2dpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=100"
-    },
-    {
-      "name": "Data Science and Analytics",
-      "link": "data_science_and_analytics",
-      "job_ready": true,
-      "opened": true,
-      "letter": "Congratdatascience-December.pdf",
-      "content":
-        "Start a journey with data science and business analytics. Gain jobs and internships with companies globally. Earn monthly stipends while in school. ",
-      "img":
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGF0YSUyMHNjaWVuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=100"
     },
     {
       "name": "LinkedIn for Jobs and Personal Branding ",
