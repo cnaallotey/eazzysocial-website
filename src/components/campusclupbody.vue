@@ -74,7 +74,8 @@
                   <p
                     class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl max-w-2xl mx-auto lg:text-center"
                   >
-                    Access to job ready courses to help you gain functional skills
+                    Access to job ready tution-free courses to help you gain functional
+                    skills
                   </p>
                   <p
                     class="w-fit lg:mx-auto p-2 bg-orange-100 text-sm font-semibold text-orange-500 mt-4 rounded-md"

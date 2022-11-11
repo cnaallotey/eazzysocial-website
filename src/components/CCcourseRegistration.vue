@@ -12,9 +12,13 @@
               Register for {{ found.name }}
             </h2>
             <p class="text-sm font-normal text-blue-500 bg-blue-50 my-5 p-3 leading-5">
-              <span class="text-black">Please note:</span> A certification fee of 50 Ghana
-              Cedis or its equivalent in your Country’s Currency will be required at the
-              start of the course to help with Job transition after the course
+              <span class="text-black">Please note:</span>
+              <span class="text-bold underline decoration-blue-500 decoration-4 relative"
+                ><span class="">Tuition is free.</span></span
+              >
+              However, to assist with job transition at the end of the course, a mandatory
+              certification fee of 50 Ghana cedis or its equivalent in your country’s
+              currency will be required after the first week of training.
             </p>
             <form
               action="submit"
