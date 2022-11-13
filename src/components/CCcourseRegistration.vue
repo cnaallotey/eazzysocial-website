@@ -385,8 +385,7 @@ export default {
     console.log(this.courses);
     this.found = this.courses.find((element) => element.link === this.$route.params.id);
     if (this.found !== undefined) return;
-    console.log("not found");
-    //this.$router.push("/campusclub");
+    this.$router.push("/campusclub");
   },
 };
 </script>
