@@ -382,9 +382,11 @@ export default {
     },
   },
   mounted() {
+    console.log(this.courses);
     this.found = this.courses.find((element) => element.link === this.$route.params.id);
     if (this.found !== undefined) return;
-    this.$router.push("/campusclub");
+    console.log("not found");
+    //this.$router.push("/campusclub");
   },
 };
 </script>
