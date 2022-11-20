@@ -150,6 +150,13 @@
                     </option>
                   </select>
                 </div>
+                <vue-recaptcha
+                  class="mt-4"
+                  ref="recaptcha"
+                  sitekey="6LeOPiAjAAAAALic69Jt2xVdd8AaPMSu2rvM94--"
+                  @verify="recaptcha = true"
+                  @expired="recaptcha = false"
+                />
               </div>
               <div class="w-full flex flex-row space-x-4 justify-center">
                 <button
@@ -301,6 +308,7 @@
 </template>
 
 <script>
+import { VueRecaptcha } from "vue-recaptcha";
 import { VueTelInput } from "vue-tel-input";
 import errornotVue from "./errornot.vue";
 import successnotificationVue from "./successnotification.vue";
@@ -308,7 +316,7 @@ import { courses } from "../assets/campusclubcourses.json";
 import axios from "axios";
 import { router } from "../main";
 export default {
-  components: { VueTelInput, successnotificationVue, errornotVue },
+  components: { VueTelInput, successnotificationVue, errornotVue, VueRecaptcha },
   data() {
     return {
       courses,
@@ -329,13 +337,15 @@ export default {
       country: null,
       dialCode: null,
       alert: false,
+      recaptcha: false,
       found: {},
     };
   },
   methods: {
     sendform() {
+      if (!this.recaptcha) return;
       this.loading = true;
-      const token = "LRIp0GUh5X";
+      const token = "JN7nKqBECZ";
       axios
         .post(`https://app.headlessforms.cloud/api/v1/form-submission/${token}`, {
           name: this.name,
@@ -364,6 +374,9 @@ export default {
             this.error = false;
           }, 5000);
         });
+    },
+    verify() {
+      this.$refs.recaptcha.execute();
     },
     checkcountry(n) {
       //console.log(n);
