@@ -511,10 +511,14 @@ export default {
 
     const sendform = () => {
       axios
-        .post(`https://app.headlessforms.cloud/api/v1/form-submission/${token}`, {
-          ...tvet.value,
-          course: selectedCourse,
-        })
+        .post(
+          "https://getform.io/f/d196ec39-49e4-43cd-a605-1d3db953ee9c",
+          {
+            ...tvet.value,
+            course: selectedCourse,
+          },
+          { headers: { Accept: "application/json" } }
+        )
         .then((res) => {
           console.log(res);
           modal.value = false;
@@ -540,9 +544,13 @@ export default {
     const registerschool = () => {
       //console.log(school.value);
       axios
-        .post(`https://app.headlessforms.cloud/api/v1/form-submission/${token}`, {
-          ...school.value,
-        })
+        .post(
+          "https://getform.io/f/5b88ef6a-7f7e-4c21-8e99-21b454ceedea",
+          {
+            ...school.value,
+          },
+          { headers: { Accept: "application/json" } }
+        )
         .then((res) => {
           console.log(res);
           school.value = {};

@@ -399,14 +399,19 @@ export default {
     formsubmit: function () {
       this.loading = true;
       const token = "DdL3uxnOUd";
+      const url = "https://getform.io/f/d196ec39-49e4-43cd-a605-1d3db953ee9c";
       axios
-        .post(`https://app.headlessforms.cloud/api/v1/form-submission/${token}`, {
-          name: this.name,
-          email: this.email,
-          contact: this.contact,
-          course: this.course.name,
-          whatsapp: this.whatsapp,
-        })
+        .post(
+          url,
+          {
+            name: this.name,
+            email: this.email,
+            contact: this.contact,
+            course: this.course.name,
+            whatsapp: this.whatsapp,
+          },
+          { headers: { Accept: "application/json" } }
+        )
         .then((res) => {
           console.log(res);
           this.submited = true;

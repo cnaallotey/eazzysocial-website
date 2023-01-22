@@ -211,11 +211,16 @@ export default {
     },
     sendform: function (contact) {
       const token = "QnuUxEORss";
+      const url = "https://getform.io/f/0ad3c0c8-9097-4810-9d0c-a4693582d0cf";
       this.loading = true;
       axios
-        .post(`https://app.headlessforms.cloud/api/v1/form-submission/${token}`, {
-          ...contact,
-        })
+        .post(
+          url,
+          {
+            ...contact,
+          },
+          { headers: { Accept: "application/json" } }
+        )
         .then((res) => {
           //console.log(res);
           this.success = true;
