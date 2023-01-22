@@ -104,6 +104,7 @@
                     placeholder="enter school name"
                     class="rounded-none border-gray-200 px-3 py-2 border-2"
                   />
+                  <input type="hidden" name="_gotcha" style="display: none !important" />
                   <label for="level" class="text-sm text-gray-700 mb-1 mt-4"
                     >Currently studying for a Postgraduate Degree?</label
                   ><select
@@ -346,20 +347,25 @@ export default {
       if (!this.recaptcha) return;
       this.loading = true;
       const token = "JN7nKqBECZ";
+      const url = "https://getform.io/f/07a9acb7-37a9-4494-b033-52695b576cf1";
       axios
-        .post(`https://app.headlessforms.cloud/api/v1/form-submission/${token}`, {
-          name: this.name,
-          email: this.email,
-          contact: this.contact,
-          school: this.school,
-          course: this.found.name,
-          whatsapp: this.whatsapp,
-          postgrad: this.postgrad,
-          CompletionYear: this.year,
-          country: this.country,
-          code: this.dialCode,
-          affiliate: this.$route.query.affiliate,
-        })
+        .post(
+          url,
+          {
+            name: this.name,
+            email: this.email,
+            contact: this.contact,
+            school: this.school,
+            course: this.found.name,
+            whatsapp: this.whatsapp,
+            postgrad: this.postgrad,
+            CompletionYear: this.year,
+            country: this.country,
+            code: this.dialCode,
+            affiliate: this.$route.query.affiliate,
+          },
+          { headers: { Accept: "application/json" } }
+        )
         .then((res) => {
           this.modal = false;
 
