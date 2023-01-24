@@ -390,7 +390,7 @@ export default {
     },
     downloadLetter() {
       //console.log(pdf);
-      const letter = `/brochures/campusclub/${this.found.letter}`;
+      const letter = `/brochures/campusclub/january/${this.found.letter}`;
       window.open(letter, "Download");
     },
   },
