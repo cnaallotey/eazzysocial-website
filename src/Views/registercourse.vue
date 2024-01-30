@@ -399,7 +399,7 @@ export default {
     formsubmit: function () {
       this.loading = true;
       const token = "DdL3uxnOUd";
-      const url = "https://getform.io/f/d196ec39-49e4-43cd-a605-1d3db953ee9c";
+      const url = "https://getform.io/f/8f7f6104-d92d-46f0-89f9-a3576c50e5f6";
       axios
         .post(
           url,

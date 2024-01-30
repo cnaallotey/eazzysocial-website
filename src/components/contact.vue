@@ -211,7 +211,7 @@ export default {
     },
     sendform: function (contact) {
       const token = "QnuUxEORss";
-      const url = "https://getform.io/f/0ad3c0c8-9097-4810-9d0c-a4693582d0cf";
+      const url = "https://getform.io/f/bfb6a976-0de8-4aec-831b-e14c508fb208";
       this.loading = true;
       axios
         .post(
