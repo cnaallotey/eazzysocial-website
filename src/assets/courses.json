@@ -46,10 +46,10 @@
         },
         {
           "name": "Executive Social Media and Digital Marketing Crash Course",
-          "price": "GHC 2,000",
+          "price": "GHC 3,000",
           "price_usd":"200",
           "price_discount_usd":"150",
-          "price_discount": "GHC 1,500",
+          "price_discount": "GHC 2,000",
           "params": "escdmc",
           "type": "Crash Course",
           "duration": "1 Month",
