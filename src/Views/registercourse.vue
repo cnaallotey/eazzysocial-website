@@ -250,138 +250,14 @@ import errornotVue from "../components/errornot.vue";
 import axios from "axios";
 import Errornot from "../components/errornot.vue";
 import Price from "../components/price.vue";
+import { courses } from "../assets/courses.json";
 export default {
   components: { waves, errornotVue, Price },
   data() {
     Errornot;
     return {
       course: [],
-      courses: [
-        {
-          name: "Social Media Marketing Training and Advertising Support for SMEs",
-          params: "smmta",
-          type: "Crash Course",
-          price: "GHC 250",
-          price_usd: "50",
-          price_discount_usd: "free",
-          price_discount: "Free",
-          duration: "1 Day",
-          content:
-            "Access a completely free social media marketing program, e-commerce and gain daily support in driving sales, growing your customers and engaging your followers.",
-          img:
-            "https://images.unsplash.com/photo-1610473199899-fc0ec6e204bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100",
-          brochure:
-            "/brochures/Free_Social_Media_Marketing_Training_and_Advertising_Support_for_SMEs.pdf",
-        },
-        {
-          name: "Small Business Advanced Social Media Strategy Crash Course",
-          price: "GHC 500",
-          price_discount: "GHC 250",
-          price_usd: "75",
-          price_discount_usd: "25",
-          duration: "2 Days",
-          params: "sbsmmc",
-          type: "Crash Course",
-          img:
-            "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=100",
-          content:
-            "Develop a social media marketing strategy for your small business. Gain a strategic understanding in driving sales traffic through social media. ",
-          brochure:
-            "/brochures/Exe_Advanced_Social_Media_Strategy_Course_for_Small_Business.pdf",
-        },
-        {
-          name:
-            "Complete Certification in Social Media Marketing with an option in Graphic Design and Photography",
-          price: "GHC 6,000",
-          price_discount: "GHC 4,500",
-          type: "Complete Certification",
-          price_usd: "800",
-          price_discount_usd: "399",
-          duration: "6 Months",
-          params: "sdmgdp",
-          img:
-            "https://images.unsplash.com/photo-1613479205646-c0dc1ee8511f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=100",
-          content:
-            "Launch a successful career as a social media marketing manager with top firms. Gain relevant skills in all the areas of social media marketing. ",
-          brochure: "/brochures/Eazzy_Social_SM_Marketing_Brochure.pdf",
-        },
-        {
-          name:
-            "Complete Certification in SEO with an option in WordPress Website Development ",
-          price: "GHC 6,000",
-          price_discount: "GHC 4,000",
-          price_usd: "",
-          price_discount_usd: "",
-          params: "pcseowwd",
-          type: "Complete Certification",
-          duration: "6 Months",
-          img:
-            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=100",
-          content:
-            "Search Engine Optimization specialists are in high demand across the Globe. Gain relevant skills in all the areas of SEO and work for top firms. Develop practical skills in building a website and optimizing. ",
-          brochure: "/brochures/Eazzy_Social_SEO_Brochure.pdf",
-        },
-        {
-          name: "Executive Social Media and Digital Marketing Crash Course",
-          price: "GHC 1,000",
-          price_discount: "GHC 700",
-          price_usd: "200",
-          price_discount_usd: "99",
-          params: "escdmc",
-          type: "Crash Course",
-          duration: "1 Month",
-          img:
-            "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=100",
-          content:
-            "Are you a business executive looking to deepen your knowledge in social media and digital marketing? Enrol our Executive course designed in partnership with Koforidua Technical University.  ",
-          brochure: "/brochures/Executive_SM_and_DM_Crash_Course_22.pdf",
-        },
-        {
-          name: "Online Shop Attendant Crash Course",
-          price: "GHC 2,500",
-          price_discount: "GHC 1,000",
-          price_usd: "200",
-          price_discount_usd: "99",
-          params: "osac",
-          type: "Crash Course",
-          duration: "1 Month",
-          img:
-            "https://images.unsplash.com/photo-1570857502809-08184874388e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=100",
-          content:
-            "Begin a journey as a professional as an online shop attendant. Gain skills in all the areas in managing an online shop ie. Social media, e-commerce, accounting, customer service, product photography etc.  ",
-          brochure: "/brochures/Online_shop_Attendant_Brochure_FIN_33.pdf",
-        },
-        {
-          name: "Executive Social Selling and Digital Selling Crash Course",
-          price: "GHC 1,200",
-          price_discount: "GHC 899",
-          price_usd: "250",
-          price_discount_usd: "150",
-          params: "essdsc",
-          type: "Crash Course",
-          duration: "1 Month",
-          img:
-            "https://images.unsplash.com/photo-1573162915955-6a8ba9d2fe20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=100",
-          content:
-            "Be a digital sales leader. Increase sales velocity and engage more prospects using social media platforms. The course is in partnership with Koforidua Technical University.  ",
-          brochure: "/brochures/SOCIAL_SELLING_CRASH_COURSE_BROCHURE.pdf",
-        },
-        {
-          name: "Online Reputation Management and Applied SEO Crash Course",
-          price: "GHC 5,000",
-          price_discount: "GHC 2,500",
-          price_usd: "500",
-          price_discount_usd: "250",
-          params: "ormaseow",
-          type: "Crash Course",
-          duration: "1 Month",
-          img:
-            "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100",
-          content:
-            "Protect the image of your business online through advanced social listening and bury negative information about your business in search through Advance search engine optimization.  ",
-          brochure: "/brochures/Eazzy_Social_Online_Reputation_Brochure_new.pdf",
-        },
-      ],
+      courses,
       loading: false,
       submited: false,
       error: false,
