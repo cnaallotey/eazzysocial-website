@@ -27,7 +27,7 @@
                 <div class="mt-10 flex space-x-2 items-center">
                   <img src="../assets/whatsapp.png" class="w-8" alt="" />
                   <p class="text-base text-slate-200">
-                    <a href="https://wa.me/+233546660320">+233 54 666 0320</a>
+                    <a href="https://wa.me/+233248119530">+233 24 811 9530</a>
                   </p>
                 </div>
                 <div class="mt-10 max-w-sm flex flex-col">
@@ -217,6 +217,7 @@ export default {
         .post(
           url,
           {
+            source: "from Eazzysocial",
             ...contact,
           },
           { headers: { Accept: "application/json" } }
